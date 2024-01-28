@@ -8,7 +8,8 @@ URL = "https://attack.mitre.org/techniques/enterprise/"
 
 def get_techniques(url):
     """
-    Login to the MITER ATT&CK page and then parse the page to extract the techniques and details about them
+    Get technique data from MITRE's ATT&CK website.
+    :param url: The URL of the page to scrape.
     """
     response = requests.get(url)
 

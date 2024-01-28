@@ -1,0 +1,66 @@
+{
+    "T1556": [
+        "Modify Authentication Process",
+        "Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts"
+    ],
+    "T1578": [
+        "Modify Cloud Compute Infrastructure",
+        "An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses"
+    ],
+    "T1112": [
+        "Modify Registry",
+        "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution"
+    ],
+    "T1601": [
+        "Modify System Image",
+        "Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves"
+    ],
+    "T1111": [
+        "Multi-Factor Authentication Interception",
+        "Adversaries may target multi-factor authentication (MFA) mechanisms, (i"
+    ],
+    "T1621": [
+        "Multi-Factor Authentication Request Generation",
+        "Adversaries may attempt to bypass multi-factor authentication (MFA) mechanisms and gain access to accounts by generating MFA requests sent to users"
+    ],
+    "T1104": [
+        "Multi-Stage Channels",
+        "Adversaries may create multiple stages for command and control that are employed under different conditions or for certain functions"
+    ],
+    "T1106": [
+        "Native API",
+        "Adversaries may interact with the native OS application programming interface (API) to execute behaviors"
+    ],
+    "T1599": [
+        "Network Boundary Bridging",
+        "Adversaries may bridge network boundaries by compromising perimeter network devices or internal devices responsible for network segmentation"
+    ],
+    "T1498": [
+        "Network Denial of Service",
+        "Adversaries may perform Network Denial of Service (DoS) attacks to degrade or block the availability of targeted resources to users"
+    ],
+    "T1046": [
+        "Network Service Discovery",
+        "Adversaries may attempt to get a listing of services running on remote hosts and local network infrastructure devices, including those that may be vulnerable to remote software exploitation"
+    ],
+    "T1135": [
+        "Network Share Discovery",
+        "Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement"
+    ],
+    "T1040": [
+        "Network Sniffing",
+        "Adversaries may sniff network traffic to capture information about an environment, including authentication material passed over the network"
+    ],
+    "T1095": [
+        "Non-Application Layer Protocol",
+        "Adversaries may use an OSI non-application layer protocol for communication between host and C2 server or among infected hosts within a network"
+    ],
+    "T1571": [
+        "Non-Standard Port",
+        "Adversaries may communicate using a protocol and port pairing that are typically not associated"
+    ],
+    "T1027": [
+        "Obfuscated Files or Information",
+        "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit"
+    ]
+}

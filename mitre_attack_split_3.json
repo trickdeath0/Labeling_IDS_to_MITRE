@@ -1,0 +1,86 @@
+{
+    "T1136": [
+        "Create Account",
+        "Adversaries may create an account to maintain access to victim systems"
+    ],
+    "T1543": [
+        "Create or Modify System Process",
+        "Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1555": [
+        "Credentials from Password Stores",
+        "Adversaries may search for common password storage locations to obtain user credentials"
+    ],
+    "T1485": [
+        "Data Destruction",
+        "Adversaries may destroy data and files on specific systems or in large numbers on a network to interrupt availability to systems, services, and network resources"
+    ],
+    "T1132": [
+        "Data Encoding",
+        "Adversaries may encode data to make the content of command and control traffic more difficult to detect"
+    ],
+    "T1486": [
+        "Data Encrypted for Impact",
+        "Adversaries may encrypt data on target systems or on large numbers of systems in a network to interrupt availability to system and network resources"
+    ],
+    "T1530": [
+        "Data from Cloud Storage",
+        "Adversaries may access data from cloud storage"
+    ],
+    "T1602": [
+        "Data from Configuration Repository",
+        "Adversaries may collect data related to managed devices from configuration repositories"
+    ],
+    "T1213": [
+        "Data from Information Repositories",
+        "Adversaries may leverage information repositories to mine valuable information"
+    ],
+    "T1005": [
+        "Data from Local System",
+        "Adversaries may search local system sources, such as file systems and configuration files or local databases, to find files of interest and sensitive data prior to Exfiltration"
+    ],
+    "T1039": [
+        "Data from Network Shared Drive",
+        "Adversaries may search network shares on computers they have compromised to find files of interest"
+    ],
+    "T1025": [
+        "Data from Removable Media",
+        "Adversaries may search connected removable media on computers they have compromised to find files of interest"
+    ],
+    "T1565": [
+        "Data Manipulation",
+        "Adversaries may insert, delete, or manipulate data in order to influence external outcomes or hide activity, thus threatening the integrity of the data"
+    ],
+    "T1001": [
+        "Data Obfuscation",
+        "Adversaries may obfuscate command and control traffic to make it more difficult to detect"
+    ],
+    "T1074": [
+        "Data Staged",
+        "Adversaries may stage collected data in a central location or directory prior to Exfiltration"
+    ],
+    "T1030": [
+        "Data Transfer Size Limits",
+        "An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds"
+    ],
+    "T1622": [
+        "Debugger Evasion",
+        "Adversaries may employ various means to detect and avoid debuggers"
+    ],
+    "T1491": [
+        "Defacement",
+        "Adversaries may modify visual content available internally or externally to an enterprise network, thus affecting the integrity of the original content"
+    ],
+    "T1140": [
+        "Deobfuscate/Decode Files or Information",
+        "Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis"
+    ],
+    "T1610": [
+        "Deploy Container",
+        "Adversaries may deploy a container into an environment to facilitate execution or evade defenses"
+    ],
+    "T1587": [
+        "Develop Capabilities",
+        "Adversaries may build capabilities that can be used during targeting"
+    ]
+}

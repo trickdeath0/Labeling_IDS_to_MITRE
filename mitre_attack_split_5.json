@@ -1,0 +1,70 @@
+{
+    "T1190": [
+        "Exploit Public-Facing Application",
+        "Adversaries may attempt to exploit a weakness in an Internet-facing host or system to initially access a network"
+    ],
+    "T1203": [
+        "Exploitation for Client Execution",
+        "Adversaries may exploit software vulnerabilities in client applications to execute code"
+    ],
+    "T1212": [
+        "Exploitation for Credential Access",
+        "Adversaries may exploit software vulnerabilities in an attempt to collect credentials"
+    ],
+    "T1211": [
+        "Exploitation for Defense Evasion",
+        "Adversaries may exploit a system or application vulnerability to bypass security features"
+    ],
+    "T1068": [
+        "Exploitation for Privilege Escalation",
+        "Adversaries may exploit software vulnerabilities in an attempt to elevate privileges"
+    ],
+    "T1210": [
+        "Exploitation of Remote Services",
+        "Adversaries may exploit remote services to gain unauthorized access to internal systems once inside of a network"
+    ],
+    "T1133": [
+        "External Remote Services",
+        "Adversaries may leverage external-facing remote services to initially access and/or persist within a network"
+    ],
+    "T1008": [
+        "Fallback Channels",
+        "Adversaries may use fallback or alternate communication channels if the primary channel is compromised or inaccessible in order to maintain reliable command and control and to avoid data transfer thresholds"
+    ],
+    "T1083": [
+        "File and Directory Discovery",
+        "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system"
+    ],
+    "T1222": [
+        "File and Directory Permissions Modification",
+        "Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files"
+    ],
+    "T1657": [
+        "Financial Theft",
+        "Adversaries may steal monetary resources from targets through extortion, social engineering, technical theft, or other methods aimed at their own financial gain at the expense of the availability of these resources for victims"
+    ],
+    "T1495": [
+        "Firmware Corruption",
+        "Adversaries may overwrite or corrupt the flash memory contents of system BIOS or other firmware in devices attached to a system in order to render them inoperable or unable to boot, thus denying the availability to use the devices and/or the system"
+    ],
+    "T1187": [
+        "Forced Authentication",
+        "Adversaries may gather credential material by invoking or forcing a user to automatically provide authentication information through a mechanism in which they can intercept"
+    ],
+    "T1606": [
+        "Forge Web Credentials",
+        "Adversaries may forge credential materials that can be used to gain access to web applications or Internet services"
+    ],
+    "T1592": [
+        "Gather Victim Host Information",
+        "Adversaries may gather information about the victim's hosts that can be used during targeting"
+    ],
+    "T1589": [
+        "Gather Victim Identity Information",
+        "Adversaries may gather information about the victim's identity that can be used during targeting"
+    ],
+    "T1590": [
+        "Gather Victim Network Information",
+        "Adversaries may gather information about the victim's networks that can be used during targeting"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "T1529": [
+        "System Shutdown/Reboot",
+        "Adversaries may shutdown/reboot systems to interrupt access to, or aid in the destruction of, those systems"
+    ],
+    "T1124": [
+        "System Time Discovery",
+        "An adversary may gather the system time and/or time zone from a local or remote system"
+    ],
+    "T1080": [
+        "Taint Shared Content",
+        "Adversaries may deliver payloads to remote systems by adding content to shared storage locations, such as network drives or internal code repositories"
+    ],
+    "T1221": [
+        "Template Injection",
+        "Adversaries may create or modify references in user document templates to conceal malicious code or force authentication attempts"
+    ],
+    "T1205": [
+        "Traffic Signaling",
+        "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control"
+    ],
+    "T1537": [
+        "Transfer Data to Cloud Account",
+        "Adversaries may exfiltrate data by transferring the data, including backups of cloud environments, to another cloud account they control on the same service to avoid typical file transfers/downloads and network-based exfiltration detection"
+    ],
+    "T1127": [
+        "Trusted Developer Utilities Proxy Execution",
+        "Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads"
+    ],
+    "T1199": [
+        "Trusted Relationship",
+        "Adversaries may breach or otherwise leverage organizations who have access to intended victims"
+    ],
+    "T1552": [
+        "Unsecured Credentials",
+        "Adversaries may search compromised systems to find and obtain insecurely stored credentials"
+    ],
+    "T1535": [
+        "Unused/Unsupported Cloud Regions",
+        "Adversaries may create cloud instances in unused geographic service regions in order to evade detection"
+    ],
+    "T1550": [
+        "Use Alternate Authentication Material",
+        "Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls"
+    ],
+    "T1204": [
+        "User Execution",
+        "An adversary may rely upon specific actions by a user in order to gain execution"
+    ],
+    "T1078": [
+        "Valid Accounts",
+        "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1125": [
+        "Video Capture",
+        "An adversary can leverage a computer's peripheral devices (e"
+    ],
+    "T1497": [
+        "Virtualization/Sandbox Evasion",
+        "Adversaries may employ various means to detect and avoid virtualization and analysis environments"
+    ],
+    "T1600": [
+        "Weaken Encryption",
+        "Adversaries may compromise a network device\u2019s encryption capability in order to bypass encryption that would otherwise protect data communications"
+    ],
+    "T1102": [
+        "Web Service",
+        "Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system"
+    ],
+    "T1047": [
+        "Windows Management Instrumentation",
+        "Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads"
+    ],
+    "T1220": [
+        "XSL Script Processing",
+        "Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files"
+    ]
+}

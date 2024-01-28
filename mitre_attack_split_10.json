@@ -1,0 +1,70 @@
+{
+    "T1518": [
+        "Software Discovery",
+        "Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment"
+    ],
+    "T1608": [
+        "Stage Capabilities",
+        "Adversaries may upload, install, or otherwise set up capabilities that can be used during targeting"
+    ],
+    "T1528": [
+        "Steal Application Access Token",
+        "Adversaries can steal application access tokens as a means of acquiring credentials to access remote systems and resources"
+    ],
+    "T1649": [
+        "Steal or Forge Authentication Certificates",
+        "Adversaries may steal or forge certificates used for authentication to access remote systems or resources"
+    ],
+    "T1558": [
+        "Steal or Forge Kerberos Tickets",
+        "Adversaries may attempt to subvert Kerberos authentication by stealing or forging Kerberos tickets to enable Pass the Ticket"
+    ],
+    "T1539": [
+        "Steal Web Session Cookie",
+        "An adversary may steal web application or service session cookies and use them to gain access to web applications or Internet services as an authenticated user without needing credentials"
+    ],
+    "T1553": [
+        "Subvert Trust Controls",
+        "Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs"
+    ],
+    "T1195": [
+        "Supply Chain Compromise",
+        "Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise"
+    ],
+    "T1218": [
+        "System Binary Proxy Execution",
+        "Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries"
+    ],
+    "T1082": [
+        "System Information Discovery",
+        "An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture"
+    ],
+    "T1614": [
+        "System Location Discovery",
+        "Adversaries may gather information in an attempt to calculate the geographical location of a victim host"
+    ],
+    "T1016": [
+        "System Network Configuration Discovery",
+        "Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems"
+    ],
+    "T1049": [
+        "System Network Connections Discovery",
+        "Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network"
+    ],
+    "T1033": [
+        "System Owner/User Discovery",
+        "Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system"
+    ],
+    "T1216": [
+        "System Script Proxy Execution",
+        "Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files"
+    ],
+    "T1007": [
+        "System Service Discovery",
+        "Adversaries may try to gather information about registered local system services"
+    ],
+    "T1569": [
+        "System Services",
+        "Adversaries may abuse system services or daemons to execute commands or programs"
+    ]
+}

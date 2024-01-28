@@ -1,0 +1,74 @@
+{
+    "T1021": [
+        "Remote Services",
+        "Adversaries may use Valid Accounts to log into a service that accepts remote connections, such as telnet, SSH, and VNC"
+    ],
+    "T1018": [
+        "Remote System Discovery",
+        "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system"
+    ],
+    "T1091": [
+        "Replication Through Removable Media",
+        "Adversaries may move onto systems, possibly those on disconnected or air-gapped networks, by copying malware to removable media and taking advantage of Autorun features when the media is inserted into a system and executes"
+    ],
+    "T1496": [
+        "Resource Hijacking",
+        "Adversaries may leverage the resources of co-opted systems to complete resource-intensive tasks, which may impact system and/or hosted service availability"
+    ],
+    "T1207": [
+        "Rogue Domain Controller",
+        "Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data"
+    ],
+    "T1014": [
+        "Rootkit",
+        "Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components"
+    ],
+    "T1053": [
+        "Scheduled Task/Job",
+        "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code"
+    ],
+    "T1029": [
+        "Scheduled Transfer",
+        "Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals"
+    ],
+    "T1113": [
+        "Screen Capture",
+        "Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation"
+    ],
+    "T1597": [
+        "Search Closed Sources",
+        "Adversaries may search and gather information about victims from closed sources that can be used during targeting"
+    ],
+    "T1596": [
+        "Search Open Technical Databases",
+        "Adversaries may search freely available technical databases for information about victims that can be used during targeting"
+    ],
+    "T1593": [
+        "Search Open Websites/Domains",
+        "Adversaries may search freely available websites and/or domains for information about victims that can be used during targeting"
+    ],
+    "T1594": [
+        "Search Victim-Owned Websites",
+        "Adversaries may search websites owned by the victim for information that can be used during targeting"
+    ],
+    "T1505": [
+        "Server Software Component",
+        "Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems"
+    ],
+    "T1648": [
+        "Serverless Execution",
+        "Adversaries may abuse serverless computing, integration, and automation services to execute arbitrary code in cloud environments"
+    ],
+    "T1489": [
+        "Service Stop",
+        "Adversaries may stop or disable services on a system to render those services unavailable to legitimate users"
+    ],
+    "T1129": [
+        "Shared Modules",
+        "Adversaries may execute malicious payloads via loading shared modules"
+    ],
+    "T1072": [
+        "Software Deployment Tools",
+        "Adversaries may gain access to and use third-party software suites installed within an enterprise network, such as administration, monitoring, and deployment systems, to move laterally through the network"
+    ]
+}

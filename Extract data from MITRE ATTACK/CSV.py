@@ -27,7 +27,7 @@ def get_techniques(url):
             cells = row.find_all("td")
             ID = cells[0].text.strip()
             name = cells[1].text.strip()
-            description = cells[2].text.strip()
+            description = cells[2].text.strip().split(".")[0]
             if str(name).startswith(".0"):
                 continue
             techniques.append((ID,name, description))
@@ -87,7 +87,7 @@ def convertToJSON():
         for row in reader:
             dictOfTechs[row[0]] = (row[1], row[2])
 
-    output_files = split_and_write_json(dictOfTechs, 3300, "mitre_attack_split")
+    output_files = split_and_write_json(dictOfTechs, 3000, "mitre_attack_split")
 
 
 if "__main__" == __name__:

@@ -1,0 +1,74 @@
+{
+    "T1217": [
+        "Browser Information Discovery",
+        "Adversaries may enumerate information about browsers to learn more about compromised environments"
+    ],
+    "T1185": [
+        "Browser Session Hijacking",
+        "Adversaries may take advantage of security vulnerabilities and inherent functionality in browser software to change content, modify user-behaviors, and intercept information as part of various browser session hijacking techniques"
+    ],
+    "T1110": [
+        "Brute Force",
+        "Adversaries may use brute force techniques to gain access to accounts when passwords are unknown or when password hashes are obtained"
+    ],
+    "T1612": [
+        "Build Image on Host",
+        "Adversaries may build a container image directly on a host to bypass defenses that monitor for the retrieval of malicious images from a public registry"
+    ],
+    "T1115": [
+        "Clipboard Data",
+        "Adversaries may collect data stored in the clipboard from users copying information within or between applications"
+    ],
+    "T1651": [
+        "Cloud Administration Command",
+        "Adversaries may abuse cloud management services to execute commands within virtual machines or hybrid-joined devices"
+    ],
+    "T1580": [
+        "Cloud Infrastructure Discovery",
+        "An adversary may attempt to discover infrastructure and resources that are available within an infrastructure-as-a-service (IaaS) environment"
+    ],
+    "T1538": [
+        "Cloud Service Dashboard",
+        "An adversary may use a cloud service dashboard GUI with stolen credentials to gain useful information from an operational cloud environment, such as specific services, resources, and features"
+    ],
+    "T1526": [
+        "Cloud Service Discovery",
+        "An adversary may attempt to enumerate the cloud services running on a system after gaining access"
+    ],
+    "T1619": [
+        "Cloud Storage Object Discovery",
+        "Adversaries may enumerate objects in cloud storage infrastructure"
+    ],
+    "T1059": [
+        "Command and Scripting Interpreter",
+        "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries"
+    ],
+    "T1092": [
+        "Communication Through Removable Media",
+        "Adversaries can perform command and control between compromised hosts on potentially disconnected networks using removable media to transfer commands from system to system"
+    ],
+    "T1586": [
+        "Compromise Accounts",
+        "Adversaries may compromise accounts with services that can be used during targeting"
+    ],
+    "T1554": [
+        "Compromise Client Software Binary",
+        "Adversaries may modify client software binaries to establish persistent access to systems"
+    ],
+    "T1584": [
+        "Compromise Infrastructure",
+        "Adversaries may compromise third-party infrastructure that can be used during targeting"
+    ],
+    "T1609": [
+        "Container Administration Command",
+        "Adversaries may abuse a container administration service to execute commands within a container"
+    ],
+    "T1613": [
+        "Container and Resource Discovery",
+        "Adversaries may attempt to discover containers and other resources that are available within a containers environment"
+    ],
+    "T1659": [
+        "Content Injection",
+        "Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "T1588": [
+        "Obtain Capabilities",
+        "Adversaries may buy and/or steal capabilities that can be used during targeting"
+    ],
+    "T1137": [
+        "Office Application Startup",
+        "Adversaries may leverage Microsoft Office-based applications for persistence between startups"
+    ],
+    "T1003": [
+        "OS Credential Dumping",
+        "Adversaries may attempt to dump credentials to obtain account login and credential material, normally in the form of a hash or a clear text password, from the operating system and software"
+    ],
+    "T1201": [
+        "Password Policy Discovery",
+        "Adversaries may attempt to access detailed information about the password policy used within an enterprise network or cloud environment"
+    ],
+    "T1120": [
+        "Peripheral Device Discovery",
+        "Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system"
+    ],
+    "T1069": [
+        "Permission Groups Discovery",
+        "Adversaries may attempt to discover group and permission settings"
+    ],
+    "T1566": [
+        "Phishing",
+        "Adversaries may send phishing messages to gain access to victim systems"
+    ],
+    "T1598": [
+        "Phishing for Information",
+        "Adversaries may send phishing messages to elicit sensitive information that can be used during targeting"
+    ],
+    "T1647": [
+        "Plist File Modification",
+        "Adversaries may modify property list files (plist files) to enable other malicious activity, while also potentially evading and bypassing system defenses"
+    ],
+    "T1653": [
+        "Power Settings",
+        "Adversaries may impair a system's ability to hibernate, reboot, or shut down in order to extend access to infected machines"
+    ],
+    "T1542": [
+        "Pre-OS Boot",
+        "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system"
+    ],
+    "T1057": [
+        "Process Discovery",
+        "Adversaries may attempt to get information about running processes on a system"
+    ],
+    "T1055": [
+        "Process Injection",
+        "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1572": [
+        "Protocol Tunneling",
+        "Adversaries may tunnel network communications to and from a victim system within a separate protocol to avoid detection/network filtering and/or enable access to otherwise unreachable systems"
+    ],
+    "T1090": [
+        "Proxy",
+        "Adversaries may use a connection proxy to direct network traffic between systems or act as an intermediary for network communications to a command and control server to avoid direct connections to their infrastructure"
+    ],
+    "T1012": [
+        "Query Registry",
+        "Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software"
+    ],
+    "T1620": [
+        "Reflective Code Loading",
+        "Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads"
+    ],
+    "T1219": [
+        "Remote Access Software",
+        "An adversary may use legitimate desktop support and remote access software to establish an interactive command and control channel to target systems within networks"
+    ],
+    "T1563": [
+        "Remote Service Session Hijacking",
+        "Adversaries may take control of preexisting sessions with remote services to move laterally in an environment"
+    ]
+}

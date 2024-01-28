@@ -1,0 +1,74 @@
+{
+    "T1591": [
+        "Gather Victim Org Information",
+        "Adversaries may gather information about the victim's organization that can be used during targeting"
+    ],
+    "T1615": [
+        "Group Policy Discovery",
+        "Adversaries may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that can be manipulated or used to blend in the environment"
+    ],
+    "T1200": [
+        "Hardware Additions",
+        "Adversaries may introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access"
+    ],
+    "T1564": [
+        "Hide Artifacts",
+        "Adversaries may attempt to hide artifacts associated with their behaviors to evade detection"
+    ],
+    "T1574": [
+        "Hijack Execution Flow",
+        "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs"
+    ],
+    "T1562": [
+        "Impair Defenses",
+        "Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms"
+    ],
+    "T1656": [
+        "Impersonation",
+        "Adversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf"
+    ],
+    "T1525": [
+        "Implant Internal Image",
+        "Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment"
+    ],
+    "T1070": [
+        "Indicator Removal",
+        "Adversaries may delete or modify artifacts generated within systems to remove evidence of their presence or hinder defenses"
+    ],
+    "T1202": [
+        "Indirect Command Execution",
+        "Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters"
+    ],
+    "T1105": [
+        "Ingress Tool Transfer",
+        "Adversaries may transfer tools or other files from an external system into a compromised environment"
+    ],
+    "T1490": [
+        "Inhibit System Recovery",
+        "Adversaries may delete or remove built-in data and turn off services designed to aid in the recovery of a corrupted system to prevent recovery"
+    ],
+    "T1056": [
+        "Input Capture",
+        "Adversaries may use methods of capturing user input to obtain credentials or collect information"
+    ],
+    "T1559": [
+        "Inter-Process Communication",
+        "Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution"
+    ],
+    "T1534": [
+        "Internal Spearphishing",
+        "Adversaries may use internal spearphishing to gain access to additional information or exploit other users within the same organization after they already have access to accounts or systems within the environment"
+    ],
+    "T1570": [
+        "Lateral Tool Transfer",
+        "Adversaries may transfer tools or other files between systems in a compromised environment"
+    ],
+    "T1654": [
+        "Log Enumeration",
+        "Adversaries may enumerate system and service logs to find useful data"
+    ],
+    "T1036": [
+        "Masquerading",
+        "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "T1548": [
+        "Abuse Elevation Control Mechanism",
+        "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions"
+    ],
+    "T1134": [
+        "Access Token Manipulation",
+        "Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls"
+    ],
+    "T1531": [
+        "Account Access Removal",
+        "Adversaries may interrupt availability of system and network resources by inhibiting access to accounts utilized by legitimate users"
+    ],
+    "T1087": [
+        "Account Discovery",
+        "Adversaries may attempt to get a listing of valid accounts, usernames, or email addresses on a system or within a compromised environment"
+    ],
+    "T1098": [
+        "Account Manipulation",
+        "Adversaries may manipulate accounts to maintain and/or elevate access to victim systems"
+    ],
+    "T1650": [
+        "Acquire Access",
+        "Adversaries may purchase or otherwise acquire an existing access to a target system or network"
+    ],
+    "T1583": [
+        "Acquire Infrastructure",
+        "Adversaries may buy, lease, or rent infrastructure that can be used during targeting"
+    ],
+    "T1595": [
+        "Active Scanning",
+        "Adversaries may execute active reconnaissance scans to gather information that can be used during targeting"
+    ],
+    "T1557": [
+        "Adversary-in-the-Middle",
+        "Adversaries may attempt to position themselves between two or more networked devices using an adversary-in-the-middle (AiTM) technique to support follow-on behaviors such as Network Sniffing, Transmitted Data Manipulation, or replay attacks (Exploitation for Credential Access)"
+    ],
+    "T1071": [
+        "Application Layer Protocol",
+        "Adversaries may communicate using OSI application layer protocols to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1010": [
+        "Application Window Discovery",
+        "Adversaries may attempt to get a listing of open application windows"
+    ],
+    "T1560": [
+        "Archive Collected Data",
+        "An adversary may compress and/or encrypt data that is collected prior to exfiltration"
+    ],
+    "T1123": [
+        "Audio Capture",
+        "An adversary can leverage a computer's peripheral devices (e"
+    ],
+    "T1119": [
+        "Automated Collection",
+        "Once established within a system or network, an adversary may use automated techniques for collecting internal data"
+    ],
+    "T1020": [
+        "Automated Exfiltration",
+        "Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection"
+    ],
+    "T1197": [
+        "BITS Jobs",
+        "Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks"
+    ],
+    "T1547": [
+        "Boot or Logon Autostart Execution",
+        "Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems"
+    ],
+    "T1037": [
+        "Boot or Logon Initialization Scripts",
+        "Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence"
+    ],
+    "T1176": [
+        "Browser Extensions",
+        "Adversaries may abuse Internet browser extensions to establish persistent access to victim systems"
+    ]
+}

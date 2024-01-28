@@ -2,11 +2,12 @@ import requests
 import json
 from bs4 import BeautifulSoup
 import csv
+import os
 
 URL = "https://attack.mitre.org/techniques/enterprise/"
 
 
-def get_techniques(url):
+def get_techniques(url, output_folder):
     """
     Get technique data from MITRE's ATT&CK website.
     :param url: The URL of the page to scrape.
@@ -33,7 +34,7 @@ def get_techniques(url):
             techniques.append((ID,name, description))
 
         # Write data to CSV
-        with open("mitre_attack.csv", "w", newline="", encoding="utf-8") as csvfile:
+        with open(f"{output_folder}/mitre_attack.csv", "w", newline="", encoding="utf-8") as csvfile:
             writer = csv.writer(csvfile)
             writer.writerow(["ID", "Technique Name", "Description"])
             writer.writerows(techniques)
@@ -41,7 +42,7 @@ def get_techniques(url):
         print("Techniques section not found. Check if the page structure has changed.")
 
 
-def split_and_write_json(data, max_chars, output_filename_prefix):
+def split_and_write_json(data, max_chars, output_folder, output_filename_prefix):
     """
     Split a dictionary into multiple JSON files.
     :param data: The dictionary to split.
@@ -56,7 +57,7 @@ def split_and_write_json(data, max_chars, output_filename_prefix):
         current_data[key] = value
 
         if current_chars >= max_chars:
-            output_filename = f"{output_filename_prefix}_{current_part}.json"
+            output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
             with open(output_filename, "w", encoding="utf-8") as fp:
                 json.dump(current_data, fp, indent=4)
             output_files.append(output_filename)
@@ -67,7 +68,7 @@ def split_and_write_json(data, max_chars, output_filename_prefix):
 
     # Write the remaining data to the last file
     if current_data:
-        output_filename = f"{output_filename_prefix}_{current_part}.json"
+        output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
         with open(output_filename, "w", encoding="utf-8") as fp:
             json.dump(current_data, fp, indent=4)
         output_files.append(output_filename)
@@ -75,21 +76,24 @@ def split_and_write_json(data, max_chars, output_filename_prefix):
     return output_files
 
 
-def convertToJSON():
+def convertToJSON(output_folder):
     '''
     Converts the CSV file to a JSON file
     '''
     dictOfTechs = {}
-    with open("mitre_attack.csv", "r", newline="", encoding="utf-8") as csvfile:
+    with open(f"{output_folder}/mitre_attack.csv", "r", newline="", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile)
         # Skip header row
         next(reader)
         for row in reader:
             dictOfTechs[row[0]] = (row[1], row[2])
 
-    output_files = split_and_write_json(dictOfTechs, 3000, "mitre_attack_split")
+    output_files = split_and_write_json(dictOfTechs, 3000, output_folder, "mitre_attack_split")
 
 
 if "__main__" == __name__:
-    get_techniques(URL)
-    convertToJSON()
+    output_folder = "Extract data from MITRE ATTACK/techniques_split"
+    os.makedirs(output_folder, exist_ok=True)
+
+    get_techniques(URL, output_folder)
+    convertToJSON(output_folder)

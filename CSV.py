@@ -43,7 +43,8 @@ def get_techniques(url):
 
 def split_and_write_json(data, max_chars, output_filename_prefix):
     """
-    Split dictionary data into multiple parts based on max_chars and write each part to a separate JSON file.
+    Split a dictionary into multiple JSON files.
+    :param data: The dictionary to split.
     """
     output_files = []
     current_chars = 0
@@ -75,6 +76,9 @@ def split_and_write_json(data, max_chars, output_filename_prefix):
 
 
 def convertToJSON():
+    '''
+    Converts the CSV file to a JSON file
+    '''
     dictOfTechs = {}
     with open("mitre_attack.csv", "r", newline="", encoding="utf-8") as csvfile:
         reader = csv.reader(csvfile)

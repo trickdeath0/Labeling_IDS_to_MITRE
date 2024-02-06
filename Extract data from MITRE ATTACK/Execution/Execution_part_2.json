@@ -1,8 +1,5 @@
+The information:
 {
-    "T1053.007": [
-        "Container Orchestration Job",
-        "Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code"
-    ],
     "T1648": [
         "Serverless Execution",
         "Adversaries may abuse serverless computing, integration, and automation services to execute arbitrary code in cloud environments"

@@ -1,3 +1,4 @@
+The information:
 {
     "T1547": [
         "Boot or Logon Autostart Execution",
@@ -78,5 +79,9 @@
     "T1037.004": [
         "RC Scripts",
         "Adversaries may establish persistence by modifying RC scripts which are executed during a Unix-like system\u2019s startup"
+    ],
+    "T1037.005": [
+        "Startup Items",
+        "Adversaries may use startup items automatically executed at boot initialization to establish persistence"
     ]
 }

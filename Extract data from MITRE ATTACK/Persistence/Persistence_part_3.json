@@ -1,12 +1,5 @@
+The information:
 {
-    "T1546.002": [
-        "Screensaver",
-        "Adversaries may establish persistence by executing malicious content triggered by user inactivity"
-    ],
-    "T1546.003": [
-        "Windows Management Instrumentation Event Subscription",
-        "Adversaries may establish persistence and elevate privileges by executing malicious content triggered by a Windows Management Instrumentation (WMI) event subscription"
-    ],
     "T1546.004": [
         "Unix Shell Configuration Modification",
         "Adversaries may establish persistence through executing malicious commands triggered by a user\u2019s shell"
@@ -70,5 +63,17 @@
     "T1574.001": [
         "DLL Search Order Hijacking",
         "Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs"
+    ],
+    "T1574.002": [
+        "DLL Side-Loading",
+        "Adversaries may execute their own malicious payloads by side-loading DLLs"
+    ],
+    "T1574.004": [
+        "Dylib Hijacking",
+        "Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime"
+    ],
+    "T1574.005": [
+        "Executable Installer File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer"
     ]
 }

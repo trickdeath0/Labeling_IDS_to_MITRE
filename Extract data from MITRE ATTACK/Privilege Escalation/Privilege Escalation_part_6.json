@@ -1,12 +1,5 @@
+The information:
 {
-    "T1053": [
-        "Scheduled Task/Job",
-        "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code"
-    ],
-    "T1053.002": [
-        "At",
-        "Adversaries may abuse the at utility to perform task scheduling for initial or recurring execution of malicious code"
-    ],
     "T1053.003": [
         "Cron",
         "Adversaries may abuse the cron utility to perform task scheduling for initial or recurring execution of malicious code"

@@ -1,16 +1,5 @@
+The information:
 {
-    "T1574.002": [
-        "DLL Side-Loading",
-        "Adversaries may execute their own malicious payloads by side-loading DLLs"
-    ],
-    "T1574.004": [
-        "Dylib Hijacking",
-        "Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime"
-    ],
-    "T1574.005": [
-        "Executable Installer File Permissions Weakness",
-        "Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer"
-    ],
     "T1574.006": [
         "Dynamic Linker Hijacking",
         "Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries"
@@ -70,5 +59,13 @@
     "T1556.005": [
         "Reversible Encryption",
         "An adversary may abuse Active Directory authentication encryption properties to gain access to credentials on Windows systems"
+    ],
+    "T1556.006": [
+        "Multi-Factor Authentication",
+        "Adversaries may disable or modify multi-factor authentication (MFA) mechanisms to enable persistent access to compromised accounts"
+    ],
+    "T1556.007": [
+        "Hybrid Identity",
+        "Adversaries may patch, modify, or otherwise backdoor cloud authentication processes that are tied to on-premises user identities in order to bypass typical authentication mechanisms, access credentials, and enable persistent access to accounts"
     ]
 }

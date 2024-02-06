@@ -1,8 +1,5 @@
+The information:
 {
-    "T1219": [
-        "Remote Access Software",
-        "An adversary may use legitimate desktop support and remote access software to establish an interactive command and control channel to target systems within networks"
-    ],
     "T1205": [
         "Traffic Signaling",
         "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control"

@@ -1,16 +1,5 @@
+The information:
 {
-    "T1036.001": [
-        "Invalid Code Signature",
-        "Adversaries may attempt to mimic features of valid code signatures to increase the chance of deceiving a user, analyst, or tool"
-    ],
-    "T1036.002": [
-        "Right-to-Left Override",
-        "Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign"
-    ],
-    "T1036.003": [
-        "Rename System Utilities",
-        "Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities"
-    ],
     "T1036.004": [
         "Masquerade Task or Service",
         "Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign"
@@ -66,5 +55,21 @@
     "T1556.007": [
         "Hybrid Identity",
         "Adversaries may patch, modify, or otherwise backdoor cloud authentication processes that are tied to on-premises user identities in order to bypass typical authentication mechanisms, access credentials, and enable persistent access to accounts"
+    ],
+    "T1556.008": [
+        "Network Provider DLL",
+        "Adversaries may register malicious network provider dynamic link libraries (DLLs) to capture cleartext user credentials during the authentication process"
+    ],
+    "T1578": [
+        "Modify Cloud Compute Infrastructure",
+        "An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses"
+    ],
+    "T1578.001": [
+        "Create Snapshot",
+        "An adversary may create a snapshot or data backup within a cloud account to evade defenses"
+    ],
+    "T1578.002": [
+        "Create Cloud Instance",
+        "An adversary may create a new instance or virtual machine (VM) within the compute service of a cloud account to evade defenses"
     ]
 }

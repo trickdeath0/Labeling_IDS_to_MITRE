@@ -1,8 +1,5 @@
+The information:
 {
-    "T1037.005": [
-        "Startup Items",
-        "Adversaries may use startup items automatically executed at boot initialization to establish persistence"
-    ],
     "T1543": [
         "Create or Modify System Process",
         "Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence"
@@ -74,5 +71,9 @@
     "T1546.008": [
         "Accessibility Features",
         "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by accessibility features"
+    ],
+    "T1546.009": [
+        "AppCert DLLs",
+        "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by AppCert DLLs loaded into processes"
     ]
 }

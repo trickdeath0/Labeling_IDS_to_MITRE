@@ -66,6 +66,7 @@ def split_and_write_json(data, max_chars, output_folder, output_filename_prefix)
         if current_chars >= max_chars:
             output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
             with open(output_filename, "w", encoding="utf-8") as fp:
+                fp.write("The information:\n")
                 json.dump(current_data, fp, indent=4)
             output_files.append(output_filename)
 
@@ -77,6 +78,7 @@ def split_and_write_json(data, max_chars, output_folder, output_filename_prefix)
     if current_data:
         output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
         with open(output_filename, "w", encoding="utf-8") as fp:
+            fp.write("The information:\n")
             json.dump(current_data, fp, indent=4)
         output_files.append(output_filename)
 
@@ -95,7 +97,7 @@ def convertToJSON(output_folder, tactic_name):
         for row in reader:
             dictOfTechs[row[0]] = (row[1], row[2])
 
-    output_files = split_and_write_json(dictOfTechs, 3000, output_folder, f"{tactic_name}_part")
+    output_files = split_and_write_json(dictOfTechs, 3100, output_folder, f"{tactic_name}_part")
 
 
 

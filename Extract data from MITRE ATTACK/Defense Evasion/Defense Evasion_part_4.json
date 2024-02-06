@@ -1,12 +1,5 @@
+The information:
 {
-    "T1562.007": [
-        "Disable or Modify Cloud Firewall",
-        "Adversaries may disable or modify a firewall within a cloud environment to bypass controls that limit access to cloud resources"
-    ],
-    "T1562.008": [
-        "Disable or Modify Cloud Logs",
-        "An adversary may disable or modify cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection"
-    ],
     "T1562.009": [
         "Safe Mode Boot",
         "Adversaries may abuse Windows safe mode to disable endpoint defenses"
@@ -74,5 +67,17 @@
     "T1036": [
         "Masquerading",
         "Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools"
+    ],
+    "T1036.001": [
+        "Invalid Code Signature",
+        "Adversaries may attempt to mimic features of valid code signatures to increase the chance of deceiving a user, analyst, or tool"
+    ],
+    "T1036.002": [
+        "Right-to-Left Override",
+        "Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign"
+    ],
+    "T1036.003": [
+        "Rename System Utilities",
+        "Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities"
     ]
 }

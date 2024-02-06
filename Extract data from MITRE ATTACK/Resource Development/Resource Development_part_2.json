@@ -1,8 +1,5 @@
+The information:
 {
-    "T1587.002": [
-        "Code Signing Certificates",
-        "Adversaries may create self-signed code signing certificates that can be used during targeting"
-    ],
     "T1587.003": [
         "Digital Certificates",
         "Adversaries may create self-signed SSL/TLS certificates that can be used during targeting"

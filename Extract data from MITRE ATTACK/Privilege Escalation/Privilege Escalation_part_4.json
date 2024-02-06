@@ -1,8 +1,5 @@
+The information:
 {
-    "T1546.009": [
-        "AppCert DLLs",
-        "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by AppCert DLLs loaded into processes"
-    ],
     "T1546.010": [
         "AppInit DLLs",
         "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by AppInit DLLs loaded into processes"
@@ -70,5 +67,13 @@
     "T1574.009": [
         "Path Interception by Unquoted Path",
         "Adversaries may execute their own malicious payloads by hijacking vulnerable file path references"
+    ],
+    "T1574.010": [
+        "Services File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by services"
+    ],
+    "T1574.011": [
+        "Services Registry Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services"
     ]
 }

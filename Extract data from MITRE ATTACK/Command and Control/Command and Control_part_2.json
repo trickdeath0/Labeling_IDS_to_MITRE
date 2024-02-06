@@ -1,3 +1,4 @@
+The information:
 {
     "T1568.003": [
         "DNS Calculation",
@@ -58,5 +59,9 @@
     "T1090.004": [
         "Domain Fronting",
         "Adversaries may take advantage of routing schemes in Content Delivery Networks (CDNs) and other services which host multiple domains to obfuscate the intended destination of HTTPS traffic or traffic tunneled through HTTPS"
+    ],
+    "T1219": [
+        "Remote Access Software",
+        "An adversary may use legitimate desktop support and remote access software to establish an interactive command and control channel to target systems within networks"
     ]
 }

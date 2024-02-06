@@ -1,3 +1,4 @@
+The information:
 {
     "T1651": [
         "Cloud Administration Command",
@@ -94,5 +95,9 @@
     "T1053.006": [
         "Systemd Timers",
         "Adversaries may abuse systemd timers to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.007": [
+        "Container Orchestration Job",
+        "Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code"
     ]
 }

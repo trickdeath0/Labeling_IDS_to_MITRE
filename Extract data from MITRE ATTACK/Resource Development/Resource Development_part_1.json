@@ -1,3 +1,4 @@
+The information:
 {
     "T1650": [
         "Acquire Access",
@@ -94,5 +95,9 @@
     "T1587.001": [
         "Malware",
         "Adversaries may develop malware and malware components that can be used during targeting"
+    ],
+    "T1587.002": [
+        "Code Signing Certificates",
+        "Adversaries may create self-signed code signing certificates that can be used during targeting"
     ]
 }

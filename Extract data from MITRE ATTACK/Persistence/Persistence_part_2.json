@@ -1,8 +1,5 @@
+The information:
 {
-    "T1547.013": [
-        "XDG Autostart Entries",
-        "Adversaries may add or modify XDG Autostart Entries to execute malicious programs or commands when a user\u2019s desktop environment is loaded at login"
-    ],
     "T1547.014": [
         "Active Setup",
         "Adversaries may achieve persistence by adding a Registry key to the Active Setup of the local machine"
@@ -86,5 +83,13 @@
     "T1546.001": [
         "Change Default File Association",
         "Adversaries may establish persistence by executing malicious content triggered by a file type association"
+    ],
+    "T1546.002": [
+        "Screensaver",
+        "Adversaries may establish persistence by executing malicious content triggered by user inactivity"
+    ],
+    "T1546.003": [
+        "Windows Management Instrumentation Event Subscription",
+        "Adversaries may establish persistence and elevate privileges by executing malicious content triggered by a Windows Management Instrumentation (WMI) event subscription"
     ]
 }

@@ -1,3 +1,4 @@
+The information:
 {
     "T1020": [
         "Automated Exfiltration",
@@ -70,5 +71,9 @@
     "T1029": [
         "Scheduled Transfer",
         "Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals"
+    ],
+    "T1537": [
+        "Transfer Data to Cloud Account",
+        "Adversaries may exfiltrate data by transferring the data, including backups of cloud environments, to another cloud account they control on the same service to avoid typical file transfers/downloads and network-based exfiltration detection"
     ]
 }

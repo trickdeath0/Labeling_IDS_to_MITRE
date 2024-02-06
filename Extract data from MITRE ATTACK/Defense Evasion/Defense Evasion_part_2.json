@@ -1,3 +1,4 @@
+The information:
 {
     "T1484.002": [
         "Domain Trust Modification",
@@ -74,5 +75,9 @@
     "T1564.011": [
         "Ignore Process Interrupts",
         "Adversaries may evade defensive mechanisms by executing commands that hide from process interrupt signals"
+    ],
+    "T1574": [
+        "Hijack Execution Flow",
+        "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs"
     ]
 }

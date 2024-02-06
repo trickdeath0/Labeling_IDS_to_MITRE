@@ -1,3 +1,4 @@
+The information:
 {
     "T1531": [
         "Account Access Removal",
@@ -62,5 +63,9 @@
     "T1499.002": [
         "Service Exhaustion Flood",
         "Adversaries may target the different network services provided by systems to conduct a denial of service (DoS)"
+    ],
+    "T1499.003": [
+        "Application Exhaustion Flood",
+        "Adversaries may target resource intensive features of applications to cause a denial of service (DoS), denying availability to those applications"
     ]
 }

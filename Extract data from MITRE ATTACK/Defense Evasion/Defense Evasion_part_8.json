@@ -1,20 +1,5 @@
+The information:
 {
-    "T1055.003": [
-        "Thread Execution Hijacking",
-        "Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
-    ],
-    "T1055.004": [
-        "Asynchronous Procedure Call",
-        "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges"
-    ],
-    "T1055.005": [
-        "Thread Local Storage",
-        "Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges"
-    ],
-    "T1055.008": [
-        "Ptrace System Calls",
-        "Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges"
-    ],
     "T1055.009": [
         "Proc Memory",
         "Adversaries may inject malicious code into processes via the /proc filesystem in order to evade process-based defenses as well as possibly elevate privileges"
@@ -66,5 +51,29 @@
     "T1553.003": [
         "SIP and Trust Provider Hijacking",
         "Adversaries may tamper with SIP and trust provider components to mislead the operating system and application control tools when conducting signature validation checks"
+    ],
+    "T1553.004": [
+        "Install Root Certificate",
+        "Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers"
+    ],
+    "T1553.005": [
+        "Mark-of-the-Web Bypass",
+        "Adversaries may abuse specific file formats to subvert Mark-of-the-Web (MOTW) controls"
+    ],
+    "T1553.006": [
+        "Code Signing Policy Modification",
+        "Adversaries may modify code signing policies to enable execution of unsigned or self-signed code"
+    ],
+    "T1218": [
+        "System Binary Proxy Execution",
+        "Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries"
+    ],
+    "T1218.001": [
+        "Compiled HTML File",
+        "Adversaries may abuse Compiled HTML files ("
+    ],
+    "T1218.002": [
+        "Control Panel",
+        "Adversaries may abuse control"
     ]
 }

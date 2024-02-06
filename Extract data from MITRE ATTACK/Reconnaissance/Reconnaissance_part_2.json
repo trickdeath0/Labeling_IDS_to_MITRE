@@ -1,3 +1,4 @@
+The information:
 {
     "T1591.003": [
         "Identify Business Tempo",
@@ -78,5 +79,9 @@
     "T1593.003": [
         "Code Repositories",
         "Adversaries may search public code repositories for information about victims that can be used during targeting"
+    ],
+    "T1594": [
+        "Search Victim-Owned Websites",
+        "Adversaries may search websites owned by the victim for information that can be used during targeting"
     ]
 }

@@ -1,8 +1,5 @@
+The information:
 {
-    "T1574": [
-        "Hijack Execution Flow",
-        "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs"
-    ],
     "T1574.001": [
         "DLL Search Order Hijacking",
         "Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs"
@@ -74,5 +71,13 @@
     "T1562.006": [
         "Indicator Blocking",
         "An adversary may attempt to block indicators or events typically captured by sensors from being gathered and analyzed"
+    ],
+    "T1562.007": [
+        "Disable or Modify Cloud Firewall",
+        "Adversaries may disable or modify a firewall within a cloud environment to bypass controls that limit access to cloud resources"
+    ],
+    "T1562.008": [
+        "Disable or Modify Cloud Logs",
+        "An adversary may disable or modify cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection"
     ]
 }

@@ -1,3 +1,4 @@
+The information:
 {
     "T1098": [
         "Account Manipulation",
@@ -78,5 +79,9 @@
     "T1547.012": [
         "Print Processors",
         "Adversaries may abuse print processors to run malicious DLLs during system boot for persistence and/or privilege escalation"
+    ],
+    "T1547.013": [
+        "XDG Autostart Entries",
+        "Adversaries may add or modify XDG Autostart Entries to execute malicious programs or commands when a user\u2019s desktop environment is loaded at login"
     ]
 }

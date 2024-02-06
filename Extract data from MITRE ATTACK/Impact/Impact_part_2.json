@@ -1,8 +1,5 @@
+The information:
 {
-    "T1499.003": [
-        "Application Exhaustion Flood",
-        "Adversaries may target resource intensive features of applications to cause a denial of service (DoS), denying availability to those applications"
-    ],
     "T1499.004": [
         "Application or System Exploitation",
         "Adversaries may exploit software vulnerabilities that can cause an application or system to crash and deny availability to users"

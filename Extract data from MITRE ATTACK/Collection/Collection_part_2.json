@@ -1,8 +1,5 @@
+The information:
 {
-    "T1213.002": [
-        "Sharepoint",
-        "Adversaries may leverage the SharePoint repository as a source to mine valuable information"
-    ],
     "T1213.003": [
         "Code Repositories",
         "Adversaries may leverage code repositories to collect valuable information"

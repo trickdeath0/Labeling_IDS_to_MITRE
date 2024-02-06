@@ -1,20 +1,5 @@
+The information:
 {
-    "T1027.004": [
-        "Compile After Delivery",
-        "Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code"
-    ],
-    "T1027.005": [
-        "Indicator Removal from Tools",
-        "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed"
-    ],
-    "T1027.006": [
-        "HTML Smuggling",
-        "Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files"
-    ],
-    "T1027.007": [
-        "Dynamic API Resolution",
-        "Adversaries may obfuscate then dynamically resolve API functions called by their malware in order to conceal malicious functionalities and impair defensive analysis"
-    ],
     "T1027.008": [
         "Stripped Payloads",
         "Adversaries may attempt to make a payload difficult to analyze by removing symbols, strings, and other human readable information"
@@ -74,5 +59,21 @@
     "T1055.002": [
         "Portable Executable Injection",
         "Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.003": [
+        "Thread Execution Hijacking",
+        "Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.004": [
+        "Asynchronous Procedure Call",
+        "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.005": [
+        "Thread Local Storage",
+        "Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.008": [
+        "Ptrace System Calls",
+        "Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges"
     ]
 }

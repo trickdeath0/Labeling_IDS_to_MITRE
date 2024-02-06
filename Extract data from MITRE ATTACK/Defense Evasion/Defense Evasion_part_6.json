@@ -1,20 +1,5 @@
+The information:
 {
-    "T1556.008": [
-        "Network Provider DLL",
-        "Adversaries may register malicious network provider dynamic link libraries (DLLs) to capture cleartext user credentials during the authentication process"
-    ],
-    "T1578": [
-        "Modify Cloud Compute Infrastructure",
-        "An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses"
-    ],
-    "T1578.001": [
-        "Create Snapshot",
-        "An adversary may create a snapshot or data backup within a cloud account to evade defenses"
-    ],
-    "T1578.002": [
-        "Create Cloud Instance",
-        "An adversary may create a new instance or virtual machine (VM) within the compute service of a cloud account to evade defenses"
-    ],
     "T1578.003": [
         "Delete Cloud Instance",
         "An adversary may delete a cloud instance after they have performed malicious activities in an attempt to evade detection and remove evidence of their presence"
@@ -66,5 +51,21 @@
     "T1027.003": [
         "Steganography",
         "Adversaries may use steganography techniques in order to prevent the detection of hidden information"
+    ],
+    "T1027.004": [
+        "Compile After Delivery",
+        "Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code"
+    ],
+    "T1027.005": [
+        "Indicator Removal from Tools",
+        "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed"
+    ],
+    "T1027.006": [
+        "HTML Smuggling",
+        "Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files"
+    ],
+    "T1027.007": [
+        "Dynamic API Resolution",
+        "Adversaries may obfuscate then dynamically resolve API functions called by their malware in order to conceal malicious functionalities and impair defensive analysis"
     ]
 }

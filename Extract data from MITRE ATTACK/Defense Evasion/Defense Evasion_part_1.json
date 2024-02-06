@@ -1,0 +1,82 @@
+{
+    "T1548": [
+        "Abuse Elevation Control Mechanism",
+        "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions"
+    ],
+    "T1548.001": [
+        "Setuid and Setgid",
+        "An adversary may abuse configurations where an application has the setuid or setgid bits set in order to get code running in a different (and possibly more privileged) user\u2019s context"
+    ],
+    "T1548.002": [
+        "Bypass User Account Control",
+        "Adversaries may bypass UAC mechanisms to elevate process privileges on system"
+    ],
+    "T1548.003": [
+        "Sudo and Sudo Caching",
+        "Adversaries may perform sudo caching and/or use the sudoers file to elevate privileges"
+    ],
+    "T1548.004": [
+        "Elevated Execution with Prompt",
+        "Adversaries may leverage the AuthorizationExecuteWithPrivileges API to escalate privileges by prompting the user for credentials"
+    ],
+    "T1548.005": [
+        "Temporary Elevated Cloud Access",
+        "Adversaries may abuse permission configurations that allow them to gain temporarily elevated access to cloud resources"
+    ],
+    "T1134": [
+        "Access Token Manipulation",
+        "Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls"
+    ],
+    "T1134.001": [
+        "Token Impersonation/Theft",
+        "Adversaries may duplicate then impersonate another user's existing token to escalate privileges and bypass access controls"
+    ],
+    "T1134.002": [
+        "Create Process with Token",
+        "Adversaries may create a new process with an existing token to escalate privileges and bypass access controls"
+    ],
+    "T1134.003": [
+        "Make and Impersonate Token",
+        "Adversaries may make new tokens and impersonate users to escalate privileges and bypass access controls"
+    ],
+    "T1134.004": [
+        "Parent PID Spoofing",
+        "Adversaries may spoof the parent process identifier (PPID) of a new process to evade process-monitoring defenses or to elevate privileges"
+    ],
+    "T1134.005": [
+        "SID-History Injection",
+        "Adversaries may use SID-History Injection to escalate privileges and bypass access controls"
+    ],
+    "T1197": [
+        "BITS Jobs",
+        "Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks"
+    ],
+    "T1612": [
+        "Build Image on Host",
+        "Adversaries may build a container image directly on a host to bypass defenses that monitor for the retrieval of malicious images from a public registry"
+    ],
+    "T1622": [
+        "Debugger Evasion",
+        "Adversaries may employ various means to detect and avoid debuggers"
+    ],
+    "T1140": [
+        "Deobfuscate/Decode Files or Information",
+        "Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis"
+    ],
+    "T1610": [
+        "Deploy Container",
+        "Adversaries may deploy a container into an environment to facilitate execution or evade defenses"
+    ],
+    "T1006": [
+        "Direct Volume Access",
+        "Adversaries may directly access a volume to bypass file access controls and file system monitoring"
+    ],
+    "T1484": [
+        "Domain Policy Modification",
+        "Adversaries may modify the configuration settings of a domain to evade defenses and/or escalate privileges in domain environments"
+    ],
+    "T1484.001": [
+        "Group Policy Modification",
+        "Adversaries may modify Group Policy Objects (GPOs) to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain"
+    ]
+}

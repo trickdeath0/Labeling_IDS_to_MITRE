@@ -1,0 +1,70 @@
+{
+    "T1071": [
+        "Application Layer Protocol",
+        "Adversaries may communicate using OSI application layer protocols to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1071.001": [
+        "Web Protocols",
+        "Adversaries may communicate using application layer protocols associated with web traffic to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1071.002": [
+        "File Transfer Protocols",
+        "Adversaries may communicate using application layer protocols associated with transferring files to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1071.003": [
+        "Mail Protocols",
+        "Adversaries may communicate using application layer protocols associated with electronic mail delivery to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1071.004": [
+        "DNS",
+        "Adversaries may communicate using the Domain Name System (DNS) application layer protocol to avoid detection/network filtering by blending in with existing traffic"
+    ],
+    "T1092": [
+        "Communication Through Removable Media",
+        "Adversaries can perform command and control between compromised hosts on potentially disconnected networks using removable media to transfer commands from system to system"
+    ],
+    "T1659": [
+        "Content Injection",
+        "Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic"
+    ],
+    "T1132": [
+        "Data Encoding",
+        "Adversaries may encode data to make the content of command and control traffic more difficult to detect"
+    ],
+    "T1132.001": [
+        "Standard Encoding",
+        "Adversaries may encode data with a standard data encoding system to make the content of command and control traffic more difficult to detect"
+    ],
+    "T1132.002": [
+        "Non-Standard Encoding",
+        "Adversaries may encode data with a non-standard data encoding system to make the content of command and control traffic more difficult to detect"
+    ],
+    "T1001": [
+        "Data Obfuscation",
+        "Adversaries may obfuscate command and control traffic to make it more difficult to detect"
+    ],
+    "T1001.001": [
+        "Junk Data",
+        "Adversaries may add junk data to protocols used for command and control to make detection more difficult"
+    ],
+    "T1001.002": [
+        "Steganography",
+        "Adversaries may use steganographic techniques to hide command and control traffic to make detection efforts more difficult"
+    ],
+    "T1001.003": [
+        "Protocol Impersonation",
+        "Adversaries may impersonate legitimate protocols or web service traffic to disguise command and control activity and thwart analysis efforts"
+    ],
+    "T1568": [
+        "Dynamic Resolution",
+        "Adversaries may dynamically establish connections to command and control infrastructure to evade common detections and remediations"
+    ],
+    "T1568.001": [
+        "Fast Flux DNS",
+        "Adversaries may use Fast Flux DNS to hide a command and control channel behind an array of rapidly changing IP addresses linked to a single domain resolution"
+    ],
+    "T1568.002": [
+        "Domain Generation Algorithms",
+        "Adversaries may make use of Domain Generation Algorithms (DGAs) to dynamically identify a destination domain for command and control traffic rather than relying on a list of static IP addresses or domains"
+    ]
+}

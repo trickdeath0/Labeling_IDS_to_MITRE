@@ -1,0 +1,34 @@
+{
+    "T1219": [
+        "Remote Access Software",
+        "An adversary may use legitimate desktop support and remote access software to establish an interactive command and control channel to target systems within networks"
+    ],
+    "T1205": [
+        "Traffic Signaling",
+        "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control"
+    ],
+    "T1205.001": [
+        "Port Knocking",
+        "Adversaries may use port knocking to hide open ports used for persistence or command and control"
+    ],
+    "T1205.002": [
+        "Socket Filters",
+        "Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control"
+    ],
+    "T1102": [
+        "Web Service",
+        "Adversaries may use an existing, legitimate external Web service as a means for relaying data to/from a compromised system"
+    ],
+    "T1102.001": [
+        "Dead Drop Resolver",
+        "Adversaries may use an existing, legitimate external Web service to host information that points to additional command and control (C2) infrastructure"
+    ],
+    "T1102.002": [
+        "Bidirectional Communication",
+        "Adversaries may use an existing, legitimate external Web service as a means for sending commands to and receiving output from a compromised system over the Web service channel"
+    ],
+    "T1102.003": [
+        "One-Way Communication",
+        "Adversaries may use an existing, legitimate external Web service as a means for sending commands to a compromised system without receiving return output over the Web service channel"
+    ]
+}

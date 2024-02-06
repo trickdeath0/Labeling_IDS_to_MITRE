@@ -1,0 +1,98 @@
+{
+    "T1651": [
+        "Cloud Administration Command",
+        "Adversaries may abuse cloud management services to execute commands within virtual machines or hybrid-joined devices"
+    ],
+    "T1059": [
+        "Command and Scripting Interpreter",
+        "Adversaries may abuse command and script interpreters to execute commands, scripts, or binaries"
+    ],
+    "T1059.001": [
+        "PowerShell",
+        "Adversaries may abuse PowerShell commands and scripts for execution"
+    ],
+    "T1059.002": [
+        "AppleScript",
+        "Adversaries may abuse AppleScript for execution"
+    ],
+    "T1059.003": [
+        "Windows Command Shell",
+        "Adversaries may abuse the Windows command shell for execution"
+    ],
+    "T1059.004": [
+        "Unix Shell",
+        "Adversaries may abuse Unix shell commands and scripts for execution"
+    ],
+    "T1059.005": [
+        "Visual Basic",
+        "Adversaries may abuse Visual Basic (VB) for execution"
+    ],
+    "T1059.006": [
+        "Python",
+        "Adversaries may abuse Python commands and scripts for execution"
+    ],
+    "T1059.007": [
+        "JavaScript",
+        "Adversaries may abuse various implementations of JavaScript for execution"
+    ],
+    "T1059.008": [
+        "Network Device CLI",
+        "Adversaries may abuse scripting or built-in command line interpreters (CLI) on network devices to execute malicious command and payloads"
+    ],
+    "T1059.009": [
+        "Cloud API",
+        "Adversaries may abuse cloud APIs to execute malicious commands"
+    ],
+    "T1609": [
+        "Container Administration Command",
+        "Adversaries may abuse a container administration service to execute commands within a container"
+    ],
+    "T1610": [
+        "Deploy Container",
+        "Adversaries may deploy a container into an environment to facilitate execution or evade defenses"
+    ],
+    "T1203": [
+        "Exploitation for Client Execution",
+        "Adversaries may exploit software vulnerabilities in client applications to execute code"
+    ],
+    "T1559": [
+        "Inter-Process Communication",
+        "Adversaries may abuse inter-process communication (IPC) mechanisms for local code or command execution"
+    ],
+    "T1559.001": [
+        "Component Object Model",
+        "Adversaries may use the Windows Component Object Model (COM) for local code execution"
+    ],
+    "T1559.002": [
+        "Dynamic Data Exchange",
+        "Adversaries may use Windows Dynamic Data Exchange (DDE) to execute arbitrary commands"
+    ],
+    "T1559.003": [
+        "XPC Services",
+        "Adversaries can provide malicious content to an XPC service daemon for local code execution"
+    ],
+    "T1106": [
+        "Native API",
+        "Adversaries may interact with the native OS application programming interface (API) to execute behaviors"
+    ],
+    "T1053": [
+        "Scheduled Task/Job",
+        "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code"
+    ],
+    "T1053.002": [
+        "At",
+        "Adversaries may abuse the at utility to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.003": [
+        "Cron",
+        "Adversaries may abuse the cron utility to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.005": [
+        "Scheduled Task",
+        "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.006": [
+        "Systemd Timers",
+        "Adversaries may abuse systemd timers to perform task scheduling for initial or recurring execution of malicious code"
+    ]
+}

@@ -1,0 +1,70 @@
+{
+    "T1556.008": [
+        "Network Provider DLL",
+        "Adversaries may register malicious network provider dynamic link libraries (DLLs) to capture cleartext user credentials during the authentication process"
+    ],
+    "T1578": [
+        "Modify Cloud Compute Infrastructure",
+        "An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses"
+    ],
+    "T1578.001": [
+        "Create Snapshot",
+        "An adversary may create a snapshot or data backup within a cloud account to evade defenses"
+    ],
+    "T1578.002": [
+        "Create Cloud Instance",
+        "An adversary may create a new instance or virtual machine (VM) within the compute service of a cloud account to evade defenses"
+    ],
+    "T1578.003": [
+        "Delete Cloud Instance",
+        "An adversary may delete a cloud instance after they have performed malicious activities in an attempt to evade detection and remove evidence of their presence"
+    ],
+    "T1578.004": [
+        "Revert Cloud Instance",
+        "An adversary may revert changes made to a cloud instance after they have performed malicious activities in attempt to evade detection and remove evidence of their presence"
+    ],
+    "T1578.005": [
+        "Modify Cloud Compute Configurations",
+        "Adversaries may modify settings that directly affect the size, locations, and resources available to cloud compute infrastructure in order to evade defenses"
+    ],
+    "T1112": [
+        "Modify Registry",
+        "Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution"
+    ],
+    "T1601": [
+        "Modify System Image",
+        "Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves"
+    ],
+    "T1601.001": [
+        "Patch System Image",
+        "Adversaries may modify the operating system of a network device to introduce new capabilities or weaken existing defenses"
+    ],
+    "T1601.002": [
+        "Downgrade System Image",
+        "Adversaries may install an older version of the operating system of a network device to weaken security"
+    ],
+    "T1599": [
+        "Network Boundary Bridging",
+        "Adversaries may bridge network boundaries by compromising perimeter network devices or internal devices responsible for network segmentation"
+    ],
+    "T1599.001": [
+        "Network Address Translation Traversal",
+        "Adversaries may bridge network boundaries by modifying a network device\u2019s Network Address Translation (NAT) configuration"
+    ],
+    "T1027": [
+        "Obfuscated Files or Information",
+        "Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit"
+    ],
+    "T1027.001": [
+        "Binary Padding",
+        "Adversaries may use binary padding to add junk data and change the on-disk representation of malware"
+    ],
+    "T1027.002": [
+        "Software Packing",
+        "Adversaries may perform software packing or virtual machine software protection to conceal their code"
+    ],
+    "T1027.003": [
+        "Steganography",
+        "Adversaries may use steganography techniques in order to prevent the detection of hidden information"
+    ]
+}

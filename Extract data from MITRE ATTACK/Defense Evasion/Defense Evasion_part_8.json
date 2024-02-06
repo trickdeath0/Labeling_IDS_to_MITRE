@@ -1,0 +1,70 @@
+{
+    "T1055.003": [
+        "Thread Execution Hijacking",
+        "Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.004": [
+        "Asynchronous Procedure Call",
+        "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.005": [
+        "Thread Local Storage",
+        "Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.008": [
+        "Ptrace System Calls",
+        "Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.009": [
+        "Proc Memory",
+        "Adversaries may inject malicious code into processes via the /proc filesystem in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.011": [
+        "Extra Window Memory Injection",
+        "Adversaries may inject malicious code into process via Extra Window Memory (EWM) in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.012": [
+        "Process Hollowing",
+        "Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses"
+    ],
+    "T1055.013": [
+        "Process Doppelg\u00e4nging",
+        "Adversaries may inject malicious code into process via process doppelg\u00e4nging in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.014": [
+        "VDSO Hijacking",
+        "Adversaries may inject malicious code into processes via VDSO hijacking in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.015": [
+        "ListPlanting",
+        "Adversaries may abuse list-view controls to inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1620": [
+        "Reflective Code Loading",
+        "Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads"
+    ],
+    "T1207": [
+        "Rogue Domain Controller",
+        "Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data"
+    ],
+    "T1014": [
+        "Rootkit",
+        "Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components"
+    ],
+    "T1553": [
+        "Subvert Trust Controls",
+        "Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs"
+    ],
+    "T1553.001": [
+        "Gatekeeper Bypass",
+        "Adversaries may modify file attributes and subvert Gatekeeper functionality to evade user prompts and execute untrusted programs"
+    ],
+    "T1553.002": [
+        "Code Signing",
+        "Adversaries may create, acquire, or steal code signing materials to sign their malware or tools"
+    ],
+    "T1553.003": [
+        "SIP and Trust Provider Hijacking",
+        "Adversaries may tamper with SIP and trust provider components to mislead the operating system and application control tools when conducting signature validation checks"
+    ]
+}

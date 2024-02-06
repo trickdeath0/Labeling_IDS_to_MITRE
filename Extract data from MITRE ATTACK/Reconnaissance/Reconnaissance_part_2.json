@@ -1,0 +1,82 @@
+{
+    "T1591.003": [
+        "Identify Business Tempo",
+        "Adversaries may gather information about the victim's business tempo that can be used during targeting"
+    ],
+    "T1591.004": [
+        "Identify Roles",
+        "Adversaries may gather information about identities and roles within the victim organization that can be used during targeting"
+    ],
+    "T1598": [
+        "Phishing for Information",
+        "Adversaries may send phishing messages to elicit sensitive information that can be used during targeting"
+    ],
+    "T1598.001": [
+        "Spearphishing Service",
+        "Adversaries may send spearphishing messages via third-party services to elicit sensitive information that can be used during targeting"
+    ],
+    "T1598.002": [
+        "Spearphishing Attachment",
+        "Adversaries may send spearphishing messages with a malicious attachment to elicit sensitive information that can be used during targeting"
+    ],
+    "T1598.003": [
+        "Spearphishing Link",
+        "Adversaries may send spearphishing messages with a malicious link to elicit sensitive information that can be used during targeting"
+    ],
+    "T1598.004": [
+        "Spearphishing Voice",
+        "Adversaries may use voice communications to elicit sensitive information that can be used during targeting"
+    ],
+    "T1597": [
+        "Search Closed Sources",
+        "Adversaries may search and gather information about victims from closed sources that can be used during targeting"
+    ],
+    "T1597.001": [
+        "Threat Intel Vendors",
+        "Adversaries may search private data from threat intelligence vendors for information that can be used during targeting"
+    ],
+    "T1597.002": [
+        "Purchase Technical Data",
+        "Adversaries may purchase technical information about victims that can be used during targeting"
+    ],
+    "T1596": [
+        "Search Open Technical Databases",
+        "Adversaries may search freely available technical databases for information about victims that can be used during targeting"
+    ],
+    "T1596.001": [
+        "DNS/Passive DNS",
+        "Adversaries may search DNS data for information about victims that can be used during targeting"
+    ],
+    "T1596.002": [
+        "WHOIS",
+        "Adversaries may search public WHOIS data for information about victims that can be used during targeting"
+    ],
+    "T1596.003": [
+        "Digital Certificates",
+        "Adversaries may search public digital certificate data for information about victims that can be used during targeting"
+    ],
+    "T1596.004": [
+        "CDNs",
+        "Adversaries may search content delivery network (CDN) data about victims that can be used during targeting"
+    ],
+    "T1596.005": [
+        "Scan Databases",
+        "Adversaries may search within public scan databases for information about victims that can be used during targeting"
+    ],
+    "T1593": [
+        "Search Open Websites/Domains",
+        "Adversaries may search freely available websites and/or domains for information about victims that can be used during targeting"
+    ],
+    "T1593.001": [
+        "Social Media",
+        "Adversaries may search social media for information about victims that can be used during targeting"
+    ],
+    "T1593.002": [
+        "Search Engines",
+        "Adversaries may use search engines to collect information about victims that can be used during targeting"
+    ],
+    "T1593.003": [
+        "Code Repositories",
+        "Adversaries may search public code repositories for information about victims that can be used during targeting"
+    ]
+}

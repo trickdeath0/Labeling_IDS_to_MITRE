@@ -1,0 +1,50 @@
+{
+    "T1053.007": [
+        "Container Orchestration Job",
+        "Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code"
+    ],
+    "T1648": [
+        "Serverless Execution",
+        "Adversaries may abuse serverless computing, integration, and automation services to execute arbitrary code in cloud environments"
+    ],
+    "T1129": [
+        "Shared Modules",
+        "Adversaries may execute malicious payloads via loading shared modules"
+    ],
+    "T1072": [
+        "Software Deployment Tools",
+        "Adversaries may gain access to and use third-party software suites installed within an enterprise network, such as administration, monitoring, and deployment systems, to move laterally through the network"
+    ],
+    "T1569": [
+        "System Services",
+        "Adversaries may abuse system services or daemons to execute commands or programs"
+    ],
+    "T1569.001": [
+        "Launchctl",
+        "Adversaries may abuse launchctl to execute commands or programs"
+    ],
+    "T1569.002": [
+        "Service Execution",
+        "Adversaries may abuse the Windows service control manager to execute malicious commands or payloads"
+    ],
+    "T1204": [
+        "User Execution",
+        "An adversary may rely upon specific actions by a user in order to gain execution"
+    ],
+    "T1204.001": [
+        "Malicious Link",
+        "An adversary may rely upon a user clicking a malicious link in order to gain execution"
+    ],
+    "T1204.002": [
+        "Malicious File",
+        "An adversary may rely upon a user opening a malicious file in order to gain execution"
+    ],
+    "T1204.003": [
+        "Malicious Image",
+        "Adversaries may rely on a user running a malicious image to facilitate execution"
+    ],
+    "T1047": [
+        "Windows Management Instrumentation",
+        "Adversaries may abuse Windows Management Instrumentation (WMI) to execute malicious commands and payloads"
+    ]
+}

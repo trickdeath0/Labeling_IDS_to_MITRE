@@ -1,0 +1,90 @@
+{
+    "T1547.013": [
+        "XDG Autostart Entries",
+        "Adversaries may add or modify XDG Autostart Entries to execute malicious programs or commands when a user\u2019s desktop environment is loaded at login"
+    ],
+    "T1547.014": [
+        "Active Setup",
+        "Adversaries may achieve persistence by adding a Registry key to the Active Setup of the local machine"
+    ],
+    "T1547.015": [
+        "Login Items",
+        "Adversaries may add login items to execute upon user login to gain persistence or escalate privileges"
+    ],
+    "T1037": [
+        "Boot or Logon Initialization Scripts",
+        "Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence"
+    ],
+    "T1037.001": [
+        "Logon Script (Windows)",
+        "Adversaries may use Windows logon scripts automatically executed at logon initialization to establish persistence"
+    ],
+    "T1037.002": [
+        "Login Hook",
+        "Adversaries may use a Login Hook to establish persistence executed upon user logon"
+    ],
+    "T1037.003": [
+        "Network Logon Script",
+        "Adversaries may use network logon scripts automatically executed at logon initialization to establish persistence"
+    ],
+    "T1037.004": [
+        "RC Scripts",
+        "Adversaries may establish persistence by modifying RC scripts which are executed during a Unix-like system\u2019s startup"
+    ],
+    "T1037.005": [
+        "Startup Items",
+        "Adversaries may use startup items automatically executed at boot initialization to establish persistence"
+    ],
+    "T1176": [
+        "Browser Extensions",
+        "Adversaries may abuse Internet browser extensions to establish persistent access to victim systems"
+    ],
+    "T1554": [
+        "Compromise Client Software Binary",
+        "Adversaries may modify client software binaries to establish persistent access to systems"
+    ],
+    "T1136": [
+        "Create Account",
+        "Adversaries may create an account to maintain access to victim systems"
+    ],
+    "T1136.001": [
+        "Local Account",
+        "Adversaries may create a local account to maintain access to victim systems"
+    ],
+    "T1136.002": [
+        "Domain Account",
+        "Adversaries may create a domain account to maintain access to victim systems"
+    ],
+    "T1136.003": [
+        "Cloud Account",
+        "Adversaries may create a cloud account to maintain access to victim systems"
+    ],
+    "T1543": [
+        "Create or Modify System Process",
+        "Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.001": [
+        "Launch Agent",
+        "Adversaries may create or modify launch agents to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.002": [
+        "Systemd Service",
+        "Adversaries may create or modify systemd services to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.003": [
+        "Windows Service",
+        "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.004": [
+        "Launch Daemon",
+        "Adversaries may create or modify Launch Daemons to execute malicious payloads as part of persistence"
+    ],
+    "T1546": [
+        "Event Triggered Execution",
+        "Adversaries may establish persistence and/or elevate privileges using system mechanisms that trigger execution based on specific events"
+    ],
+    "T1546.001": [
+        "Change Default File Association",
+        "Adversaries may establish persistence by executing malicious content triggered by a file type association"
+    ]
+}

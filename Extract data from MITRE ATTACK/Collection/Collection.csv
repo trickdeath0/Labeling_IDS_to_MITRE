@@ -1,0 +1,38 @@
+ID,Technique Name,Description
+T1557,Adversary-in-the-Middle,"Adversaries may attempt to position themselves between two or more networked devices using an adversary-in-the-middle (AiTM) technique to support follow-on behaviors such as Network Sniffing, Transmitted Data Manipulation, or replay attacks (Exploitation for Credential Access)"
+T1557.001,LLMNR/NBT-NS Poisoning and SMB Relay,"By responding to LLMNR/NBT-NS network traffic, adversaries may spoof an authoritative source for name resolution to force communication with an adversary controlled system"
+T1557.002,ARP Cache Poisoning,Adversaries may poison Address Resolution Protocol (ARP) caches to position themselves between the communication of two or more networked devices
+T1557.003,DHCP Spoofing,Adversaries may redirect network traffic to adversary-owned systems by spoofing Dynamic Host Configuration Protocol (DHCP) traffic and acting as a malicious DHCP server on the victim network
+T1560,Archive Collected Data,An adversary may compress and/or encrypt data that is collected prior to exfiltration
+T1560.001,Archive via Utility,Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration
+T1560.002,Archive via Library,An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party libraries
+T1560.003,Archive via Custom Method,An adversary may compress or encrypt data that is collected prior to exfiltration using a custom method
+T1123,Audio Capture,An adversary can leverage a computer's peripheral devices (e
+T1119,Automated Collection,"Once established within a system or network, an adversary may use automated techniques for collecting internal data"
+T1185,Browser Session Hijacking,"Adversaries may take advantage of security vulnerabilities and inherent functionality in browser software to change content, modify user-behaviors, and intercept information as part of various browser session hijacking techniques"
+T1115,Clipboard Data,Adversaries may collect data stored in the clipboard from users copying information within or between applications
+T1530,Data from Cloud Storage,Adversaries may access data from cloud storage
+T1602,Data from Configuration Repository,Adversaries may collect data related to managed devices from configuration repositories
+T1602.001,SNMP (MIB Dump),Adversaries may target the Management Information Base (MIB) to collect and/or mine valuable information in a network managed using Simple Network Management Protocol (SNMP)
+T1602.002,Network Device Configuration Dump,Adversaries may access network configuration files to collect sensitive data about the device and the network
+T1213,Data from Information Repositories,Adversaries may leverage information repositories to mine valuable information
+T1213.001,Confluence,Adversaries may leverage Confluence repositories to mine valuable information
+T1213.002,Sharepoint,Adversaries may leverage the SharePoint repository as a source to mine valuable information
+T1213.003,Code Repositories,Adversaries may leverage code repositories to collect valuable information
+T1005,Data from Local System,"Adversaries may search local system sources, such as file systems and configuration files or local databases, to find files of interest and sensitive data prior to Exfiltration"
+T1039,Data from Network Shared Drive,Adversaries may search network shares on computers they have compromised to find files of interest
+T1025,Data from Removable Media,Adversaries may search connected removable media on computers they have compromised to find files of interest
+T1074,Data Staged,Adversaries may stage collected data in a central location or directory prior to Exfiltration
+T1074.001,Local Data Staging,Adversaries may stage collected data in a central location or directory on the local system prior to Exfiltration
+T1074.002,Remote Data Staging,Adversaries may stage data collected from multiple systems in a central location or directory on one system prior to Exfiltration
+T1114,Email Collection,Adversaries may target user email to collect sensitive information
+T1114.001,Local Email Collection,Adversaries may target user email on local systems to collect sensitive information
+T1114.002,Remote Email Collection,"Adversaries may target an Exchange server, Office 365, or Google Workspace to collect sensitive information"
+T1114.003,Email Forwarding Rule,Adversaries may setup email forwarding rules to collect sensitive information
+T1056,Input Capture,Adversaries may use methods of capturing user input to obtain credentials or collect information
+T1056.001,Keylogging,Adversaries may log user keystrokes to intercept credentials as the user types them
+T1056.002,GUI Input Capture,Adversaries may mimic common operating system GUI components to prompt users for credentials with a seemingly legitimate prompt
+T1056.003,Web Portal Capture,"Adversaries may install code on externally facing portals, such as a VPN login page, to capture and transmit credentials of users who attempt to log into the service"
+T1056.004,Credential API Hooking,Adversaries may hook into Windows application programming interface (API) functions to collect user credentials
+T1113,Screen Capture,Adversaries may attempt to take screen captures of the desktop to gather information over the course of an operation
+T1125,Video Capture,An adversary can leverage a computer's peripheral devices (e

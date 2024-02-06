@@ -1,0 +1,74 @@
+{
+    "T1574.002": [
+        "DLL Side-Loading",
+        "Adversaries may execute their own malicious payloads by side-loading DLLs"
+    ],
+    "T1574.004": [
+        "Dylib Hijacking",
+        "Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime"
+    ],
+    "T1574.005": [
+        "Executable Installer File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer"
+    ],
+    "T1574.006": [
+        "Dynamic Linker Hijacking",
+        "Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries"
+    ],
+    "T1574.007": [
+        "Path Interception by PATH Environment Variable",
+        "Adversaries may execute their own malicious payloads by hijacking environment variables used to load libraries"
+    ],
+    "T1574.008": [
+        "Path Interception by Search Order Hijacking",
+        "Adversaries may execute their own malicious payloads by hijacking the search order used to load other programs"
+    ],
+    "T1574.009": [
+        "Path Interception by Unquoted Path",
+        "Adversaries may execute their own malicious payloads by hijacking vulnerable file path references"
+    ],
+    "T1574.010": [
+        "Services File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by services"
+    ],
+    "T1574.011": [
+        "Services Registry Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services"
+    ],
+    "T1574.012": [
+        "COR_PROFILER",
+        "Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the "
+    ],
+    "T1574.013": [
+        "KernelCallbackTable",
+        "Adversaries may abuse the KernelCallbackTable of a process to hijack its execution flow in order to run their own payloads"
+    ],
+    "T1525": [
+        "Implant Internal Image",
+        "Adversaries may implant cloud or container images with malicious code to establish persistence after gaining access to an environment"
+    ],
+    "T1556": [
+        "Modify Authentication Process",
+        "Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts"
+    ],
+    "T1556.001": [
+        "Domain Controller Authentication",
+        "Adversaries may patch the authentication process on a domain controller to bypass the typical authentication mechanisms and enable access to accounts"
+    ],
+    "T1556.002": [
+        "Password Filter DLL",
+        "Adversaries may register malicious password filter dynamic link libraries (DLLs) into the authentication process to acquire user credentials as they are validated"
+    ],
+    "T1556.003": [
+        "Pluggable Authentication Modules",
+        "Adversaries may modify pluggable authentication modules (PAM) to access user credentials or enable otherwise unwarranted access to accounts"
+    ],
+    "T1556.004": [
+        "Network Device Authentication",
+        "Adversaries may use Patch System Image to hard code a password in the operating system, thus bypassing of native authentication mechanisms for local accounts on network devices"
+    ],
+    "T1556.005": [
+        "Reversible Encryption",
+        "An adversary may abuse Active Directory authentication encryption properties to gain access to credentials on Windows systems"
+    ]
+}

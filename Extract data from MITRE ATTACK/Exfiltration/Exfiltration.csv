@@ -1,0 +1,20 @@
+ID,Technique Name,Description
+T1020,Automated Exfiltration,"Adversaries may exfiltrate data, such as sensitive documents, through the use of automated processing after being gathered during Collection"
+T1020.001,Traffic Duplication,Adversaries may leverage traffic mirroring in order to automate data exfiltration over compromised infrastructure
+T1030,Data Transfer Size Limits,An adversary may exfiltrate data in fixed size chunks instead of whole files or limit packet sizes below certain thresholds
+T1048,Exfiltration Over Alternative Protocol,Adversaries may steal data by exfiltrating it over a different protocol than that of the existing command and control channel
+T1048.001,Exfiltration Over Symmetric Encrypted Non-C2 Protocol,Adversaries may steal data by exfiltrating it over a symmetrically encrypted network protocol other than that of the existing command and control channel
+T1048.002,Exfiltration Over Asymmetric Encrypted Non-C2 Protocol,Adversaries may steal data by exfiltrating it over an asymmetrically encrypted network protocol other than that of the existing command and control channel
+T1048.003,Exfiltration Over Unencrypted Non-C2 Protocol,Adversaries may steal data by exfiltrating it over an un-encrypted network protocol other than that of the existing command and control channel
+T1041,Exfiltration Over C2 Channel,Adversaries may steal data by exfiltrating it over an existing command and control channel
+T1011,Exfiltration Over Other Network Medium,Adversaries may attempt to exfiltrate data over a different network medium than the command and control channel
+T1011.001,Exfiltration Over Bluetooth,Adversaries may attempt to exfiltrate data over Bluetooth rather than the command and control channel
+T1052,Exfiltration Over Physical Medium,"Adversaries may attempt to exfiltrate data via a physical medium, such as a removable drive"
+T1052.001,Exfiltration over USB,Adversaries may attempt to exfiltrate data over a USB connected physical device
+T1567,Exfiltration Over Web Service,"Adversaries may use an existing, legitimate external Web service to exfiltrate data rather than their primary command and control channel"
+T1567.001,Exfiltration to Code Repository,Adversaries may exfiltrate data to a code repository rather than over their primary command and control channel
+T1567.002,Exfiltration to Cloud Storage,Adversaries may exfiltrate data to a cloud storage service rather than over their primary command and control channel
+T1567.003,Exfiltration to Text Storage Sites,Adversaries may exfiltrate data to text storage sites instead of their primary command and control channel
+T1567.004,Exfiltration Over Webhook,Adversaries may exfiltrate data to a webhook endpoint rather than over their primary command and control channel
+T1029,Scheduled Transfer,Adversaries may schedule data exfiltration to be performed only at certain times of day or at certain intervals
+T1537,Transfer Data to Cloud Account,"Adversaries may exfiltrate data by transferring the data, including backups of cloud environments, to another cloud account they control on the same service to avoid typical file transfers/downloads and network-based exfiltration detection"

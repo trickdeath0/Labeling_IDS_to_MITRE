@@ -1,0 +1,70 @@
+{
+    "T1574.010": [
+        "Services File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by services"
+    ],
+    "T1574.011": [
+        "Services Registry Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services"
+    ],
+    "T1574.012": [
+        "COR_PROFILER",
+        "Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the "
+    ],
+    "T1574.013": [
+        "KernelCallbackTable",
+        "Adversaries may abuse the KernelCallbackTable of a process to hijack its execution flow in order to run their own payloads"
+    ],
+    "T1055": [
+        "Process Injection",
+        "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.001": [
+        "Dynamic-link Library Injection",
+        "Adversaries may inject dynamic-link libraries (DLLs) into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.002": [
+        "Portable Executable Injection",
+        "Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.003": [
+        "Thread Execution Hijacking",
+        "Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.004": [
+        "Asynchronous Procedure Call",
+        "Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.005": [
+        "Thread Local Storage",
+        "Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.008": [
+        "Ptrace System Calls",
+        "Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.009": [
+        "Proc Memory",
+        "Adversaries may inject malicious code into processes via the /proc filesystem in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.011": [
+        "Extra Window Memory Injection",
+        "Adversaries may inject malicious code into process via Extra Window Memory (EWM) in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.012": [
+        "Process Hollowing",
+        "Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses"
+    ],
+    "T1055.013": [
+        "Process Doppelg\u00e4nging",
+        "Adversaries may inject malicious code into process via process doppelg\u00e4nging in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.014": [
+        "VDSO Hijacking",
+        "Adversaries may inject malicious code into processes via VDSO hijacking in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.015": [
+        "ListPlanting",
+        "Adversaries may abuse list-view controls to inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ]
+}

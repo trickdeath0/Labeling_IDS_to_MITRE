@@ -1,0 +1,192 @@
+ID,Technique Name,Description
+T1548,Abuse Elevation Control Mechanism,Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions
+T1548.001,Setuid and Setgid,An adversary may abuse configurations where an application has the setuid or setgid bits set in order to get code running in a different (and possibly more privileged) user’s context
+T1548.002,Bypass User Account Control,Adversaries may bypass UAC mechanisms to elevate process privileges on system
+T1548.003,Sudo and Sudo Caching,Adversaries may perform sudo caching and/or use the sudoers file to elevate privileges
+T1548.004,Elevated Execution with Prompt,Adversaries may leverage the AuthorizationExecuteWithPrivileges API to escalate privileges by prompting the user for credentials
+T1548.005,Temporary Elevated Cloud Access,Adversaries may abuse permission configurations that allow them to gain temporarily elevated access to cloud resources
+T1134,Access Token Manipulation,Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls
+T1134.001,Token Impersonation/Theft,Adversaries may duplicate then impersonate another user's existing token to escalate privileges and bypass access controls
+T1134.002,Create Process with Token,Adversaries may create a new process with an existing token to escalate privileges and bypass access controls
+T1134.003,Make and Impersonate Token,Adversaries may make new tokens and impersonate users to escalate privileges and bypass access controls
+T1134.004,Parent PID Spoofing,Adversaries may spoof the parent process identifier (PPID) of a new process to evade process-monitoring defenses or to elevate privileges
+T1134.005,SID-History Injection,Adversaries may use SID-History Injection to escalate privileges and bypass access controls
+T1197,BITS Jobs,Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks
+T1612,Build Image on Host,Adversaries may build a container image directly on a host to bypass defenses that monitor for the retrieval of malicious images from a public registry
+T1622,Debugger Evasion,Adversaries may employ various means to detect and avoid debuggers
+T1140,Deobfuscate/Decode Files or Information,Adversaries may use Obfuscated Files or Information to hide artifacts of an intrusion from analysis
+T1610,Deploy Container,Adversaries may deploy a container into an environment to facilitate execution or evade defenses
+T1006,Direct Volume Access,Adversaries may directly access a volume to bypass file access controls and file system monitoring
+T1484,Domain Policy Modification,Adversaries may modify the configuration settings of a domain to evade defenses and/or escalate privileges in domain environments
+T1484.001,Group Policy Modification,"Adversaries may modify Group Policy Objects (GPOs) to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain"
+T1484.002,Domain Trust Modification,Adversaries may add new domain trusts or modify the properties of existing domain trusts to evade defenses and/or elevate privileges
+T1480,Execution Guardrails,Adversaries may use execution guardrails to constrain execution or actions based on adversary supplied and environment specific conditions that are expected to be present on the target
+T1480.001,Environmental Keying,Adversaries may environmentally key payloads or other features of malware to evade defenses and constraint execution to a specific target environment
+T1211,Exploitation for Defense Evasion,Adversaries may exploit a system or application vulnerability to bypass security features
+T1222,File and Directory Permissions Modification,Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files
+T1222.001,Windows File and Directory Permissions Modification,Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files
+T1222.002,Linux and Mac File and Directory Permissions Modification,Adversaries may modify file or directory permissions/attributes to evade access control lists (ACLs) and access protected files
+T1564,Hide Artifacts,Adversaries may attempt to hide artifacts associated with their behaviors to evade detection
+T1564.001,Hidden Files and Directories,Adversaries may set files and directories to be hidden to evade detection mechanisms
+T1564.002,Hidden Users,Adversaries may use hidden users to hide the presence of user accounts they create or modify
+T1564.003,Hidden Window,Adversaries may use hidden windows to conceal malicious activity from the plain sight of users
+T1564.004,NTFS File Attributes,Adversaries may use NTFS file attributes to hide their malicious data in order to evade detection
+T1564.005,Hidden File System,Adversaries may use a hidden file system to conceal malicious activity from users and security tools
+T1564.006,Run Virtual Instance,Adversaries may carry out malicious operations using a virtual instance to avoid detection
+T1564.007,VBA Stomping,Adversaries may hide malicious Visual Basic for Applications (VBA) payloads embedded within MS Office documents by replacing the VBA source code with benign data
+T1564.008,Email Hiding Rules,Adversaries may use email rules to hide inbound emails in a compromised user's mailbox
+T1564.009,Resource Forking,Adversaries may abuse resource forks to hide malicious code or executables to evade detection and bypass security applications
+T1564.010,Process Argument Spoofing,Adversaries may attempt to hide process command-line arguments by overwriting process memory
+T1564.011,Ignore Process Interrupts,Adversaries may evade defensive mechanisms by executing commands that hide from process interrupt signals
+T1574,Hijack Execution Flow,Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs
+T1574.001,DLL Search Order Hijacking,Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs
+T1574.002,DLL Side-Loading,Adversaries may execute their own malicious payloads by side-loading DLLs
+T1574.004,Dylib Hijacking,Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime
+T1574.005,Executable Installer File Permissions Weakness,Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer
+T1574.006,Dynamic Linker Hijacking,Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries
+T1574.007,Path Interception by PATH Environment Variable,Adversaries may execute their own malicious payloads by hijacking environment variables used to load libraries
+T1574.008,Path Interception by Search Order Hijacking,Adversaries may execute their own malicious payloads by hijacking the search order used to load other programs
+T1574.009,Path Interception by Unquoted Path,Adversaries may execute their own malicious payloads by hijacking vulnerable file path references
+T1574.010,Services File Permissions Weakness,Adversaries may execute their own malicious payloads by hijacking the binaries used by services
+T1574.011,Services Registry Permissions Weakness,Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services
+T1574.012,COR_PROFILER,Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the 
+T1574.013,KernelCallbackTable,Adversaries may abuse the KernelCallbackTable of a process to hijack its execution flow in order to run their own payloads
+T1562,Impair Defenses,Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms
+T1562.001,Disable or Modify Tools,Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities
+T1562.002,Disable Windows Event Logging,Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits
+T1562.003,Impair Command History Logging,Adversaries may impair command history logging to hide commands they run on a compromised system
+T1562.004,Disable or Modify System Firewall,Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage
+T1562.006,Indicator Blocking,An adversary may attempt to block indicators or events typically captured by sensors from being gathered and analyzed
+T1562.007,Disable or Modify Cloud Firewall,Adversaries may disable or modify a firewall within a cloud environment to bypass controls that limit access to cloud resources
+T1562.008,Disable or Modify Cloud Logs,An adversary may disable or modify cloud logging capabilities and integrations to limit what data is collected on their activities and avoid detection
+T1562.009,Safe Mode Boot,Adversaries may abuse Windows safe mode to disable endpoint defenses
+T1562.010,Downgrade Attack,"Adversaries may downgrade or use a version of system features that may be outdated, vulnerable, and/or does not support updated security controls"
+T1562.011,Spoof Security Alerting,"Adversaries may spoof security alerting from tools, presenting false evidence to impair defenders’ awareness of malicious activity"
+T1562.012,Disable or Modify Linux Audit System,Adversaries may disable or modify the Linux audit system to hide malicious activity and avoid detection
+T1656,Impersonation,Adversaries may impersonate a trusted person or organization in order to persuade and trick a target into performing some action on their behalf
+T1070,Indicator Removal,Adversaries may delete or modify artifacts generated within systems to remove evidence of their presence or hinder defenses
+T1070.001,Clear Windows Event Logs,Adversaries may clear Windows Event Logs to hide the activity of an intrusion
+T1070.002,Clear Linux or Mac System Logs,Adversaries may clear system logs to hide evidence of an intrusion
+T1070.003,Clear Command History,"In addition to clearing system logs, an adversary may clear the command history of a compromised account to conceal the actions undertaken during an intrusion"
+T1070.004,File Deletion,Adversaries may delete files left behind by the actions of their intrusion activity
+T1070.005,Network Share Connection Removal,Adversaries may remove share connections that are no longer useful in order to clean up traces of their operation
+T1070.006,Timestomp,Adversaries may modify file time attributes to hide new or changes to existing files
+T1070.007,Clear Network Connection History and Configurations,Adversaries may clear or remove evidence of malicious network connections in order to clean up traces of their operations
+T1070.008,Clear Mailbox Data,Adversaries may modify mail and mail application data to remove evidence of their activity
+T1070.009,Clear Persistence,Adversaries may clear artifacts associated with previously established persistence on a host system to remove evidence of their activity
+T1202,Indirect Command Execution,Adversaries may abuse utilities that allow for command execution to bypass security restrictions that limit the use of command-line interpreters
+T1036,Masquerading,Adversaries may attempt to manipulate features of their artifacts to make them appear legitimate or benign to users and/or security tools
+T1036.001,Invalid Code Signature,"Adversaries may attempt to mimic features of valid code signatures to increase the chance of deceiving a user, analyst, or tool"
+T1036.002,Right-to-Left Override,Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign
+T1036.003,Rename System Utilities,Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities
+T1036.004,Masquerade Task or Service,Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign
+T1036.005,Match Legitimate Name or Location,Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them
+T1036.006,Space after Filename,Adversaries can hide a program's true filetype by changing the extension of a file
+T1036.007,Double File Extension,Adversaries may abuse a double extension in the filename as a means of masquerading the true file type
+T1036.008,Masquerade File Type,"Adversaries may masquerade malicious payloads as legitimate files through changes to the payload's formatting, including the file’s signature, extension, and contents"
+T1036.009,Break Process Trees,An adversary may attempt to evade process tree-based analysis by modifying executed malware's parent process ID (PPID)
+T1556,Modify Authentication Process,Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts
+T1556.001,Domain Controller Authentication,Adversaries may patch the authentication process on a domain controller to bypass the typical authentication mechanisms and enable access to accounts
+T1556.002,Password Filter DLL,Adversaries may register malicious password filter dynamic link libraries (DLLs) into the authentication process to acquire user credentials as they are validated
+T1556.003,Pluggable Authentication Modules,Adversaries may modify pluggable authentication modules (PAM) to access user credentials or enable otherwise unwarranted access to accounts
+T1556.004,Network Device Authentication,"Adversaries may use Patch System Image to hard code a password in the operating system, thus bypassing of native authentication mechanisms for local accounts on network devices"
+T1556.005,Reversible Encryption,An adversary may abuse Active Directory authentication encryption properties to gain access to credentials on Windows systems
+T1556.006,Multi-Factor Authentication,Adversaries may disable or modify multi-factor authentication (MFA) mechanisms to enable persistent access to compromised accounts
+T1556.007,Hybrid Identity,"Adversaries may patch, modify, or otherwise backdoor cloud authentication processes that are tied to on-premises user identities in order to bypass typical authentication mechanisms, access credentials, and enable persistent access to accounts"
+T1556.008,Network Provider DLL,Adversaries may register malicious network provider dynamic link libraries (DLLs) to capture cleartext user credentials during the authentication process
+T1578,Modify Cloud Compute Infrastructure,An adversary may attempt to modify a cloud account's compute service infrastructure to evade defenses
+T1578.001,Create Snapshot,An adversary may create a snapshot or data backup within a cloud account to evade defenses
+T1578.002,Create Cloud Instance,An adversary may create a new instance or virtual machine (VM) within the compute service of a cloud account to evade defenses
+T1578.003,Delete Cloud Instance,An adversary may delete a cloud instance after they have performed malicious activities in an attempt to evade detection and remove evidence of their presence
+T1578.004,Revert Cloud Instance,An adversary may revert changes made to a cloud instance after they have performed malicious activities in attempt to evade detection and remove evidence of their presence
+T1578.005,Modify Cloud Compute Configurations,"Adversaries may modify settings that directly affect the size, locations, and resources available to cloud compute infrastructure in order to evade defenses"
+T1112,Modify Registry,"Adversaries may interact with the Windows Registry to hide configuration information within Registry keys, remove information as part of cleaning up, or as part of other techniques to aid in persistence and execution"
+T1601,Modify System Image,Adversaries may make changes to the operating system of embedded network devices to weaken defenses and provide new capabilities for themselves
+T1601.001,Patch System Image,Adversaries may modify the operating system of a network device to introduce new capabilities or weaken existing defenses
+T1601.002,Downgrade System Image,Adversaries may install an older version of the operating system of a network device to weaken security
+T1599,Network Boundary Bridging,Adversaries may bridge network boundaries by compromising perimeter network devices or internal devices responsible for network segmentation
+T1599.001,Network Address Translation Traversal,Adversaries may bridge network boundaries by modifying a network device’s Network Address Translation (NAT) configuration
+T1027,Obfuscated Files or Information,"Adversaries may attempt to make an executable or file difficult to discover or analyze by encrypting, encoding, or otherwise obfuscating its contents on the system or in transit"
+T1027.001,Binary Padding,Adversaries may use binary padding to add junk data and change the on-disk representation of malware
+T1027.002,Software Packing,Adversaries may perform software packing or virtual machine software protection to conceal their code
+T1027.003,Steganography,Adversaries may use steganography techniques in order to prevent the detection of hidden information
+T1027.004,Compile After Delivery,Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code
+T1027.005,Indicator Removal from Tools,"Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed"
+T1027.006,HTML Smuggling,Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files
+T1027.007,Dynamic API Resolution,Adversaries may obfuscate then dynamically resolve API functions called by their malware in order to conceal malicious functionalities and impair defensive analysis
+T1027.008,Stripped Payloads,"Adversaries may attempt to make a payload difficult to analyze by removing symbols, strings, and other human readable information"
+T1027.009,Embedded Payloads,Adversaries may embed payloads within other files to conceal malicious content from defenses
+T1027.010,Command Obfuscation,Adversaries may obfuscate content during command execution to impede detection
+T1027.011,Fileless Storage,"Adversaries may store data in ""fileless"" formats to conceal malicious activity from defenses"
+T1027.012,LNK Icon Smuggling,Adversaries may smuggle commands to download malicious payloads past content filters by hiding them within otherwise seemingly benign windows shortcut files
+T1647,Plist File Modification,"Adversaries may modify property list files (plist files) to enable other malicious activity, while also potentially evading and bypassing system defenses"
+T1542,Pre-OS Boot,Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system
+T1542.001,System Firmware,Adversaries may modify system firmware to persist on systems
+T1542.002,Component Firmware,Adversaries may modify component firmware to persist on systems
+T1542.003,Bootkit,Adversaries may use bootkits to persist on systems
+T1542.004,ROMMONkit,Adversaries may abuse the ROM Monitor (ROMMON) by loading an unauthorized firmware with adversary code to provide persistent access and manipulate device behavior that is difficult to detect
+T1542.005,TFTP Boot,Adversaries may abuse netbooting to load an unauthorized network device operating system from a Trivial File Transfer Protocol (TFTP) server
+T1055,Process Injection,Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges
+T1055.001,Dynamic-link Library Injection,Adversaries may inject dynamic-link libraries (DLLs) into processes in order to evade process-based defenses as well as possibly elevate privileges
+T1055.002,Portable Executable Injection,Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges
+T1055.003,Thread Execution Hijacking,Adversaries may inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges
+T1055.004,Asynchronous Procedure Call,Adversaries may inject malicious code into processes via the asynchronous procedure call (APC) queue in order to evade process-based defenses as well as possibly elevate privileges
+T1055.005,Thread Local Storage,Adversaries may inject malicious code into processes via thread local storage (TLS) callbacks in order to evade process-based defenses as well as possibly elevate privileges
+T1055.008,Ptrace System Calls,Adversaries may inject malicious code into processes via ptrace (process trace) system calls in order to evade process-based defenses as well as possibly elevate privileges
+T1055.009,Proc Memory,Adversaries may inject malicious code into processes via the /proc filesystem in order to evade process-based defenses as well as possibly elevate privileges
+T1055.011,Extra Window Memory Injection,Adversaries may inject malicious code into process via Extra Window Memory (EWM) in order to evade process-based defenses as well as possibly elevate privileges
+T1055.012,Process Hollowing,Adversaries may inject malicious code into suspended and hollowed processes in order to evade process-based defenses
+T1055.013,Process Doppelgänging,Adversaries may inject malicious code into process via process doppelgänging in order to evade process-based defenses as well as possibly elevate privileges
+T1055.014,VDSO Hijacking,Adversaries may inject malicious code into processes via VDSO hijacking in order to evade process-based defenses as well as possibly elevate privileges
+T1055.015,ListPlanting,Adversaries may abuse list-view controls to inject malicious code into hijacked processes in order to evade process-based defenses as well as possibly elevate privileges
+T1620,Reflective Code Loading,Adversaries may reflectively load code into a process in order to conceal the execution of malicious payloads
+T1207,Rogue Domain Controller,Adversaries may register a rogue Domain Controller to enable manipulation of Active Directory data
+T1014,Rootkit,"Adversaries may use rootkits to hide the presence of programs, files, network connections, services, drivers, and other system components"
+T1553,Subvert Trust Controls,Adversaries may undermine security controls that will either warn users of untrusted activity or prevent execution of untrusted programs
+T1553.001,Gatekeeper Bypass,Adversaries may modify file attributes and subvert Gatekeeper functionality to evade user prompts and execute untrusted programs
+T1553.002,Code Signing,"Adversaries may create, acquire, or steal code signing materials to sign their malware or tools"
+T1553.003,SIP and Trust Provider Hijacking,Adversaries may tamper with SIP and trust provider components to mislead the operating system and application control tools when conducting signature validation checks
+T1553.004,Install Root Certificate,Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers
+T1553.005,Mark-of-the-Web Bypass,Adversaries may abuse specific file formats to subvert Mark-of-the-Web (MOTW) controls
+T1553.006,Code Signing Policy Modification,Adversaries may modify code signing policies to enable execution of unsigned or self-signed code
+T1218,System Binary Proxy Execution,"Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries"
+T1218.001,Compiled HTML File,Adversaries may abuse Compiled HTML files (
+T1218.002,Control Panel,Adversaries may abuse control
+T1218.003,CMSTP,Adversaries may abuse CMSTP to proxy execution of malicious code
+T1218.004,InstallUtil,Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility
+T1218.005,Mshta,Adversaries may abuse mshta
+T1218.007,Msiexec,Adversaries may abuse msiexec
+T1218.008,Odbcconf,Adversaries may abuse odbcconf
+T1218.009,Regsvcs/Regasm,Adversaries may abuse Regsvcs and Regasm to proxy execution of code through a trusted Windows utility
+T1218.010,Regsvr32,Adversaries may abuse Regsvr32
+T1218.011,Rundll32,Adversaries may abuse rundll32
+T1218.012,Verclsid,Adversaries may abuse verclsid
+T1218.013,Mavinject,Adversaries may abuse mavinject
+T1218.014,MMC,Adversaries may abuse mmc
+T1216,System Script Proxy Execution,"Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files"
+T1216.001,PubPrn,Adversaries may use PubPrn to proxy execution of malicious remote files
+T1221,Template Injection,Adversaries may create or modify references in user document templates to conceal malicious code or force authentication attempts
+T1205,Traffic Signaling,Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control
+T1205.001,Port Knocking,Adversaries may use port knocking to hide open ports used for persistence or command and control
+T1205.002,Socket Filters,Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control
+T1127,Trusted Developer Utilities Proxy Execution,Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads
+T1127.001,MSBuild,Adversaries may use MSBuild to proxy execution of code through a trusted Windows utility
+T1535,Unused/Unsupported Cloud Regions,Adversaries may create cloud instances in unused geographic service regions in order to evade detection
+T1550,Use Alternate Authentication Material,"Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls"
+T1550.001,Application Access Token,"Adversaries may use stolen application access tokens to bypass the typical authentication process and access restricted accounts, information, or services on remote systems"
+T1550.002,Pass the Hash,"Adversaries may ""pass the hash"" using stolen password hashes to move laterally within an environment, bypassing normal system access controls"
+T1550.003,Pass the Ticket,"Adversaries may ""pass the ticket"" using stolen Kerberos tickets to move laterally within an environment, bypassing normal system access controls"
+T1550.004,Web Session Cookie,Adversaries can use stolen session cookies to authenticate to web applications and services
+T1078,Valid Accounts,"Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+T1078.001,Default Accounts,"Adversaries may obtain and abuse credentials of a default account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+T1078.002,Domain Accounts,"Adversaries may obtain and abuse credentials of a domain account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+T1078.003,Local Accounts,"Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+T1078.004,Cloud Accounts,"Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+T1497,Virtualization/Sandbox Evasion,Adversaries may employ various means to detect and avoid virtualization and analysis environments
+T1497.001,System Checks,Adversaries may employ various system checks to detect and avoid virtualization and analysis environments
+T1497.002,User Activity Based Checks,Adversaries may employ various user activity checks to detect and avoid virtualization and analysis environments
+T1497.003,Time Based Evasion,Adversaries may employ various time-based methods to detect and avoid virtualization and analysis environments
+T1600,Weaken Encryption,Adversaries may compromise a network device’s encryption capability in order to bypass encryption that would otherwise protect data communications
+T1600.001,Reduce Key Space,Adversaries may reduce the level of effort required to decrypt data transmitted over the network by reducing the cipher strength of encrypted communications
+T1600.002,Disable Crypto Hardware,"Adversaries disable a network device’s dedicated hardware encryption, which may enable them to leverage weaknesses in software encryption in order to reduce the effort involved in collecting, manipulating, and exfiltrating transmitted data"
+T1220,XSL Script Processing,Adversaries may bypass application control and obscure execution of code by embedding scripts inside XSL files

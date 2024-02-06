@@ -1,0 +1,74 @@
+{
+    "T1659": [
+        "Content Injection",
+        "Adversaries may gain access and continuously communicate with victims by injecting malicious content into systems through online network traffic"
+    ],
+    "T1189": [
+        "Drive-by Compromise",
+        "Adversaries may gain access to a system through a user visiting a website over the normal course of browsing"
+    ],
+    "T1190": [
+        "Exploit Public-Facing Application",
+        "Adversaries may attempt to exploit a weakness in an Internet-facing host or system to initially access a network"
+    ],
+    "T1133": [
+        "External Remote Services",
+        "Adversaries may leverage external-facing remote services to initially access and/or persist within a network"
+    ],
+    "T1200": [
+        "Hardware Additions",
+        "Adversaries may introduce computer accessories, networking hardware, or other computing devices into a system or network that can be used as a vector to gain access"
+    ],
+    "T1566": [
+        "Phishing",
+        "Adversaries may send phishing messages to gain access to victim systems"
+    ],
+    "T1566.001": [
+        "Spearphishing Attachment",
+        "Adversaries may send spearphishing emails with a malicious attachment in an attempt to gain access to victim systems"
+    ],
+    "T1566.002": [
+        "Spearphishing Link",
+        "Adversaries may send spearphishing emails with a malicious link in an attempt to gain access to victim systems"
+    ],
+    "T1566.003": [
+        "Spearphishing via Service",
+        "Adversaries may send spearphishing messages via third-party services in an attempt to gain access to victim systems"
+    ],
+    "T1566.004": [
+        "Spearphishing Voice",
+        "Adversaries may use voice communications to ultimately gain access to victim systems"
+    ],
+    "T1091": [
+        "Replication Through Removable Media",
+        "Adversaries may move onto systems, possibly those on disconnected or air-gapped networks, by copying malware to removable media and taking advantage of Autorun features when the media is inserted into a system and executes"
+    ],
+    "T1195": [
+        "Supply Chain Compromise",
+        "Adversaries may manipulate products or product delivery mechanisms prior to receipt by a final consumer for the purpose of data or system compromise"
+    ],
+    "T1195.001": [
+        "Compromise Software Dependencies and Development Tools",
+        "Adversaries may manipulate software dependencies and development tools prior to receipt by a final consumer for the purpose of data or system compromise"
+    ],
+    "T1195.002": [
+        "Compromise Software Supply Chain",
+        "Adversaries may manipulate application software prior to receipt by a final consumer for the purpose of data or system compromise"
+    ],
+    "T1195.003": [
+        "Compromise Hardware Supply Chain",
+        "Adversaries may manipulate hardware components in products prior to receipt by a final consumer for the purpose of data or system compromise"
+    ],
+    "T1199": [
+        "Trusted Relationship",
+        "Adversaries may breach or otherwise leverage organizations who have access to intended victims"
+    ],
+    "T1078": [
+        "Valid Accounts",
+        "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.001": [
+        "Default Accounts",
+        "Adversaries may obtain and abuse credentials of a default account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ]
+}

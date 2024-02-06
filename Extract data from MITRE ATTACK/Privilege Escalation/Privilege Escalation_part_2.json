@@ -1,0 +1,82 @@
+{
+    "T1547": [
+        "Boot or Logon Autostart Execution",
+        "Adversaries may configure system settings to automatically execute a program during system boot or logon to maintain persistence or gain higher-level privileges on compromised systems"
+    ],
+    "T1547.001": [
+        "Registry Run Keys / Startup Folder",
+        "Adversaries may achieve persistence by adding a program to a startup folder or referencing it with a Registry run key"
+    ],
+    "T1547.002": [
+        "Authentication Package",
+        "Adversaries may abuse authentication packages to execute DLLs when the system boots"
+    ],
+    "T1547.003": [
+        "Time Providers",
+        "Adversaries may abuse time providers to execute DLLs when the system boots"
+    ],
+    "T1547.004": [
+        "Winlogon Helper DLL",
+        "Adversaries may abuse features of Winlogon to execute DLLs and/or executables when a user logs in"
+    ],
+    "T1547.005": [
+        "Security Support Provider",
+        "Adversaries may abuse security support providers (SSPs) to execute DLLs when the system boots"
+    ],
+    "T1547.006": [
+        "Kernel Modules and Extensions",
+        "Adversaries may modify the kernel to automatically execute programs on system boot"
+    ],
+    "T1547.007": [
+        "Re-opened Applications",
+        "Adversaries may modify plist files to automatically run an application when a user logs in"
+    ],
+    "T1547.008": [
+        "LSASS Driver",
+        "Adversaries may modify or add LSASS drivers to obtain persistence on compromised systems"
+    ],
+    "T1547.009": [
+        "Shortcut Modification",
+        "Adversaries may create or modify shortcuts that can execute a program during system boot or user login"
+    ],
+    "T1547.010": [
+        "Port Monitors",
+        "Adversaries may use port monitors to run an adversary supplied DLL during system boot for persistence or privilege escalation"
+    ],
+    "T1547.012": [
+        "Print Processors",
+        "Adversaries may abuse print processors to run malicious DLLs during system boot for persistence and/or privilege escalation"
+    ],
+    "T1547.013": [
+        "XDG Autostart Entries",
+        "Adversaries may add or modify XDG Autostart Entries to execute malicious programs or commands when a user\u2019s desktop environment is loaded at login"
+    ],
+    "T1547.014": [
+        "Active Setup",
+        "Adversaries may achieve persistence by adding a Registry key to the Active Setup of the local machine"
+    ],
+    "T1547.015": [
+        "Login Items",
+        "Adversaries may add login items to execute upon user login to gain persistence or escalate privileges"
+    ],
+    "T1037": [
+        "Boot or Logon Initialization Scripts",
+        "Adversaries may use scripts automatically executed at boot or logon initialization to establish persistence"
+    ],
+    "T1037.001": [
+        "Logon Script (Windows)",
+        "Adversaries may use Windows logon scripts automatically executed at logon initialization to establish persistence"
+    ],
+    "T1037.002": [
+        "Login Hook",
+        "Adversaries may use a Login Hook to establish persistence executed upon user logon"
+    ],
+    "T1037.003": [
+        "Network Logon Script",
+        "Adversaries may use network logon scripts automatically executed at logon initialization to establish persistence"
+    ],
+    "T1037.004": [
+        "RC Scripts",
+        "Adversaries may establish persistence by modifying RC scripts which are executed during a Unix-like system\u2019s startup"
+    ]
+}

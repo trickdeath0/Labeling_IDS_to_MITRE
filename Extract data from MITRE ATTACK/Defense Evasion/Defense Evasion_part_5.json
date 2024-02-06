@@ -1,0 +1,70 @@
+{
+    "T1036.001": [
+        "Invalid Code Signature",
+        "Adversaries may attempt to mimic features of valid code signatures to increase the chance of deceiving a user, analyst, or tool"
+    ],
+    "T1036.002": [
+        "Right-to-Left Override",
+        "Adversaries may abuse the right-to-left override (RTLO or RLO) character (U+202E) to disguise a string and/or file name to make it appear benign"
+    ],
+    "T1036.003": [
+        "Rename System Utilities",
+        "Adversaries may rename legitimate system utilities to try to evade security mechanisms concerning the usage of those utilities"
+    ],
+    "T1036.004": [
+        "Masquerade Task or Service",
+        "Adversaries may attempt to manipulate the name of a task or service to make it appear legitimate or benign"
+    ],
+    "T1036.005": [
+        "Match Legitimate Name or Location",
+        "Adversaries may match or approximate the name or location of legitimate files or resources when naming/placing them"
+    ],
+    "T1036.006": [
+        "Space after Filename",
+        "Adversaries can hide a program's true filetype by changing the extension of a file"
+    ],
+    "T1036.007": [
+        "Double File Extension",
+        "Adversaries may abuse a double extension in the filename as a means of masquerading the true file type"
+    ],
+    "T1036.008": [
+        "Masquerade File Type",
+        "Adversaries may masquerade malicious payloads as legitimate files through changes to the payload's formatting, including the file\u2019s signature, extension, and contents"
+    ],
+    "T1036.009": [
+        "Break Process Trees",
+        "An adversary may attempt to evade process tree-based analysis by modifying executed malware's parent process ID (PPID)"
+    ],
+    "T1556": [
+        "Modify Authentication Process",
+        "Adversaries may modify authentication mechanisms and processes to access user credentials or enable otherwise unwarranted access to accounts"
+    ],
+    "T1556.001": [
+        "Domain Controller Authentication",
+        "Adversaries may patch the authentication process on a domain controller to bypass the typical authentication mechanisms and enable access to accounts"
+    ],
+    "T1556.002": [
+        "Password Filter DLL",
+        "Adversaries may register malicious password filter dynamic link libraries (DLLs) into the authentication process to acquire user credentials as they are validated"
+    ],
+    "T1556.003": [
+        "Pluggable Authentication Modules",
+        "Adversaries may modify pluggable authentication modules (PAM) to access user credentials or enable otherwise unwarranted access to accounts"
+    ],
+    "T1556.004": [
+        "Network Device Authentication",
+        "Adversaries may use Patch System Image to hard code a password in the operating system, thus bypassing of native authentication mechanisms for local accounts on network devices"
+    ],
+    "T1556.005": [
+        "Reversible Encryption",
+        "An adversary may abuse Active Directory authentication encryption properties to gain access to credentials on Windows systems"
+    ],
+    "T1556.006": [
+        "Multi-Factor Authentication",
+        "Adversaries may disable or modify multi-factor authentication (MFA) mechanisms to enable persistent access to compromised accounts"
+    ],
+    "T1556.007": [
+        "Hybrid Identity",
+        "Adversaries may patch, modify, or otherwise backdoor cloud authentication processes that are tied to on-premises user identities in order to bypass typical authentication mechanisms, access credentials, and enable persistent access to accounts"
+    ]
+}

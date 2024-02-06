@@ -1,8 +1,4 @@
 {
-    "T1548": [
-        "Abuse Elevation Control Mechanism",
-        "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions"
-    ],
     "T1134": [
         "Access Token Manipulation",
         "Adversaries may modify access tokens to operate under a different user or system security context to perform actions and bypass access controls"
@@ -62,6 +58,10 @@
     "T1197": [
         "BITS Jobs",
         "Adversaries may abuse BITS jobs to persistently execute code and perform various background tasks"
+    ],
+    "T1548": [
+        "Abuse Elevation Control Mechanism",
+        "Adversaries may circumvent mechanisms designed to control elevate privileges to gain higher-level permissions"
     ],
     "T1547": [
         "Boot or Logon Autostart Execution",

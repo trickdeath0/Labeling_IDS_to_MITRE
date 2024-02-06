@@ -1,0 +1,78 @@
+{
+    "T1037.005": [
+        "Startup Items",
+        "Adversaries may use startup items automatically executed at boot initialization to establish persistence"
+    ],
+    "T1543": [
+        "Create or Modify System Process",
+        "Adversaries may create or modify system-level processes to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.001": [
+        "Launch Agent",
+        "Adversaries may create or modify launch agents to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.002": [
+        "Systemd Service",
+        "Adversaries may create or modify systemd services to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.003": [
+        "Windows Service",
+        "Adversaries may create or modify Windows services to repeatedly execute malicious payloads as part of persistence"
+    ],
+    "T1543.004": [
+        "Launch Daemon",
+        "Adversaries may create or modify Launch Daemons to execute malicious payloads as part of persistence"
+    ],
+    "T1484": [
+        "Domain Policy Modification",
+        "Adversaries may modify the configuration settings of a domain to evade defenses and/or escalate privileges in domain environments"
+    ],
+    "T1484.001": [
+        "Group Policy Modification",
+        "Adversaries may modify Group Policy Objects (GPOs) to subvert the intended discretionary access controls for a domain, usually with the intention of escalating privileges on the domain"
+    ],
+    "T1484.002": [
+        "Domain Trust Modification",
+        "Adversaries may add new domain trusts or modify the properties of existing domain trusts to evade defenses and/or elevate privileges"
+    ],
+    "T1611": [
+        "Escape to Host",
+        "Adversaries may break out of a container to gain access to the underlying host"
+    ],
+    "T1546": [
+        "Event Triggered Execution",
+        "Adversaries may establish persistence and/or elevate privileges using system mechanisms that trigger execution based on specific events"
+    ],
+    "T1546.001": [
+        "Change Default File Association",
+        "Adversaries may establish persistence by executing malicious content triggered by a file type association"
+    ],
+    "T1546.002": [
+        "Screensaver",
+        "Adversaries may establish persistence by executing malicious content triggered by user inactivity"
+    ],
+    "T1546.003": [
+        "Windows Management Instrumentation Event Subscription",
+        "Adversaries may establish persistence and elevate privileges by executing malicious content triggered by a Windows Management Instrumentation (WMI) event subscription"
+    ],
+    "T1546.004": [
+        "Unix Shell Configuration Modification",
+        "Adversaries may establish persistence through executing malicious commands triggered by a user\u2019s shell"
+    ],
+    "T1546.005": [
+        "Trap",
+        "Adversaries may establish persistence by executing malicious content triggered by an interrupt signal"
+    ],
+    "T1546.006": [
+        "LC_LOAD_DYLIB Addition",
+        "Adversaries may establish persistence by executing malicious content triggered by the execution of tainted binaries"
+    ],
+    "T1546.007": [
+        "Netsh Helper DLL",
+        "Adversaries may establish persistence by executing malicious content triggered by Netsh Helper DLLs"
+    ],
+    "T1546.008": [
+        "Accessibility Features",
+        "Adversaries may establish persistence and/or elevate privileges by executing malicious content triggered by accessibility features"
+    ]
+}

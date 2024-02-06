@@ -1,0 +1,78 @@
+{
+    "T1040": [
+        "Network Sniffing",
+        "Adversaries may sniff network traffic to capture information about an environment, including authentication material passed over the network"
+    ],
+    "T1201": [
+        "Password Policy Discovery",
+        "Adversaries may attempt to access detailed information about the password policy used within an enterprise network or cloud environment"
+    ],
+    "T1120": [
+        "Peripheral Device Discovery",
+        "Adversaries may attempt to gather information about attached peripheral devices and components connected to a computer system"
+    ],
+    "T1069": [
+        "Permission Groups Discovery",
+        "Adversaries may attempt to discover group and permission settings"
+    ],
+    "T1069.001": [
+        "Local Groups",
+        "Adversaries may attempt to find local system groups and permission settings"
+    ],
+    "T1069.002": [
+        "Domain Groups",
+        "Adversaries may attempt to find domain-level groups and permission settings"
+    ],
+    "T1069.003": [
+        "Cloud Groups",
+        "Adversaries may attempt to find cloud groups and permission settings"
+    ],
+    "T1057": [
+        "Process Discovery",
+        "Adversaries may attempt to get information about running processes on a system"
+    ],
+    "T1012": [
+        "Query Registry",
+        "Adversaries may interact with the Windows Registry to gather information about the system, configuration, and installed software"
+    ],
+    "T1018": [
+        "Remote System Discovery",
+        "Adversaries may attempt to get a listing of other systems by IP address, hostname, or other logical identifier on a network that may be used for Lateral Movement from the current system"
+    ],
+    "T1518": [
+        "Software Discovery",
+        "Adversaries may attempt to get a listing of software and software versions that are installed on a system or in a cloud environment"
+    ],
+    "T1518.001": [
+        "Security Software Discovery",
+        "Adversaries may attempt to get a listing of security software, configurations, defensive tools, and sensors that are installed on a system or in a cloud environment"
+    ],
+    "T1082": [
+        "System Information Discovery",
+        "An adversary may attempt to get detailed information about the operating system and hardware, including version, patches, hotfixes, service packs, and architecture"
+    ],
+    "T1614": [
+        "System Location Discovery",
+        "Adversaries may gather information in an attempt to calculate the geographical location of a victim host"
+    ],
+    "T1614.001": [
+        "System Language Discovery",
+        "Adversaries may attempt to gather information about the system language of a victim in order to infer the geographical location of that host"
+    ],
+    "T1016": [
+        "System Network Configuration Discovery",
+        "Adversaries may look for details about the network configuration and settings, such as IP and/or MAC addresses, of systems they access or through information discovery of remote systems"
+    ],
+    "T1016.001": [
+        "Internet Connection Discovery",
+        "Adversaries may check for Internet connectivity on compromised systems"
+    ],
+    "T1016.002": [
+        "Wi-Fi Discovery",
+        "Adversaries may search for information about Wi-Fi networks, such as network names and passwords, on compromised systems"
+    ],
+    "T1049": [
+        "System Network Connections Discovery",
+        "Adversaries may attempt to get a listing of network connections to or from the compromised system they are currently accessing or from remote systems by querying for information over the network"
+    ]
+}

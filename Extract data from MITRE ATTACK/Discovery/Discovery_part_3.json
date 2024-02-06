@@ -1,0 +1,30 @@
+{
+    "T1033": [
+        "System Owner/User Discovery",
+        "Adversaries may attempt to identify the primary user, currently logged in user, set of users that commonly uses a system, or whether a user is actively using the system"
+    ],
+    "T1007": [
+        "System Service Discovery",
+        "Adversaries may try to gather information about registered local system services"
+    ],
+    "T1124": [
+        "System Time Discovery",
+        "An adversary may gather the system time and/or time zone from a local or remote system"
+    ],
+    "T1497": [
+        "Virtualization/Sandbox Evasion",
+        "Adversaries may employ various means to detect and avoid virtualization and analysis environments"
+    ],
+    "T1497.001": [
+        "System Checks",
+        "Adversaries may employ various system checks to detect and avoid virtualization and analysis environments"
+    ],
+    "T1497.002": [
+        "User Activity Based Checks",
+        "Adversaries may employ various user activity checks to detect and avoid virtualization and analysis environments"
+    ],
+    "T1497.003": [
+        "Time Based Evasion",
+        "Adversaries may employ various time-based methods to detect and avoid virtualization and analysis environments"
+    ]
+}

@@ -1,0 +1,78 @@
+{
+    "T1574": [
+        "Hijack Execution Flow",
+        "Adversaries may execute their own malicious payloads by hijacking the way operating systems run programs"
+    ],
+    "T1574.001": [
+        "DLL Search Order Hijacking",
+        "Adversaries may execute their own malicious payloads by hijacking the search order used to load DLLs"
+    ],
+    "T1574.002": [
+        "DLL Side-Loading",
+        "Adversaries may execute their own malicious payloads by side-loading DLLs"
+    ],
+    "T1574.004": [
+        "Dylib Hijacking",
+        "Adversaries may execute their own payloads by placing a malicious dynamic library (dylib) with an expected name in a path a victim application searches at runtime"
+    ],
+    "T1574.005": [
+        "Executable Installer File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by an installer"
+    ],
+    "T1574.006": [
+        "Dynamic Linker Hijacking",
+        "Adversaries may execute their own malicious payloads by hijacking environment variables the dynamic linker uses to load shared libraries"
+    ],
+    "T1574.007": [
+        "Path Interception by PATH Environment Variable",
+        "Adversaries may execute their own malicious payloads by hijacking environment variables used to load libraries"
+    ],
+    "T1574.008": [
+        "Path Interception by Search Order Hijacking",
+        "Adversaries may execute their own malicious payloads by hijacking the search order used to load other programs"
+    ],
+    "T1574.009": [
+        "Path Interception by Unquoted Path",
+        "Adversaries may execute their own malicious payloads by hijacking vulnerable file path references"
+    ],
+    "T1574.010": [
+        "Services File Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the binaries used by services"
+    ],
+    "T1574.011": [
+        "Services Registry Permissions Weakness",
+        "Adversaries may execute their own malicious payloads by hijacking the Registry entries used by services"
+    ],
+    "T1574.012": [
+        "COR_PROFILER",
+        "Adversaries may leverage the COR_PROFILER environment variable to hijack the execution flow of programs that load the "
+    ],
+    "T1574.013": [
+        "KernelCallbackTable",
+        "Adversaries may abuse the KernelCallbackTable of a process to hijack its execution flow in order to run their own payloads"
+    ],
+    "T1562": [
+        "Impair Defenses",
+        "Adversaries may maliciously modify components of a victim environment in order to hinder or disable defensive mechanisms"
+    ],
+    "T1562.001": [
+        "Disable or Modify Tools",
+        "Adversaries may modify and/or disable security tools to avoid possible detection of their malware/tools and activities"
+    ],
+    "T1562.002": [
+        "Disable Windows Event Logging",
+        "Adversaries may disable Windows event logging to limit data that can be leveraged for detections and audits"
+    ],
+    "T1562.003": [
+        "Impair Command History Logging",
+        "Adversaries may impair command history logging to hide commands they run on a compromised system"
+    ],
+    "T1562.004": [
+        "Disable or Modify System Firewall",
+        "Adversaries may disable or modify system firewalls in order to bypass controls limiting network usage"
+    ],
+    "T1562.006": [
+        "Indicator Blocking",
+        "An adversary may attempt to block indicators or events typically captured by sensors from being gathered and analyzed"
+    ]
+}

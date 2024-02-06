@@ -1,0 +1,82 @@
+{
+    "T1087": [
+        "Account Discovery",
+        "Adversaries may attempt to get a listing of valid accounts, usernames, or email addresses on a system or within a compromised environment"
+    ],
+    "T1087.001": [
+        "Local Account",
+        "Adversaries may attempt to get a listing of local system accounts"
+    ],
+    "T1087.002": [
+        "Domain Account",
+        "Adversaries may attempt to get a listing of domain accounts"
+    ],
+    "T1087.003": [
+        "Email Account",
+        "Adversaries may attempt to get a listing of email addresses and accounts"
+    ],
+    "T1087.004": [
+        "Cloud Account",
+        "Adversaries may attempt to get a listing of cloud accounts"
+    ],
+    "T1010": [
+        "Application Window Discovery",
+        "Adversaries may attempt to get a listing of open application windows"
+    ],
+    "T1217": [
+        "Browser Information Discovery",
+        "Adversaries may enumerate information about browsers to learn more about compromised environments"
+    ],
+    "T1580": [
+        "Cloud Infrastructure Discovery",
+        "An adversary may attempt to discover infrastructure and resources that are available within an infrastructure-as-a-service (IaaS) environment"
+    ],
+    "T1538": [
+        "Cloud Service Dashboard",
+        "An adversary may use a cloud service dashboard GUI with stolen credentials to gain useful information from an operational cloud environment, such as specific services, resources, and features"
+    ],
+    "T1526": [
+        "Cloud Service Discovery",
+        "An adversary may attempt to enumerate the cloud services running on a system after gaining access"
+    ],
+    "T1619": [
+        "Cloud Storage Object Discovery",
+        "Adversaries may enumerate objects in cloud storage infrastructure"
+    ],
+    "T1613": [
+        "Container and Resource Discovery",
+        "Adversaries may attempt to discover containers and other resources that are available within a containers environment"
+    ],
+    "T1622": [
+        "Debugger Evasion",
+        "Adversaries may employ various means to detect and avoid debuggers"
+    ],
+    "T1652": [
+        "Device Driver Discovery",
+        "Adversaries may attempt to enumerate local device drivers on a victim host"
+    ],
+    "T1482": [
+        "Domain Trust Discovery",
+        "Adversaries may attempt to gather information on domain trust relationships that may be used to identify lateral movement opportunities in Windows multi-domain/forest environments"
+    ],
+    "T1083": [
+        "File and Directory Discovery",
+        "Adversaries may enumerate files and directories or may search in specific locations of a host or network share for certain information within a file system"
+    ],
+    "T1615": [
+        "Group Policy Discovery",
+        "Adversaries may gather information on Group Policy settings to identify paths for privilege escalation, security measures applied within a domain, and to discover patterns in domain objects that can be manipulated or used to blend in the environment"
+    ],
+    "T1654": [
+        "Log Enumeration",
+        "Adversaries may enumerate system and service logs to find useful data"
+    ],
+    "T1046": [
+        "Network Service Discovery",
+        "Adversaries may attempt to get a listing of services running on remote hosts and local network infrastructure devices, including those that may be vulnerable to remote software exploitation"
+    ],
+    "T1135": [
+        "Network Share Discovery",
+        "Adversaries may look for folders and drives shared on remote systems as a means of identifying sources of information to gather as a precursor for Collection and to identify potential systems of interest for Lateral Movement"
+    ]
+}

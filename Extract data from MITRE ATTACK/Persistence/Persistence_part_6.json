@@ -1,0 +1,66 @@
+{
+    "T1053.006": [
+        "Systemd Timers",
+        "Adversaries may abuse systemd timers to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.007": [
+        "Container Orchestration Job",
+        "Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code"
+    ],
+    "T1505": [
+        "Server Software Component",
+        "Adversaries may abuse legitimate extensible development features of servers to establish persistent access to systems"
+    ],
+    "T1505.001": [
+        "SQL Stored Procedures",
+        "Adversaries may abuse SQL stored procedures to establish persistent access to systems"
+    ],
+    "T1505.002": [
+        "Transport Agent",
+        "Adversaries may abuse Microsoft transport agents to establish persistent access to systems"
+    ],
+    "T1505.003": [
+        "Web Shell",
+        "Adversaries may backdoor web servers with web shells to establish persistent access to systems"
+    ],
+    "T1505.004": [
+        "IIS Components",
+        "Adversaries may install malicious components that run on Internet Information Services (IIS) web servers to establish persistence"
+    ],
+    "T1505.005": [
+        "Terminal Services DLL",
+        "Adversaries may abuse components of Terminal Services to enable persistent access to systems"
+    ],
+    "T1205": [
+        "Traffic Signaling",
+        "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control"
+    ],
+    "T1205.001": [
+        "Port Knocking",
+        "Adversaries may use port knocking to hide open ports used for persistence or command and control"
+    ],
+    "T1205.002": [
+        "Socket Filters",
+        "Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control"
+    ],
+    "T1078": [
+        "Valid Accounts",
+        "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.001": [
+        "Default Accounts",
+        "Adversaries may obtain and abuse credentials of a default account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.002": [
+        "Domain Accounts",
+        "Adversaries may obtain and abuse credentials of a domain account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.003": [
+        "Local Accounts",
+        "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.004": [
+        "Cloud Accounts",
+        "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ]
+}

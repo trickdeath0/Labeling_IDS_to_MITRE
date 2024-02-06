@@ -1,0 +1,110 @@
+{
+    "T1553.004": [
+        "Install Root Certificate",
+        "Adversaries may install a root certificate on a compromised system to avoid warnings when connecting to adversary controlled web servers"
+    ],
+    "T1553.005": [
+        "Mark-of-the-Web Bypass",
+        "Adversaries may abuse specific file formats to subvert Mark-of-the-Web (MOTW) controls"
+    ],
+    "T1553.006": [
+        "Code Signing Policy Modification",
+        "Adversaries may modify code signing policies to enable execution of unsigned or self-signed code"
+    ],
+    "T1218": [
+        "System Binary Proxy Execution",
+        "Adversaries may bypass process and/or signature-based defenses by proxying execution of malicious content with signed, or otherwise trusted, binaries"
+    ],
+    "T1218.001": [
+        "Compiled HTML File",
+        "Adversaries may abuse Compiled HTML files ("
+    ],
+    "T1218.002": [
+        "Control Panel",
+        "Adversaries may abuse control"
+    ],
+    "T1218.003": [
+        "CMSTP",
+        "Adversaries may abuse CMSTP to proxy execution of malicious code"
+    ],
+    "T1218.004": [
+        "InstallUtil",
+        "Adversaries may use InstallUtil to proxy execution of code through a trusted Windows utility"
+    ],
+    "T1218.005": [
+        "Mshta",
+        "Adversaries may abuse mshta"
+    ],
+    "T1218.007": [
+        "Msiexec",
+        "Adversaries may abuse msiexec"
+    ],
+    "T1218.008": [
+        "Odbcconf",
+        "Adversaries may abuse odbcconf"
+    ],
+    "T1218.009": [
+        "Regsvcs/Regasm",
+        "Adversaries may abuse Regsvcs and Regasm to proxy execution of code through a trusted Windows utility"
+    ],
+    "T1218.010": [
+        "Regsvr32",
+        "Adversaries may abuse Regsvr32"
+    ],
+    "T1218.011": [
+        "Rundll32",
+        "Adversaries may abuse rundll32"
+    ],
+    "T1218.012": [
+        "Verclsid",
+        "Adversaries may abuse verclsid"
+    ],
+    "T1218.013": [
+        "Mavinject",
+        "Adversaries may abuse mavinject"
+    ],
+    "T1218.014": [
+        "MMC",
+        "Adversaries may abuse mmc"
+    ],
+    "T1216": [
+        "System Script Proxy Execution",
+        "Adversaries may use trusted scripts, often signed with certificates, to proxy the execution of malicious files"
+    ],
+    "T1216.001": [
+        "PubPrn",
+        "Adversaries may use PubPrn to proxy execution of malicious remote files"
+    ],
+    "T1221": [
+        "Template Injection",
+        "Adversaries may create or modify references in user document templates to conceal malicious code or force authentication attempts"
+    ],
+    "T1205": [
+        "Traffic Signaling",
+        "Adversaries may use traffic signaling to hide open ports or other malicious functionality used for persistence or command and control"
+    ],
+    "T1205.001": [
+        "Port Knocking",
+        "Adversaries may use port knocking to hide open ports used for persistence or command and control"
+    ],
+    "T1205.002": [
+        "Socket Filters",
+        "Adversaries may attach filters to a network socket to monitor then activate backdoors used for persistence or command and control"
+    ],
+    "T1127": [
+        "Trusted Developer Utilities Proxy Execution",
+        "Adversaries may take advantage of trusted developer utilities to proxy execution of malicious payloads"
+    ],
+    "T1127.001": [
+        "MSBuild",
+        "Adversaries may use MSBuild to proxy execution of code through a trusted Windows utility"
+    ],
+    "T1535": [
+        "Unused/Unsupported Cloud Regions",
+        "Adversaries may create cloud instances in unused geographic service regions in order to evade detection"
+    ],
+    "T1550": [
+        "Use Alternate Authentication Material",
+        "Adversaries may use alternate authentication material, such as password hashes, Kerberos tickets, and application access tokens, in order to move laterally within an environment and bypass normal system access controls"
+    ]
+}

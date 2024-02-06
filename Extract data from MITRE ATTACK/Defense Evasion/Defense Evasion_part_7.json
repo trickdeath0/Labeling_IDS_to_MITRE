@@ -1,0 +1,78 @@
+{
+    "T1027.004": [
+        "Compile After Delivery",
+        "Adversaries may attempt to make payloads difficult to discover and analyze by delivering files to victims as uncompiled code"
+    ],
+    "T1027.005": [
+        "Indicator Removal from Tools",
+        "Adversaries may remove indicators from tools if they believe their malicious tool was detected, quarantined, or otherwise curtailed"
+    ],
+    "T1027.006": [
+        "HTML Smuggling",
+        "Adversaries may smuggle data and files past content filters by hiding malicious payloads inside of seemingly benign HTML files"
+    ],
+    "T1027.007": [
+        "Dynamic API Resolution",
+        "Adversaries may obfuscate then dynamically resolve API functions called by their malware in order to conceal malicious functionalities and impair defensive analysis"
+    ],
+    "T1027.008": [
+        "Stripped Payloads",
+        "Adversaries may attempt to make a payload difficult to analyze by removing symbols, strings, and other human readable information"
+    ],
+    "T1027.009": [
+        "Embedded Payloads",
+        "Adversaries may embed payloads within other files to conceal malicious content from defenses"
+    ],
+    "T1027.010": [
+        "Command Obfuscation",
+        "Adversaries may obfuscate content during command execution to impede detection"
+    ],
+    "T1027.011": [
+        "Fileless Storage",
+        "Adversaries may store data in \"fileless\" formats to conceal malicious activity from defenses"
+    ],
+    "T1027.012": [
+        "LNK Icon Smuggling",
+        "Adversaries may smuggle commands to download malicious payloads past content filters by hiding them within otherwise seemingly benign windows shortcut files"
+    ],
+    "T1647": [
+        "Plist File Modification",
+        "Adversaries may modify property list files (plist files) to enable other malicious activity, while also potentially evading and bypassing system defenses"
+    ],
+    "T1542": [
+        "Pre-OS Boot",
+        "Adversaries may abuse Pre-OS Boot mechanisms as a way to establish persistence on a system"
+    ],
+    "T1542.001": [
+        "System Firmware",
+        "Adversaries may modify system firmware to persist on systems"
+    ],
+    "T1542.002": [
+        "Component Firmware",
+        "Adversaries may modify component firmware to persist on systems"
+    ],
+    "T1542.003": [
+        "Bootkit",
+        "Adversaries may use bootkits to persist on systems"
+    ],
+    "T1542.004": [
+        "ROMMONkit",
+        "Adversaries may abuse the ROM Monitor (ROMMON) by loading an unauthorized firmware with adversary code to provide persistent access and manipulate device behavior that is difficult to detect"
+    ],
+    "T1542.005": [
+        "TFTP Boot",
+        "Adversaries may abuse netbooting to load an unauthorized network device operating system from a Trivial File Transfer Protocol (TFTP) server"
+    ],
+    "T1055": [
+        "Process Injection",
+        "Adversaries may inject code into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.001": [
+        "Dynamic-link Library Injection",
+        "Adversaries may inject dynamic-link libraries (DLLs) into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ],
+    "T1055.002": [
+        "Portable Executable Injection",
+        "Adversaries may inject portable executables (PE) into processes in order to evade process-based defenses as well as possibly elevate privileges"
+    ]
+}

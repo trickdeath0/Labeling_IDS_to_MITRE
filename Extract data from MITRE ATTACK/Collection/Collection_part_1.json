@@ -1,0 +1,74 @@
+{
+    "T1557": [
+        "Adversary-in-the-Middle",
+        "Adversaries may attempt to position themselves between two or more networked devices using an adversary-in-the-middle (AiTM) technique to support follow-on behaviors such as Network Sniffing, Transmitted Data Manipulation, or replay attacks (Exploitation for Credential Access)"
+    ],
+    "T1557.001": [
+        "LLMNR/NBT-NS Poisoning and SMB Relay",
+        "By responding to LLMNR/NBT-NS network traffic, adversaries may spoof an authoritative source for name resolution to force communication with an adversary controlled system"
+    ],
+    "T1557.002": [
+        "ARP Cache Poisoning",
+        "Adversaries may poison Address Resolution Protocol (ARP) caches to position themselves between the communication of two or more networked devices"
+    ],
+    "T1557.003": [
+        "DHCP Spoofing",
+        "Adversaries may redirect network traffic to adversary-owned systems by spoofing Dynamic Host Configuration Protocol (DHCP) traffic and acting as a malicious DHCP server on the victim network"
+    ],
+    "T1560": [
+        "Archive Collected Data",
+        "An adversary may compress and/or encrypt data that is collected prior to exfiltration"
+    ],
+    "T1560.001": [
+        "Archive via Utility",
+        "Adversaries may use utilities to compress and/or encrypt collected data prior to exfiltration"
+    ],
+    "T1560.002": [
+        "Archive via Library",
+        "An adversary may compress or encrypt data that is collected prior to exfiltration using 3rd party libraries"
+    ],
+    "T1560.003": [
+        "Archive via Custom Method",
+        "An adversary may compress or encrypt data that is collected prior to exfiltration using a custom method"
+    ],
+    "T1123": [
+        "Audio Capture",
+        "An adversary can leverage a computer's peripheral devices (e"
+    ],
+    "T1119": [
+        "Automated Collection",
+        "Once established within a system or network, an adversary may use automated techniques for collecting internal data"
+    ],
+    "T1185": [
+        "Browser Session Hijacking",
+        "Adversaries may take advantage of security vulnerabilities and inherent functionality in browser software to change content, modify user-behaviors, and intercept information as part of various browser session hijacking techniques"
+    ],
+    "T1115": [
+        "Clipboard Data",
+        "Adversaries may collect data stored in the clipboard from users copying information within or between applications"
+    ],
+    "T1530": [
+        "Data from Cloud Storage",
+        "Adversaries may access data from cloud storage"
+    ],
+    "T1602": [
+        "Data from Configuration Repository",
+        "Adversaries may collect data related to managed devices from configuration repositories"
+    ],
+    "T1602.001": [
+        "SNMP (MIB Dump)",
+        "Adversaries may target the Management Information Base (MIB) to collect and/or mine valuable information in a network managed using Simple Network Management Protocol (SNMP)"
+    ],
+    "T1602.002": [
+        "Network Device Configuration Dump",
+        "Adversaries may access network configuration files to collect sensitive data about the device and the network"
+    ],
+    "T1213": [
+        "Data from Information Repositories",
+        "Adversaries may leverage information repositories to mine valuable information"
+    ],
+    "T1213.001": [
+        "Confluence",
+        "Adversaries may leverage Confluence repositories to mine valuable information"
+    ]
+}

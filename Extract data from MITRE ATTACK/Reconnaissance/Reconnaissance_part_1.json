@@ -1,0 +1,94 @@
+{
+    "T1595": [
+        "Active Scanning",
+        "Adversaries may execute active reconnaissance scans to gather information that can be used during targeting"
+    ],
+    "T1595.001": [
+        "Scanning IP Blocks",
+        "Adversaries may scan victim IP blocks to gather information that can be used during targeting"
+    ],
+    "T1595.002": [
+        "Vulnerability Scanning",
+        "Adversaries may scan victims for vulnerabilities that can be used during targeting"
+    ],
+    "T1595.003": [
+        "Wordlist Scanning",
+        "Adversaries may iteratively probe infrastructure using brute-forcing and crawling techniques"
+    ],
+    "T1592": [
+        "Gather Victim Host Information",
+        "Adversaries may gather information about the victim's hosts that can be used during targeting"
+    ],
+    "T1592.001": [
+        "Hardware",
+        "Adversaries may gather information about the victim's host hardware that can be used during targeting"
+    ],
+    "T1592.002": [
+        "Software",
+        "Adversaries may gather information about the victim's host software that can be used during targeting"
+    ],
+    "T1592.003": [
+        "Firmware",
+        "Adversaries may gather information about the victim's host firmware that can be used during targeting"
+    ],
+    "T1592.004": [
+        "Client Configurations",
+        "Adversaries may gather information about the victim's client configurations that can be used during targeting"
+    ],
+    "T1589": [
+        "Gather Victim Identity Information",
+        "Adversaries may gather information about the victim's identity that can be used during targeting"
+    ],
+    "T1589.001": [
+        "Credentials",
+        "Adversaries may gather credentials that can be used during targeting"
+    ],
+    "T1589.002": [
+        "Email Addresses",
+        "Adversaries may gather email addresses that can be used during targeting"
+    ],
+    "T1589.003": [
+        "Employee Names",
+        "Adversaries may gather employee names that can be used during targeting"
+    ],
+    "T1590": [
+        "Gather Victim Network Information",
+        "Adversaries may gather information about the victim's networks that can be used during targeting"
+    ],
+    "T1590.001": [
+        "Domain Properties",
+        "Adversaries may gather information about the victim's network domain(s) that can be used during targeting"
+    ],
+    "T1590.002": [
+        "DNS",
+        "Adversaries may gather information about the victim's DNS that can be used during targeting"
+    ],
+    "T1590.003": [
+        "Network Trust Dependencies",
+        "Adversaries may gather information about the victim's network trust dependencies that can be used during targeting"
+    ],
+    "T1590.004": [
+        "Network Topology",
+        "Adversaries may gather information about the victim's network topology that can be used during targeting"
+    ],
+    "T1590.005": [
+        "IP Addresses",
+        "Adversaries may gather the victim's IP addresses that can be used during targeting"
+    ],
+    "T1590.006": [
+        "Network Security Appliances",
+        "Adversaries may gather information about the victim's network security appliances that can be used during targeting"
+    ],
+    "T1591": [
+        "Gather Victim Org Information",
+        "Adversaries may gather information about the victim's organization that can be used during targeting"
+    ],
+    "T1591.001": [
+        "Determine Physical Locations",
+        "Adversaries may gather the victim's physical location(s) that can be used during targeting"
+    ],
+    "T1591.002": [
+        "Business Relationships",
+        "Adversaries may gather information about the victim's business relationships that can be used during targeting"
+    ]
+}

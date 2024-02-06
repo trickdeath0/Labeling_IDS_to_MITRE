@@ -1,0 +1,46 @@
+{
+    "T1053": [
+        "Scheduled Task/Job",
+        "Adversaries may abuse task scheduling functionality to facilitate initial or recurring execution of malicious code"
+    ],
+    "T1053.002": [
+        "At",
+        "Adversaries may abuse the at utility to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.003": [
+        "Cron",
+        "Adversaries may abuse the cron utility to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.005": [
+        "Scheduled Task",
+        "Adversaries may abuse the Windows Task Scheduler to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.006": [
+        "Systemd Timers",
+        "Adversaries may abuse systemd timers to perform task scheduling for initial or recurring execution of malicious code"
+    ],
+    "T1053.007": [
+        "Container Orchestration Job",
+        "Adversaries may abuse task scheduling functionality provided by container orchestration tools such as Kubernetes to schedule deployment of containers configured to execute malicious code"
+    ],
+    "T1078": [
+        "Valid Accounts",
+        "Adversaries may obtain and abuse credentials of existing accounts as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.001": [
+        "Default Accounts",
+        "Adversaries may obtain and abuse credentials of a default account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.002": [
+        "Domain Accounts",
+        "Adversaries may obtain and abuse credentials of a domain account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.003": [
+        "Local Accounts",
+        "Adversaries may obtain and abuse credentials of a local account as a means of gaining Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ],
+    "T1078.004": [
+        "Cloud Accounts",
+        "Valid accounts in cloud environments may allow adversaries to perform actions to achieve Initial Access, Persistence, Privilege Escalation, or Defense Evasion"
+    ]
+}

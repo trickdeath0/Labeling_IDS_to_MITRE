@@ -66,7 +66,7 @@ def split_and_write_json(data, max_chars, output_folder, output_filename_prefix)
         if current_chars >= max_chars:
             output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
             with open(output_filename, "w", encoding="utf-8") as fp:
-                fp.write("The information:\n")
+                #fp.write("The information:\n")
                 json.dump(current_data, fp, indent=4)
             output_files.append(output_filename)
 
@@ -78,7 +78,7 @@ def split_and_write_json(data, max_chars, output_folder, output_filename_prefix)
     if current_data:
         output_filename = f"{output_folder}/{output_filename_prefix}_{current_part}.json"
         with open(output_filename, "w", encoding="utf-8") as fp:
-            fp.write("The information:\n")
+            #fp.write("The information:\n")
             json.dump(current_data, fp, indent=4)
         output_files.append(output_filename)
 

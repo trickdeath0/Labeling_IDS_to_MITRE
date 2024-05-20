@@ -1,9 +1,9 @@
 import pandas as pd
 import matplotlib.pyplot as plt
 
-allDataSet = pd.read_csv(r"Pre fine tuning DB\Train_Test_Data\combined_data.csv")
-trainSet = pd.read_csv(r"Pre fine tuning DB\Train_Test_Data\train_data.csv")
-testSet = pd.read_csv(r"Pre fine tuning DB\Train_Test_Data\test_data.csv")
+allDataSet = pd.read_csv(r"Simster_A\Pre fine tuning DB\Train_Test_Data\combined_data.csv")
+trainSet = pd.read_csv(r"Simster_A\Pre fine tuning DB\Train_Test_Data\train_data.csv")
+testSet = pd.read_csv(r"Simster_A\Pre fine tuning DB\Train_Test_Data\test_data.csv")
 
 
 ##### ALL DATA #####

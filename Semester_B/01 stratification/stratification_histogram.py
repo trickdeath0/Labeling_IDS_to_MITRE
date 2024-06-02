@@ -4,9 +4,9 @@
 import pandas as pd 
   
 # read the dataset as csv file 
-Nir_Data = pd.read_csv(r'Simester_B\01 stratification\ground_truth.csv') 
-Our_Full_Data = pd.read_csv(r'Simester_B\01 stratification\combined_data_fix.csv')
-Our_Test_Data_300 = pd.read_csv(r'Simester_B\01 stratification\test_data_fix.csv')
+Nir_Data = pd.read_csv(r'Semester_B\01 stratification\ground_truth.csv') 
+Our_Full_Data = pd.read_csv(r'Semester_B\01 stratification\combined_data_fix.csv')
+Our_Test_Data_300 = pd.read_csv(r'Semester_B\01 stratification\test_data_fix.csv')
   
 # # drop the name column as it is of no importance here 
 Nir_Data.drop('Unnamed: 0', axis=1, inplace=True) 

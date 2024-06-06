@@ -1,0 +1,2920 @@
+Sid,Response,Technique_id,True_labels
+213,"
+ [
+   {
+     ""Sid"": ""213"",
+     ""Technique ID"": ""T1013"",
+     ""Technique Name"": ""Initial Access: Exploit Public-Facing Application"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers on a connection to a telnet server on port 23 from outside the network, which could be an attempt to exploit a public-facing application to gain initial access to the network.""
+   },
+   {
+     ""Sid"": ""213"",
+     ""Technique ID"": ""T1050"",
+     ""Technique Name"": ""Persistence: Hidden Files and Directories"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers on the presence of the string \""wh00t!\"" in the content of the connection, which could be an attempt to create a hidden file or directory for persistence.""
+   }
+ ]
+ ","['T1013', 'T1050']",['T1014']
+213,"
+ {
+   ""214_1"": {
+     ""Sid"": ""214_1"",
+     ""Technique ID"": ""T1574.001"",
+     ""Technique Name"": ""Rootkit: Linux Rootkit"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule contains the keyword \""rootkit\"", which is a type of malware that can grant unauthorized access to a system by modifying the core components of the operating system.""
+   },
+   ""214_2"": {
+     ""Sid"": ""214_2"",
+     ""Technique ID"": ""T1053.001"",
+     ""Technique Name"": ""Remote Services: SSH"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule is triggered by traffic on port 23, which is the default port for SSH, a remote access protocol.""
+   }
+ }
+ ","['T1574.001', 'T1053.001']",['T1014']
+215,"
+ [
+   {
+     ""Sid"": ""215"",
+     ""Technique ID"": ""T1036"",
+     ""Technique Name"": ""Masquerading"",
+     ""Quotes"": [
+       ""\""Attempts to disguise software, processes, or communications to appear to be part of the system or environment in which it operates.\""""
+     ],
+     ""Explanation"": ""The Snort rule detects an attempt to establish a connection to a Telnet server using a suspicious string \""d13hh[\"". This behavior is consistent with attackers attempting to masquerade as a legitimate process or communication to gain unauthorized access to the system.""
+   },
+   {
+     ""Sid"": ""215"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Remote Services"",
+     ""Quotes"": [
+       ""\""Accessing, manipulating, or exploiting remote systems or resources, such as file services (e.g., CIFS), web services (e.g., HTTP/S), mail services (e.g., SMTP/POP3), message queues (e.g., JMS), databases (e.g., SQL), or directory services (e.g., LDAP)\""""
+     ],
+     ""Explanation"": ""The Snort rule triggers when an external source attempts to connect to a Telnet service on a specific port. This aligns with the technique of using remote services to gain unauthorized access to a system.""
+   }
+ ]
+ ","['T1036', 'T1071']",['T1014']
+215,"{
+   ""Sid"": 216,
+   ""Technique ID"": ""T1491"",
+   ""Technique Name"": ""Rootkit"",
+   ""Quotes"": ""\""Linux rootkit satori attempt\"""",
+   ""Explanation"": ""The rule detects attempts by the Satori rootkit to establish a connection to a remote server on port 23.""
+ }
+ {
+   ""Sid"": 216,
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Establish Command and Control"",
+   ""Quotes"": ""\""MALWARE-BACKDOOR MISC\"""",
+   ""Explanation"": ""The rule detects attempts to establish a command and control channel with a remote server.""
+ }","['T1491', 'T1105']",['T1014']
+233,"
+ {
+   ""Sid"": ""233"",
+   ""Technique ID"": ""T1003"",
+   ""Technique Name"": ""Exploit Public-Facing Application"",
+   ""Quotes"": [
+     ""Exploit known vulnerabilities in commonly used software or other third-party software that is exposed to the Internet."",
+     ""Use a weak password to exploit common services such as SSH, Telnet, HTTP, and FTP.""
+   ],
+   ""Explanation"": ""The rule detects an attempt to exploit a vulnerability in the Trin00 service, which is a peer-to-peer file-sharing application. The attacker is attempting to connect to the Trin00 master server on port 27665 using the default startup password, which is 'betaalmostdone'.""
+ }
+ {
+   ""Sid"": ""233"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Remote Services"",
+   ""Quotes"": [
+     ""Use remote services to manage, compromise, or exfiltrate data from a system."",
+     ""Use remote services to exploit vulnerabilities, gain access, or elevate privileges on a system.""
+   ],
+   ""Explanation"": ""The rule detects an attempt to connect to a remote service on port 27665. The attacker is attempting to use the Trin00 service to gain access to or compromise a system on the internal network.""
+ }
+ ","['T1003', 'T1110']",['T1078']
+234,"
+ {
+   ""Sid"": ""234"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Credential Dumping"",
+   ""Quotes"": [
+     ""\""gOrave\"""",
+     ""\""Trin00 Attacker to Master default password\""""
+   ],
+   ""Explanation"": ""The rule triggers on a packet with the content \""gOrave\"", which relates to credential dumping.""
+ }
+ {
+   ""Sid"": ""234"",
+   ""Technique ID"": ""T1596"",
+   ""Technique Name"": ""Phishing"",
+   ""Quotes"": [
+     ""\""to_server\""""
+   ],
+   ""Explanation"": ""The rule triggers on a packet that is sent to a server, which is a common technique used in phishing.""
+ }
+ ","['T1110', 'T1596']",['T1078']
+235,"
+ {
+   ""Sid"": ""235"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Remote Services"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers on a connection to port 27665, which is associated with the Trin00 Trojan, a remote access tool that allows attackers to remotely control a compromised system.""
+ }
+ ",['T1110'],['T1078']
+237,"{
+   ""Sid"": ""237"",
+   ""Technique ID"": ""T1043"",
+   ""Technique Name"": ""Credential Stuffing"",
+   ""Quotes"": ""\""l44adsl\"""",
+   ""Explanation"": ""The Snort rule triggers on traffic that contains the string \""l44adsl\"", which is a password associated with default credentials for the Trin00 botnet. This suggests that the rule is designed to detect credential stuffing attacks, where attackers attempt to guess credentials by trying common default passwords against multiple accounts.""
+ },
+ {
+   ""Sid"": ""237"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Brute Force"",
+   ""Quotes"": ""\""Trin00 Master to Daemon default password attempt\"""",
+   ""Explanation"": ""The Snort rule specifically mentions \""Trin00 Master to Daemon default password attempt\"", indicating that it is designed to detect brute force attacks against the Trin00 botnet. Brute force attacks involve trying multiple password combinations to gain access to a system or account.""
+ }","['T1043', 'T1110']",['T1078']
+613,"{
+   ""Sid"": ""613"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [
+     ""\""Commonly used port scanning tools include Nmap, SuperScan, and Angry IP Scanner.\"""",
+     ""\""Attackers often use port scanning to identify open ports on a target system, which can then be used to launch further attacks.\""""
+   ],
+   ""Explanation"": ""The rule is looking for a SYN packet with no ACK flag set, which is a common technique used in port scanning to identify open ports on a target system.""
+ }
+ {
+   ""Sid"": ""613"",
+   ""Technique ID"": ""T1595.001"",
+   ""Technique Name"": ""Brute Force SSH - Default Credentials"",
+   ""Quotes"": [
+     ""\""Attackers often use brute force attacks to guess SSH credentials, especially if the default credentials are still in use.\"""",
+     ""\""Default SSH credentials are often weak and easy to guess, making them a common target for brute force attacks.\""""
+   ],
+   ""Explanation"": ""The rule is looking for a SYN packet with the destination port set to 10101, which is the default port for SSH. This suggests that the attacker is attempting to brute force SSH credentials on the target system.""
+ }","['T1190', 'T1595.001']","['T1018', 'T1040', 'T1046']"
+616,"{
+   ""Sid"": ""616"",
+   ""Technique ID"": ""T1046"",
+   ""Technique Name"": ""Network Service Scanning"",
+   ""Quotes"": ""\""IDENT protocol version requests\"""",
+   ""Explanation"": ""The rule triggers on IDENT protocol version requests, which is a common technique used for network service scanning to identify open ports and services on a target network.""
+ }
+ {
+   ""Sid"": ""616"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": ""\""Network service scanning\"""",
+   ""Explanation"": ""The rule is designed to detect port scanning activities, which is a technique commonly used by attackers to identify open ports and services on a target network.""
+ }","['T1046', 'T1190']","['T1018', 'T1040', 'T1046']"
+619,"{
+   ""Sid"": ""619"",
+   ""Technique ID"": ""T1498"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [
+     ""\""The actor scans specified IP addresses for open ports,\""
+   ],
+   ""Explanation"": ""The rule is used to detect reconnaissance activity (as the rule includes the tag \""attempted-recon\"") as it detects port scans coming from a source IP on the internet (EXTERNAL_NET) to a destination IP on the internal network (HOME_NET) on port 80.""
+ }
+ {
+   ""Sid"": ""619"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Endpoint Network Discovery"",
+   ""Quotes"": [
+     ""\""An endpoint establishes a covert listening channel on a different port,\""
+   ],
+   ""Explanation"": ""The rule matches packets that are going to port 80 (HTTP) from the internet (EXTERNAL_NET) to the internal network (HOME_NET). External connections to internal HTTP servers are a sign of compromised hosts that may be used as a bridgehead for further network reconnaissance.""
+ }","['T1498', 'T1190']","['T1018', 'T1040', 'T1046']"
+622,"{
+   ""Sid"": ""622"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [
+     ""\""Enumeration is an attacker’s attempt to identify hosts, services, and user accounts on a target network.\""""
+   ],
+   ""Explanation"": ""The rule is triggered when there is a SYN scan from an external IP address to an internal IP address. This type of scan is commonly used to identify open ports on the target host, which can provide valuable information to an attacker.""
+ }
+ {
+   ""Sid"": ""622"",
+   ""Technique ID"": ""T1595.003"",
+   ""Technique Name"": ""IP Sweep"",
+   ""Quotes"": [
+     ""\""IP sweeps can be used to find and identify potential targets on a network.\""""
+   ],
+   ""Explanation"": ""The rule is also triggered when there is an IP sweep from an external IP address to an internal IP address. This type of scan is typically used to identify active hosts on a network, which can provide an attacker with a list of potential targets.""
+ }","['T1190', 'T1595.003']","['T1018', 'T1040', 'T1046']"
+626,"
+ {
+   ""Sid"": ""626"",
+   ""Technique ID"": ""T1497"",
+   ""Technique Name"": ""Indicator Scanning"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for a specific string of characters (\""AAAAAAAAAAAAAAAA\"") at the beginning of a TCP packet. This pattern of characters is often used by attackers to probe for open ports and services on a network, especially port 445 used by SMB. This technique is commonly used for reconnaissance and vulnerability assessment, and the rule is designed to detect and alert on such attempts.""
+ }
+ ",['T1497'],"['T1018', 'T1040', 'T1046']"
+627,"
+ {
+   ""Sid"": ""627"",
+   ""Technique ID"": ""T1397"",
+   ""Technique Name"": ""OS Fingerprinting"",
+   ""Quotes"": [
+     ""Sends a specially-crafted packet to an endpoint to gather technical details about the system"",
+     ""May use a variety of techniques, such as TCP/IP stack fingerprinting, version banners, or ICMP fingerprinting""
+   ],
+   ""Explanation"": ""The rule triggers on the presence of an AAAAAAAAAAAAAAAAA content, which is characteristic of the SFU12 fingerprinting probe. This probe is used to determine the operating system running on a host by sending a series of specially crafted packets and analyzing the responses.""
+ },
+ {
+   ""Sid"": ""627"",
+   ""Technique ID"": ""T1402"",
+   ""Technique Name"": ""Network Sniffing"",
+   ""Quotes"": [
+     ""Monitors network traffic to intercept and read data in transit"",
+     ""May use a variety of tools, such as Wireshark, tcpdump, and Ettercap""
+   ],
+   ""Explanation"": ""The rule triggers on the presence of ack:0; flags:12FSU; content:\""AAAAAAAAAAAAAAAA\"",depth 16; which is characteristic of a network sniffing tool. These tools are used to capture and analyze network traffic, which can be used to gather sensitive information such as passwords and credentials.""
+ }
+ ","['T1397', 'T1402']","['T1018', 'T1040', 'T1046']"
+630,"{
+   ""Sid"": ""630"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [
+     ""\""The actor conducts reconnaissance of hosts using automated tools (e.g., Nmap, Nessus)\"""",
+     ""\""Port scanning is the automated process of discovering active or open ports on a target network by sending connection requests to a range of port numbers and analyzing the responses.\""""
+   ],
+   ""Explanation"": ""The rule detects packets matching a SYN scan by looking at the combination of flags (FS) and flow type (stateless), which is a typical behavior of port scanning.""
+ },
+ {
+   ""Sid"": ""630"",
+   ""Technique ID"": ""T1194"",
+   ""Technique Name"": ""Credential Harvesting"",
+   ""Quotes"": [
+     ""\""The actor collects authentication credentials from remote systems, often via automated brute-force methods.\""""
+   ],
+   ""Explanation"": ""The rule detects port scanning, which can be a precursor to credential harvesting. By scanning for open ports, the attacker can identify potential entry points for password brute-forcing attacks.""
+ }","['T1190', 'T1194']","['T1018', 'T1040', 'T1046']"
+634,"{
+ ""Sid"": ""634"",
+ ""Technique ID"": ""T1190"",
+ ""Technique Name"": ""Network Service Scanning"",
+ ""Quotes"": ""\""Performing reconnaissance on a network using a variety of methods to collect information about systems, services, or vulnerabilities\"" (MITRE ATT&CK)"",
+ ""Explanation"": ""The rule monitors for Amanda client-version requests over UDP ports 10080-10081, indicating network service scanning by an Amanda client attempting to gather information about the target network.""
+ },
+ {
+ ""Sid"": ""634"",
+ ""Technique ID"": ""T1046"",
+ ""Technique Name"": ""Port Scanning"",
+ ""Quotes"": ""\""Searching for open ports on a target host to identify potential attack vectors or information about the target\"" (MITRE ATT&CK)"",
+ ""Explanation"": ""The rule specifically looks for Amanda client-version requests, which are associated with Amanda, a network backup software, suggesting port scanning for potential vulnerabilities.""
+ }","['T1190', 'T1046']","['T1018', 'T1040', 'T1046']"
+635,"{
+   ""Sid"": ""635"",
+   ""Technique ID"": ""T1133"",
+   ""Technique Name"": ""Protocol Reconnaissance"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects XTACACS logout packets, which can be used for port scanning and protocol reconnaissance.""
+ }
+ {
+   ""Sid"": ""635"",
+   ""Technique ID"": ""T1046"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects XTACACS logout packets, which can be used for port scanning and protocol reconnaissance.""
+ }","['T1133', 'T1046']","['T1018', 'T1040', 'T1046']"
+636,"{
+   ""Sid"": ""636"",
+   ""Technique ID"": ""T1482"",
+   ""Technique Name"": ""Endpoint Denial of Service"",
+   ""Quotes"": [
+     ""\""Initiating a DOS attack by sending invalid packets to a target and waiting for the device to fall off the network\""""
+   ],
+   ""Explanation"": ""The rule triggers when a UDP packet with specific content is received on a specific port (7) from an external network to an internal network. This matches the behavior of an endpoint denial of service attack, where an attacker sends invalid packets to a target endpoint to disrupt its normal operation.""
+ }
+ {
+   ""Sid"": ""636"",
+   ""Technique ID"": ""T1450"",
+   ""Technique Name"": ""Port Scan"",
+   ""Quotes"": [
+     ""\""Scanning common ports on the victim network looking for open and listening ports\""""
+   ],
+   ""Explanation"": ""The rule triggers on UDP traffic on port 7, which is often used for port scanning. Port scanning is a technique used by attackers to identify open ports on a target network, which can provide information about potential vulnerabilities or services running on the network.""
+ }","['T1482', 'T1450']","['T1018', 'T1040', 'T1046']"
+637,"
+ {
+   ""Sid"": ""637"",
+   ""Technique ID"": ""T1492"",
+   ""Technique Name"": ""Web Service Scanning"",
+   ""Quotes"": [
+     ""Webtrends Scanner UDP Probe""
+   ],
+   ""Explanation"": ""The rule detects a UDP probe from external network to internal network. The probe contains the string \""help| quite\"", which is associated with Webtrends Scanner. Webtrends Scanner is a tool used for web service scanning, which is a technique used to identify and exploit vulnerabilities in web applications.""
+ }
+ ",['T1492'],"['T1018', 'T1040', 'T1046']"
+1090,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""1090"",
+       ""Technique ID"": ""T1203.002"",
+       ""Technique Name"": ""Remote Desktop Protocol (RDP) Hijacking"",
+       ""Quotes"": [
+         ""RDP hijacking is a type of attack in which an attacker takes advantage of a vulnerability in an RDP server to gain unauthorized access to a remote computer.""
+       ],
+       ""Explanation"": ""The rule triggers when an RDP session is established and a client attempts to authenticate using a password. This suggests that an attacker may be attempting to hijack an RDP session and gain access to the target computer.""
+     },
+     {
+       ""Sid"": ""1090"",
+       ""Technique ID"": ""T1597.001"",
+       ""Technique Name"": ""Web Shell"",
+       ""Quotes"": [
+         ""A web shell is a malicious script that is uploaded to a web server that gives an attacker remote access to the server.""
+       ],
+       ""Explanation"": ""The rule triggers when a client sends an HTTP request to a web server and includes specific content in the URI and packet data that is associated with a known web shell. This suggests that an attacker may be attempting to upload a web shell to the target server and gain remote access.""
+     }
+   ]
+ }
+ ","['T1203.002', 'T1597.001']",['T1505']
+1100,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""1100"",
+       ""Technique ID"": ""T1190"",
+       ""Technique Name"": ""Reconnaissance"",
+       ""Quotes"": [],
+       ""Explanation"": ""This rule detects a probe attempt using a specific User-Agent string, which is commonly associated with reconnaissance activities.""
+     },
+     {
+       ""Sid"": ""1100"",
+       ""Technique ID"": ""T1490"",
+       ""Technique Name"": ""Web Application Fingerprinting"",
+       ""Quotes"": [],
+       ""Explanation"": ""This rule triggers when a specific User-Agent string is detected in an HTTP header, which can be used to fingerprint web applications and gather information about their configuration.""
+     }
+   ]
+ }
+ ","['T1190', 'T1490']","['T1018', 'T1040', 'T1046']"
+1101,"{
+   ""Sid"": ""1101"",
+   ""Technique ID"": ""T1497"",
+   ""Technique Name"": ""Indicator Scanning"",
+   ""Quotes"": [
+     ""\""Webtrends Security Analyzer\""""
+   ],
+   ""Explanation"": ""The rule checks for HTTP traffic containing the user agent \""Webtrends Security Analyzer\"" which is commonly used by Webtrends Security Analyzer tool for indicator scanning.""
+ }
+ {
+   ""Sid"": ""1101"",
+   ""Technique ID"": ""T1046.001"",
+   ""Technique Name"": ""Web Application Fingerprinting"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule checks for HTTP traffic containing a User-Agent header which can be used to fingerprint web applications.""
+ }","['T1497', 'T1046.001']","['T1018', 'T1040', 'T1046']"
+1122,"{
+   ""Sid"": ""1122"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Password Spraying"",
+   ""Quotes"": [
+     """",
+     """"
+   ],
+   ""Explanation"": ""The rule is looking for an HTTP request to access the /etc/passwd file, which contains sensitive information like usernames and hashed passwords. Password spraying is a technique where an attacker tries to guess multiple passwords for a single username. By accessing the /etc/passwd file, the attacker could obtain a list of valid usernames to use for password spraying attacks.""
+ },
+ {
+   ""Sid"": ""1122"",
+   ""Technique ID"": ""T1611.002"",
+   ""Technique Name"": ""Lateral Movement via Remote Desktop Protocol (RDP)"",
+   ""Quotes"": [
+     """",
+     """"
+   ],
+   ""Explanation"": ""The rule is looking for an HTTP request to access the /etc/passwd file, which contains sensitive information like usernames and hashed passwords. RDP is a remote access protocol that allows users to connect to a remote computer over a network. By accessing the /etc/passwd file, the attacker could obtain a list of valid usernames to use for RDP attacks.""
+ }","['T1190', 'T1611.002']",['T1087']
+1129,"
+ {
+   ""Sid"": ""1129"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Exploit Public-Facing Application"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers when an HTTP request contains `.htaccess` in the URI, which may indicate an attempt to access configuration files or perform reconnaissance on a web server.""
+ }
+ 
+ {
+   ""Sid"": ""1129"",
+   ""Technique ID"": ""T1595.001"",
+   ""Technique Name"": ""Web Server Directory Traversal"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers when an HTTP request contains `.htaccess` in the URI, which may indicate an attempt to access files outside of the intended directory structure of a web server.""
+ }
+ ","['T1190', 'T1595.001']",['T1170']
+1133,"
+ [
+   {
+     ""Sid"": ""1133"",
+     ""Technique ID"": ""T1595"",
+     ""Technique Name"": ""Port Scanning"",
+     ""Quotes"": ""The adversary uses a technique to probe a target host for open ports or services."",
+     ""Explanation"": ""The rule triggers on the port scan activity and the content of the packet match with the given pattern, which we can identify this rule is related to \""Port Scanning\"" technique.""
+   },
+   {
+     ""Sid"": ""1133"",
+     ""Technique ID"": ""T1344"",
+     ""Technique Name"": ""Credential Harvesting: Password Spraying"",
+     ""Quotes"": ""The adversary uses a technique to guess credentials by attempting to authenticate with many different passwords against a target host or service."",
+     ""Explanation"": ""This rule is also related to \""Credential Harvesting: Password Spraying\"" technique as the adversary tries to brute force a password using a password spray technique.""
+   }
+ ]
+ ","['T1595', 'T1344']","['T1018', 'T1040', 'T1046']"
+1434,"
+ {
+   ""Sid"": ""1434"",
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Command and Scripting Interpreter"",
+   ""Quotes"": [
+     ""Adversaries may use available command or scripting interpreter tools to execute commands and scripts on the victim system."",
+     ""Command or scripting interpreters can be used to perform a variety of tasks, including but not limited to:""
+   ],
+   ""Explanation"": ""The Snort rule triggers when an HTTP request contains the string \""/bash_history\"", which is a file that contains a history of commands that have been executed on a system. This suggests that an attacker is attempting to access this file, potentially to obtain information about past commands that have been run on the system and use that information to escalate privileges or perform other malicious actions.""
+ }
+ {
+   ""Sid"": ""1434"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Gather Victim Host Information"",
+   ""Quotes"": [
+     ""Adversaries may gather information about the victim host to aid in planning and executing attacks.""
+   ],
+   ""Explanation"": ""The Snort rule triggers when an HTTP request contains the string \""/bash_history\"", which is a file that contains a history of commands that have been executed on a system. This suggests that an attacker is attempting to access this file, potentially to obtain information about commands that have been run and use that information to gain insights about the victim's environment and identify potential vulnerabilities to exploit.""
+ }
+ ","['T1105', 'T1110']",['T1552']
+1638,"
+ [
+   {
+     ""Sid"": ""1638"",
+     ""Technique ID"": ""T1118"",
+     ""Technique Name"": ""Remote Services Scanning"",
+     ""Quotes"": [
+       ""\""SSH Version map attempt\""""
+     ],
+     ""Explanation"": ""The Snort rule is looking for SSH version information, which is consistent with the goal of remote services scanning.""
+   },
+   {
+     ""Sid"": ""1638"",
+     ""Technique ID"": ""T1595"",
+     ""Technique Name"": ""Network Share Discovery"",
+     ""Quotes"": [
+       ""\""SSH Version map attempt\""""
+     ],
+     ""Explanation"": ""The Snort rule is looking for SSH version information, which could be used to discover network shares.""
+   }
+ ]
+ ","['T1118', 'T1595']","['T1018', 'T1040', 'T1046']"
+1817,"
+ [
+   {
+     ""Sid"": ""1817"",
+     ""Technique ID"": ""T1078"",
+     ""Technique Name"": ""Valid Accounts"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers when a login attempt is made to MS Site Server using a default login. This indicates that the attacker is attempting to use a known valid account to gain access to the system.""
+   },
+   {
+     ""Sid"": ""1817"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Exploitation for Credential Access"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers when a login attempt is made to MS Site Server using a default login. This indicates that the attacker is attempting to exploit a vulnerability in the MS Site Server software to gain access to the system.""
+   }
+ ]
+ ","['T1078', 'T1190']",['T1078']
+1859,"
+ {
+   ""Sid"": ""1859"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Brute Force"",
+   ""Quotes"": [""""],
+   ""Explanation"": ""The rule looks for attempts to access a webapp through Oracle JavaServer by using the default password. This suggests an attacker is attempting to brute force the webapp.""
+ }
+ ",['T1110'],['T1078']
+1860,"
+ [
+   {
+     ""Sid"": ""1860"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Credential Dumping"",
+     ""Quotes"": [
+       ""\""Credential Dumping\"" is a technique in which an adversary extracts credentials from a compromised system or network."",
+       ""Examples of credential dumping techniques include extracting credentials from memory, extracting credentials from a credential store, and extracting credentials from a web browser.""
+     ],
+     ""Explanation"": ""This rule triggers when a Linksys router receives a Basic authorization header containing the default password \""admin\"". This suggests that an adversary is attempting to access the router using the default credentials, which is a common credential dumping technique.""
+   },
+   {
+     ""Sid"": ""1860"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Brute Force"",
+     ""Quotes"": [
+       ""\""Brute force\"" is a technique in which an adversary attempts to guess a password or other authentication credentials by trying all possible combinations."",
+       ""Brute force attacks can be automated using tools that generate and test large numbers of possible credentials.""
+     ],
+     ""Explanation"": ""This rule triggers when a Linksys router receives a Basic authorization header containing the default password \""admin\"". While this could be a legitimate login attempt, it is also possible that an adversary is attempting to brute force the router's password by trying the default credentials.""
+   }
+ ]
+ ","['T1110', 'T1190']",['T1078']
+1861,"
+ [
+   {
+     ""Sid"": ""1861"",
+     ""Technique ID"": ""T1078"",
+     ""Technique Name"": ""Valid Accounts"",
+     ""Quotes"": [
+       ""Adversaries may attempt to access or compromise systems by using valid accounts in order to avoid detection."",
+       ""This includes using default credentials or accounts that have been compromised through other means.""
+     ],
+     ""Explanation"": ""The IDS rule is detecting attempts to log in to a Linksys router using the default username and password, which is a valid account. This suggests that the adversary may be trying to compromise the router by using a valid account to avoid detection.""
+   },
+   {
+     ""Sid"": ""1861"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Network Sniffing"",
+     ""Quotes"": [
+       ""Adversaries may sniff network traffic in order to collect credentials, session tokens, or other sensitive information."",
+       ""This can be done using a variety of tools, such as Wireshark or tcpdump.""
+     ],
+     ""Explanation"": ""The IDS rule is detecting traffic that is attempting to log in to a Linksys router using the default username and password. This suggests that the adversary may be sniffing network traffic in order to collect credentials.""
+   }
+ ]
+ ","['T1078', 'T1110']",['T1078']
+1917,"
+ {
+   ""Sid"": ""1917"",
+   ""Technique ID"": ""T1046"",
+   ""Technique Name"": ""Network Service Scanning"",
+   ""Quotes"": [
+     ""\""M-SEARCH \"""",
+     ""\""ssdp|3A|discover\""""
+   ],
+   ""Explanation"": ""The rule detects UPnP service discovery attempts, which is a technique used for network service scanning.""
+ }
+ ",['T1046'],"['T1018', 'T1040', 'T1046']"
+2041,"{
+   ""Sid"": ""2041"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Exploit Public-Facing Application"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule is looking for an xtacacs failed response. This can be an indicator of a potential attack attempt, as an attacker may be trying to exploit a vulnerability in an xtacacs server. This technique is attempting to exploit a weakness in an application that is exposed to the public internet.""
+ }
+ {
+   ""Sid"": ""2041"",
+   ""Technique ID"": ""T1598.003"",
+   ""Technique Name"": ""X.509 Certificate Validation - Subject Field"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule is looking for a failed xtacacs response. This can be an indicator of a potential attack attempt, as an attacker may be trying to exploit a vulnerability in an xtacacs server. This technique is attempting to validate the subject field of an X.509 certificate.""
+ }","['T1190', 'T1598.003']","['T1018', 'T1040', 'T1046']"
+2043,"{
+   ""Sid"": ""2043"",
+   ""Technique ID"": ""T1593"",
+   ""Technique Name"": ""Psexec"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for ISAKMP login failures, which could be an indicator of an attempt to exploit a vulnerability in the ISAKMP protocol. Psexec is a technique that can be used to remotely execute commands on a target system, and it often uses ISAKMP to establish a connection.""
+ }
+ {
+   ""Sid"": ""2043"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Exploitation for Credential Access"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for ISAKMP login failures, which could be an indicator of an attempt to exploit a vulnerability in the ISAKMP protocol. Exploitation for credential access is a technique that can be used to gain access to a target system's credentials, and it often uses ISAKMP to establish a connection.""
+ }","['T1593', 'T1190']","['T1018', 'T1040', 'T1046']"
+2145,"
+ [
+   {
+     ""Sid"": ""2145"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Password Spraying"",
+     ""Quotes"": [
+       ""\""password=admin\""""
+     ],
+     ""Explanation"": ""The rule detects attempts to log in to a web application using the default password \""admin\"". This is a common technique used in password spraying attacks, where an attacker tries to guess the password of multiple accounts using a common password.""
+   },
+   {
+     ""Sid"": ""2145"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Exploit Public-Facing Application"",
+     ""Quotes"": [
+       ""\""/admin.php\"""",
+       ""\""admin.php default password admin attempt\""""
+     ],
+     ""Explanation"": ""The rule detects attempts to exploit a vulnerability in a web application. The vulnerability is likely located in the \""admin.php\"" file, and it allows an attacker to log in to the application using the default password \""admin\"". This is a common technique used in web application attacks, where an attacker tries to exploit a vulnerability in a web application to gain access to the system.""
+   }
+ ]
+ ","['T1110', 'T1190']",['T1078']
+2146,"
+ [
+   {
+     ""Sid"": ""2146"",
+     ""Technique ID"": ""T1210.001"",
+     ""Technique Name"": ""Exploitation of Remote Services"",
+     ""Quotes"": [
+       ""\""Using brute force attack to access server resources\""""
+     ],
+     ""Explanation"": ""The rule triggers when an attempt to access the admin.php file of a TextPortal server is detected. The attacker is trying to exploit a default password (12345) to gain unauthorized access to the server.""
+   },
+   {
+     ""Sid"": ""2146"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Credential Access"",
+     ""Quotes"": [
+       ""\""Attempting to use a known default account\""""
+     ],
+     ""Explanation"": ""The rule triggers when an attempt to access the admin.php file of a TextPortal server is detected. The attacker is trying to exploit a default password (12345) to gain unauthorized access to the server.""
+   }
+ ]
+ ","['T1210.001', 'T1190']",['T1078']
+2176,"{
+   ""Sid"": ""2176"",
+   ""Technique ID"": ""T1107"",
+   ""Technique Name"": ""SMB Relay"",
+   ""Quotes"": ""\""SMB Relay is a technique that involves abusing the SMB protocol to relay messages between a victim and a malicious server.\"""",
+   ""Explanation"": ""The rule looks for SMB traffic that is attempting to access the startup folder of a Windows system. This could be an indication of an attacker attempting to gain access to the system using SMB relay.""
+ }
+ {
+   ""Sid"": ""2176"",
+   ""Technique ID"": ""T1138"",
+   ""Technique Name"": ""Access Token Manipulation"",
+   ""Quotes"": ""\""Access Token Manipulation is a technique that involves modifying the access token of a process to gain access to resources or perform actions that would not normally be allowed.\"""",
+   ""Explanation"": ""The rule looks for SMB traffic that is attempting to access the startup folder of a Windows system. This could be an indication of an attacker attempting to gain access to the system by manipulating the access token of a process.""
+ }","['T1107', 'T1138']",['T1547']
+2177,"
+ {
+   ""Sid"": ""2177"",
+   ""Technique ID"": ""T1049"",
+   ""Technique Name"": ""File and Directory Discovery"",
+   ""Quotes"": [],
+   ""Explanation"": ""This rule detects SMB packets that are trying to access the startup folder, which could be an attempt to discover files and directories on the target system.""
+ }
+ {
+   ""Sid"": ""2177"",
+   ""Technique ID"": ""T1135"",
+   ""Technique Name"": ""Network Share Discovery"",
+   ""Quotes"": [],
+   ""Explanation"": ""This rule detects SMB packets that are trying to access the startup folder, which could be an attempt to discover network shares on the target system.""
+ }
+ ","['T1049', 'T1135']",['T1547']
+2230,"
+ [
+   {
+     ""Sid"": ""2230"",
+     ""Technique ID"": ""T1110.001"",
+     ""Technique Name"": ""Credential Stuffing"",
+     ""Quotes"": [
+       ""Credential stuffing occurs when threat actors leverage known credentials to gain access.""
+     ],
+     ""Explanation"": ""The rule detects login attempts to a NetGear router using the default credentials 'admin/password'. Credential stuffing attacks involve using stolen or leaked credentials to gain unauthorized access to accounts.""
+   },
+   {
+     ""Sid"": ""2230"",
+     ""Technique ID"": ""T1598.003"",
+     ""Technique Name"": ""Brute Force"",
+     ""Quotes"": [
+       ""Brute force attacks involve using an automated enumeration utility to submit various credential combinations until the correct combination is discovered.""
+     ],
+     ""Explanation"": ""The rule looks for repeated HTTP requests with the default credentials. Brute force attacks involve repeatedly trying different credentials until the correct one is found.""
+   }
+ ]
+ ","['T1110.001', 'T1598.003']",['T1078']
+2273,"
+ [
+   {
+     ""Sid"": ""2273"",
+     ""Technique ID"": ""T1110.003"",
+     ""Technique Name"": ""Brute Force"",
+     ""Quotes"": [
+       ""Repeatedly attempt to log on to a user account with different passwords""
+     ],
+     ""Explanation"": ""The rule triggers an alert when multiple login attempts are made within a short amount of time, which could indicate a brute force attack.""
+   },
+   {
+     ""Sid"": ""2273"",
+     ""Technique ID"": ""T1598.004"",
+     ""Technique Name"": ""Logon Attempts"",
+     ""Quotes"": [
+       ""Attempt to log on to a session using various means such as a local or remote logon""
+     ],
+     ""Explanation"": ""The rule triggers an alert when a login attempt is made, which could be part of a brute force attack.""
+   }
+ ]
+ ","['T1110.003', 'T1598.004']",['T1110']
+2274,"
+ {
+   ""Sid"": ""2274"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Brute Force"",
+   ""Quotes"": [
+     ""\""POP login brute force attempt\""""
+   ],
+   ""Explanation"": ""The rule is configured to detect brute force attacks against the POP3 service. It monitors for a series of failed login attempts (30 attempts within 30 seconds) using the \""USER\"" keyword, which is a common indicator of a brute force attack.""
+ }
+ ",['T1110'],['T1110']
+2275,"
+ {
+   ""Sid"": ""2275"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Brute Force"",
+   ""Quotes"": [
+     ""\""Authentication unsuccessful\""""
+   ],
+   ""Explanation"": ""The rule triggers when there are failed login attempts on an SMTP server which is a common indicator of brute-force attacks.""
+ }
+ {
+   ""Sid"": ""2275"",
+   ""Technique ID"": ""T1598.002"",
+   ""Technique Name"": ""Credential Stuffing"",
+   ""Quotes"": [
+     ""\""SERVER-MAIL AUTH LOGON brute force attempt\""""
+   ],
+   ""Explanation"": ""The rule also mentions that it detects brute-force attempts against the SMTP server which could be an indicator of credential stuffing attacks as well.""
+ }
+ ","['T1110', 'T1598.002']",['T1110']
+2334,"
+ [
+   {
+     ""Sid"": ""2334"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Credential Dumping"",
+     ""Quotes"": [
+       ""Adversaries may attempt to dump credentials from memory to obtain cleartext passwords or hashes for later use."",
+       ""Credential dumping may involve dumping cached credentials, tokens, or other authentication information from memory.""
+     ],
+     ""Explanation"": ""The rule triggers on FTP login attempts with the username 'y049575046'. This technique is used to identify attempts to dump credentials from memory, which could include cached credentials, tokens, or other authentication information.""
+   },
+   {
+     ""Sid"": ""2334"",
+     ""Technique ID"": ""T1078"",
+     ""Technique Name"": ""Valid Accounts"",
+     ""Quotes"": [
+       ""Adversaries may attempt to authenticate to a system using valid but compromised credentials."",
+       ""Adversaries may attempt to guess or brute-force common or default credentials for a system.""
+     ],
+     ""Explanation"": ""The rule looks for login attempts using the default FTP account with the username 'y049575046'. This technique involves using valid but compromised credentials to authenticate to a system.""
+   }
+ ]
+ ","['T1190', 'T1078']",['T1078']
+2406,"{
+   ""Sid"": ""2406"",
+   ""Technique ID"": ""T1078"",
+   ""Technique Name"": ""Valid Accounts"",
+   ""Quotes"": [
+     ""\""Tactics, Techniques, and Common Knowledge (TTPs) associated with the SolarWinds supply-chain compromise were largely implemented with legitimate credentials and/or compromised privileged accounts that were granted access via a trusted relationship.\"""",
+     ""\""Legitimate accounts are an effective way to bypass authentication mechanisms and gain access to or move laterally within a network.\""""
+   ],
+   ""Explanation"": ""The rule triggers on the \""TENmanUFactOryPOWER\"" string, which is the default password for APC SmartSlot devices. Attackers may attempt to use this default password to gain unauthorized access to these devices using valid accounts.""
+ }
+ {
+   ""Sid"": ""2406"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Endpoint Denial of Service"",
+   ""Quotes"": [
+     ""\""Denial-of-service (DoS) attacks target system resources and aim to disrupt normal operations.\"""",
+     ""\""DoS attacks can be used to disrupt operations or create a distraction while other malicious activity is carried out, such as data theft or network reconnaissance.\""""
+   ],
+   ""Explanation"": ""The rule triggers on the \""TENmanUFactOryPOWER\"" string, which is the default password for APC SmartSlot devices. Attackers may attempt to use this default password to gain unauthorized access to multiple of these devices and launch a DoS attack by overwhelming them with excessive login attempts.""
+ }","['T1078', 'T1190']",['T1078']
+2578,"
+ [
+   {
+     ""Sid"": ""2578"",
+     ""Technique ID"": ""T1078"",
+     ""Technique Name"": ""Input Validation"",
+     ""Quotes"": [
+       ""An attacker can exploit input validation vulnerabilities by providing unexpected or malformed inputs to an application or system.""
+     ],
+     ""Explanation"": ""The rule triggers on oversized ASN.1 length, which may indicate an input validation vulnerability.""
+   },
+   {
+     ""Sid"": ""2578"",
+     ""Technique ID"": ""T1190"",
+     ""Technique Name"": ""Exploit Public-Facing Application"",
+     ""Quotes"": [
+       ""Attackers can exploit public-facing applications by identifying and exploiting vulnerabilities in the application code or configuration.""
+     ],
+     ""Explanation"": ""The rule triggers on an attempt to exploit a vulnerability in the Kerberos service, which is typically public-facing.""
+   }
+ ]
+ ","['T1078', 'T1190']",['T1097']
+2579,"{
+   ""Sid"": ""2579"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Credential Dumping"",
+   ""Quotes"": [
+     ""Collect credentials (for example, password hashes, Kerberos tickets) on compromised endpoints""
+   ],
+   ""Explanation"": ""The rule is looking for a TCP packet with a destination port of 88, which is the port used by the Kerberos protocol. Kerberos is a network authentication protocol that uses encryption to provide secure communication between clients and servers. The rule is looking for a specific sequence of bytes in the packet that is indicative of a Kerberos principal name overflow vulnerability. This vulnerability can be exploited to dump credentials from the compromised endpoint.""
+ }
+ {
+   ""Sid"": ""2579"",
+   ""Technique ID"": ""T1078"",
+   ""Technique Name"": ""Remote Desktop Protocol (RDP)"",
+   ""Quotes"": [
+     ""Establish interactive sessions on remote hosts via RDP, allowing attackers to execute commands, steal data, or otherwise interact with the system""
+   ],
+   ""Explanation"": ""The rule is looking for a TCP packet with a destination port of 88, which is the port used by the Kerberos protocol. Kerberos is a network authentication protocol that is often used to authenticate RDP connections. The rule is looking for a specific sequence of bytes in the packet that is indicative of a Kerberos principal name overflow vulnerability. This vulnerability can be exploited to establish an RDP connection to the compromised endpoint.""
+ }","['T1110', 'T1078']",['T1097']
+3152,"
+ [
+   {
+     ""Sid"": ""3152"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Brute Force"",
+     ""Quotes"": [
+       ""flow:to_client,established,no_stream"",
+       ""content:\""Login failed for user 'sa'\"",fast_pattern,nocase""
+     ],
+     ""Explanation"": ""The rule detects failed brute force login attempts by monitoring traffic on port 1433 (SQL Server) and looking for packets containing the message \""Login failed for user 'sa'\"". This is consistent with the behavior of brute force attacks, which involve repeatedly attempting to log in with different usernames and passwords.""
+   },
+   {
+     ""Sid"": ""3152"",
+     ""Technique ID"": ""T1598"",
+     ""Technique Name"": ""Valid Accounts"",
+     ""Quotes"": [
+       ""content:\""Login failed for user 'sa'\"",fast_pattern,nocase""
+     ],
+     ""Explanation"": ""The rule specifically looks for failed login attempts for the user 'sa', which is a common default account for SQL Server. Attackers often target default accounts because they are easy to guess and may have administrative privileges.""
+   }
+ ]
+ ","['T1110', 'T1598']",['T1110']
+3273,"[
+   {
+     ""Sid"": ""3273"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Brute Force"",
+     ""Quotes"": [
+       ""content:\""L|00|o|00|g|00|i|00|n|00| |00|f|00|a|00|i|00|l|00|e|00|d|00| |00|f|00|o|00|r|00| |00|u|00|s|00|e|00|r|00| |00|'|00|s|00|a|00|'|00\"""",
+       ""metadata:ruleset community;  reference:bugtraq,4797;  reference:cve,2000-1209;  reference:nessus,10673;  classtype:unsuccessful-user""
+     ],
+     ""Explanation"": ""The rule detects brute force attempts against SQL servers by monitoring failed login attempts with unicode characters in the username field. Brute force attacks involve repeatedly trying different combinations of usernames and passwords to gain unauthorized access to a system.""
+   },
+   {
+     ""Sid"": ""3273"",
+     ""Technique ID"": ""T1598.002"",
+     ""Technique Name"": ""SQL Injection via Unicode"",
+     ""Quotes"": [
+       ""content:\""L|00|o|00|g|00|i|00|n|00| |00|f|00|a|00|i|00|l|00|e|00|d|00| |00|f|00|o|00|r|00| |00|u|00|s|00|e|00|r|00| |00|'|00|s|00|a|00|'|00\"""",
+       ""metadata:ruleset community;  reference:bugtraq,4797;  reference:cve,2000-1209;  reference:nessus,10673;  classtype:unsuccessful-user""
+     ],
+     ""Explanation"": ""The rule detects attempts to exploit a SQL injection vulnerability using unicode characters in the username field. SQL injection attacks involve injecting malicious SQL queries into a vulnerable application to gain unauthorized access to data or execute arbitrary commands.""
+   }
+ ]","['T1110', 'T1598.002']",['T1110']
+21282,"
+ {
+   ""Sid"": ""21282"",
+   ""Technique ID"": ""T1193"",
+   ""Technique Name"": ""File and Directory Discovery"",
+   ""Quotes"": [
+     ""\""Commands to find computer files or directories of interest\""""
+   ],
+   ""Explanation"": ""The rule looks for XSL file download requests, which could be used to discover files and directories on a system.""
+ }
+ ",['T1193'],['T1220']
+21283,"{
+   ""Sid"": ""21283"",
+   ""Technique ID"": ""T1106"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [
+     ""\""XSL file attachment detected\"""",
+     ""\""flowbits:set,file.xml\""""
+   ],
+   ""Explanation"": ""The rule detects XSL file attachments, which can be used to execute malicious code on a victim's system. XSL files can be encrypted to avoid detection by IDS rules, and the rule's flowbits:set,file.xml setting indicates that the rule is designed to detect encrypted XSL files.""
+ }
+ {
+   ""Sid"": ""21283"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [
+     ""\""XSL file attachment detected\"""",
+     ""\""flowbits:set,file.xml\"""",
+     ""\""pcre:/filename=[^\n]*\\x2exsl/i\""""
+   ],
+   ""Explanation"": ""The rule detects XSL file attachments with irregular file names using a PCRE. Obfuscating file names is a technique commonly used by attackers to evade detection by IDS rules.""
+ }","['T1106', 'T1027']",['T1220']
+21284,"{
+   ""Sid"": ""21284"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Email Attachment"",
+   ""Quotes"": [
+     ""File Attachments Used to Deliver Phishing and Malware"",
+     ""Attachments containing malicious documents or scripts are often used to deliver malware or execute undesirable behavior""
+   ],
+   ""Explanation"": ""The rule is triggered by the presence of an XSL file attachment in an email. This technique is commonly used to deliver malware or execute undesirable behavior by sending malicious documents or scripts as attachments.""
+ }
+ {
+   ""Sid"": ""21284"",
+   ""Technique ID"": ""T1193"",
+   ""Technique Name"": ""Phishing"",
+   ""Quotes"": [
+     ""Phishing: Spearphishing, Whaling, and Targeted Attacks"",
+     ""Phishing emails typically lure victims into providing sensitive information, downloading malware, or clicking malicious links""
+   ],
+   ""Explanation"": ""The rule is triggered by an XSL file attachment in an email. Phishing emails often contain malicious attachments that can lead to malware infection or sensitive information disclosure.""
+ }","['T1110', 'T1193']",['T1220']
+21285,"
+ {
+   ""Sid"": ""21285"",
+   ""Technique ID"": ""T1193"",
+   ""Technique Name"": ""XSL Stylesheet Processing (XSLT)"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule is looking for traffic that is trying to download an XSLT file. XSLT files are used to transform XML documents, and can be used to extract information from XML documents or to make it easier to read. This rule is likely looking for traffic that is trying to download an XSLT file for malicious purposes, such as extracting information from a website or to use it to exploit a vulnerability in a web application.""
+ }
+ ",['T1193'],['T1220']
+21286,"
+ {
+   ""Sid"": ""21286"",
+   ""Technique ID"": ""T1106"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects XSLT file attachments, which can be used for data exfiltration or other malicious purposes. The encryption of the data makes it difficult to detect and analyze, increasing the impact of the attack.""
+ }
+ ",['T1106'],['T1220']
+21287,"
+ {
+   ""Sid"": ""21287"",
+   ""Technique ID"": ""T1112"",
+   ""Technique Name"": ""Phishing: Spearphishing Attachment"",
+   ""Quotes"": [
+     ""\""Spearphishing emails or messages are sent to a specific set of targets.\""""
+   ],
+   ""Explanation"": ""The rule triggers on XSLT file attachments, which could be used in spearphishing campaigns.""
+ }
+ {
+   ""Sid"": ""21287"",
+   ""Technique ID"": ""T1203"",
+   ""Technique Name"": ""Exploit Public-Facing Application"",
+   ""Quotes"": [
+     ""\""Attackers exploit known vulnerabilities in the application. This could involve targeting specific web applications or services exposed to the public internet.\""""
+   ],
+   ""Explanation"": ""The rule triggers on attempts to exploit a vulnerability in an SMTP server, which is a publicly accessible application.""
+ }
+ ","['T1112', 'T1203']",['T1220']
+21442,"
+ {
+   ""Sid"": ""21442"",
+   ""Technique ID"": ""T1132"",
+   ""Technique Name"": ""Remote Access Software"",
+   ""Quotes"": [
+     ""\""Use of remote access software provides attackers with remote access to targeted systems.""
+   ],
+   ""Explanation"": ""The rule triggers on HTTP traffic that contains base64-encoded data with parameters like 'bid', 'aid', 'sid', and 'rd'. This suggests an attempt to establish a remote connection to a malicious server using Remote Access Software, consistent with the T1132 technique.""
+ }
+ {
+   ""Sid"": ""21442"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Data Encoding"",
+   ""Quotes"": [
+     ""\""Adversaries may use data encoding techniques to evade detection or analysis.""
+   ],
+   ""Explanation"": ""The rule explicitly mentions 'base64_decode', indicating that the malicious data is encoded in base64. This aligns with the T1071 technique, where adversaries encode data to make it more difficult to detect or analyze, such as evading network security controls.""
+ }
+ ","['T1132', 'T1071']","['T1001', 'T1132']"
+22061,"
+ {
+   ""Sid"": ""22061"",
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Inject Web Shell"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects an attempt to load a malicious IFRAME from a remote server, which is a common technique used by attackers to inject a web shell into a website.""
+ }
+ {
+   ""Sid"": ""22061"",
+   ""Technique ID"": ""T1566.001"",
+   ""Technique Name"": ""Phishing: Spearphishing Link"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects an attempt to load a malicious IFRAME from a remote server, which could be used to deliver phishing content to a specific target.""
+ }
+ ","['T1105', 'T1566.001']",['T1102']
+23481,"{
+   ""Sid"": ""23481"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects the use of hex escaped characters in a setTimeout call, which can be used to obfuscate malicious code.""
+ }
+ {
+   ""Sid"": ""23481"",
+   ""Technique ID"": ""T1140"",
+   ""Technique Name"": ""Masquerading"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects the use of setTimeout with hex escaped characters, which can be used to masquerade malicious code as legitimate.""
+ }","['T1027', 'T1140']","['T1027', 'T1140']"
+23482,"
+ {
+   ""Sid"": ""23482"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [
+     ""\""hex escaped characters in addEventListener call\""""
+   ],
+   ""Explanation"": ""The rule detects hex escaped characters in the addEventListener call, which is a technique used to obfuscate files or information.""
+ }
+ {
+   ""Sid"": ""23482"",
+   ""Technique ID"": ""T1140"",
+   ""Technique Name"": ""Masquerading"",
+   ""Quotes"": [
+     ""\""INDICATOR-OBFUSCATION\""""
+   ],
+   ""Explanation"": ""The rule detects hex escaped characters in the addEventListener call, which could be a technique used to masquerade as legitimate traffic.""
+ }
+ ","['T1027', 'T1140']","['T1027', 'T1140']"
+23621,"
+ {
+   ""Sid"": ""23621"",
+   ""Technique ID"": ""T1037"",
+   ""Technique Name"": ""Indicator Obfuscation"",
+   ""Quotes"": [
+     ""To evade detection, adversaries may obfuscate artifacts such as files or command and control (C2) traffic""
+   ],
+   ""Explanation"": ""The rule is looking for a known packer routine with secondary obfuscation, which is a technique used to evade detection.""
+ }
+ {
+   ""Sid"": ""23621"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [
+     ""Adversaries may obfuscate data to prevent detection.""
+   ],
+   ""Explanation"": ""The rule is looking for an eval function, which is often used to obfuscate data.""
+ }
+ ","['T1037', 'T1027']","['T1027', 'T1140']"
+23636,"
+ {
+   ""Sid"": ""23636"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects obfuscated JavaScript code using the `parseInt` function. Obfuscation is a technique used to hide malicious code from detection, which is consistent with T1027.""
+ }
+ {
+   ""Sid"": ""23636"",
+   ""Technique ID"": ""T1140"",
+   ""Technique Name"": ""Masquerading"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects JavaScript code that is trying to masquerade as legitimate code by using the `parseInt` function. Masquerading is a technique used to make malicious code appear benign, which is consistent with T1140.""
+ }
+ ","['T1027', 'T1140']","['T1027', 'T1140']"
+25503,"
+ {
+   ""Sid"": ""25503"",
+   ""Technique ID"": ""T1036"",
+   ""Technique Name"": ""Masquerading"",
+   ""Quotes"": [
+     """"
+   ],
+   ""Explanation"": ""The rule looks for malicious activity related to the Necurs botnet, which often uses masquerading techniques to evade detection.""
+ }
+ ",['T1036'],['T1014']
+25504,"
+ [
+   {
+     ""Sid"": ""25504"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects traffic to a known Necurs Rootkit op.cgi, which is a common command and control server for malware.""
+   },
+   {
+     ""Sid"": ""25504"",
+     ""Technique ID"": ""T1105"",
+     ""Technique Name"": ""Injection"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects a POST request with a specific URI and content, which is a common technique used by malware to inject malicious code into a system.""
+   }
+ ]
+ ","['T1071', 'T1105']",['T1014']
+25577,"{
+   ""Sid"": ""25577"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Remote System Discovery"",
+   ""Quotes"": [
+     ""Accessing remote systems to gather information about the system (e.g., running processes, services, open ports, version information, and other configuration data)""
+   ],
+   ""Explanation"": ""The rule is looking for a specific POST request to a specific URI, which could be used to gather information about the remote system.""
+ },
+ {
+   ""Sid"": ""25577"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over C2 Channel"",
+   ""Quotes"": [
+     ""Exfiltrating data from the target system over a command and control (C2) channel""
+   ],
+   ""Explanation"": ""The rule is looking for a specific POST request to a specific URI, which could be used to exfiltrate data from the remote system.""
+ }","['T1071', 'T1041']",['T1014']
+25578,"
+ {
+   ""25578"": [
+     {
+       ""Sid"": ""25578"",
+       ""Technique ID"": ""T1574"",
+       ""Technique Name"": ""Phishing"",
+       ""Quotes"": [
+         ""\""msg:\""MALWARE-OTHER Fake postal receipt HTTP Response phishing attack\""""
+       ],
+       ""Explanation"": ""The rule is trying to detect phishing attacks that are using a fake postal receipt as a lure. Phishing is a technique that involves sending fraudulent emails or messages to trick users into giving up sensitive information or clicking on malicious links, which is exactly what this rule is trying to prevent.""
+     },
+     {
+       ""Sid"": ""25578"",
+       ""Technique ID"": ""T1071.001"",
+       ""Technique Name"": ""Spearphishing Attachment"",
+       ""Quotes"": [
+         ""\""content:\""|3B 20|filename=PostalReceipt.zip|0D 0A|\"",fast_pattern,nocase;file_data;content:\""PostalReceipt.exe\""""
+       ],
+       ""Explanation"": ""The rule is looking for a specific file attachment named \""PostalReceipt.zip\"" that contains a malicious executable file named \""PostalReceipt.exe\"". Spearphishing is a targeted phishing attack that involves sending malicious emails or messages to specific individuals or organizations. In this case, the attachment is the malicious payload.""
+     }
+   ]
+ }
+ ","['T1574', 'T1071.001']",['T1566']
+25579,"
+ [
+   {
+     ""Sid"": ""25579"",
+     ""Technique ID"": ""T1566.001"",
+     ""Technique Name"": ""Masquerading"",
+     ""Quotes"": [
+       ""\""Masquerading involves using a legitimate entity to hide malicious activities.\""""
+     ],
+     ""Explanation"": ""The rule detects a malicious HTTP response that is disguised as a legitimate booking confirmation email. This technique is used to trick users into downloading and executing malware.""
+   },
+   {
+     ""Sid"": ""25579"",
+     ""Technique ID"": ""T1189"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [
+       ""\""Phishing is the fraudulent practice of sending emails or creating websites that appear to be from a legitimate organization but are actually attempts to骗取personal and/or financial information.\""""
+     ],
+     ""Explanation"": ""The rule detects a phishing attack that uses a fake booking confirmation email to trick users into providing their personal information.""
+   }
+ ]
+ ","['T1566.001', 'T1189']",['T1566']
+25580,"
+ [
+   {
+     ""Sid"": ""25580"",
+     ""Technique ID"": ""T1140"",
+     ""Technique Name"": ""Deobfuscate/Decode Files or Information"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule looks for a specific sequence of characters in the HTTP header and file data, which could indicate an attempt to deobfuscate or decode malicious files or information.""
+   },
+   {
+     ""Sid"": ""25580"",
+     ""Technique ID"": ""T1566"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule specifically mentions phishing in its description and looks for a file named \""BookingDetails.zip\"" in the HTTP response, which could be used in a phishing attack to trick users into downloading malware.""
+   }
+ ]
+ ","['T1140', 'T1566']",['T1566']
+26261,"
+ [
+   {
+     ""Sid"": ""26261"",
+     ""Technique ID"": ""T1566.001"",
+     ""Technique Name"": ""Phishing: Spearphishing Link"",
+     ""Quotes"": [
+       ""\""MALWARE-OTHER Fake postal receipt HTTP Response phishing attack\""""
+     ],
+     ""Explanation"": ""The rule triggers on an HTTP response with a content containing the string \""Postal-Receipt.zip\"" and \""Postal-Receipt.exe\"". This suggests that the rule is designed to detect phishing attacks where an attacker sends a malicious link to a user via email or other means, and the link leads to a website or file that appears to be legitimate but is actually malicious.""
+   },
+   {
+     ""Sid"": ""26261"",
+     ""Technique ID"": ""T1189"",
+     ""Technique Name"": ""Drive-by Compromise"",
+     ""Quotes"": [],
+     ""Explanation"": ""This rule can also be used to detect drive-by compromise attacks, where an attacker compromises a legitimate website and injects malicious content into it. When a user visits the compromised website, their browser may be exploited and malware may be downloaded and installed on their computer.""
+   }
+ ]
+ ","['T1566.001', 'T1189']",['T1566']
+26286,"
+ {
+     ""techniques"": [
+         {
+             ""Sid"": ""26286"",
+             ""Technique_ID"": ""T1119"",
+             ""Technique_Name"": ""Network Service Scanning"",
+             ""Quotes"": [],
+             ""Explanation"": ""The rule is looking for connections to the host search.dnssearch.org, which is a known network service scanning tool.""
+         },
+         {
+             ""Sid"": ""26286"",
+             ""Technique_ID"": ""T1588"",
+             ""Technique_Name"": ""Domain Generation Algorithms"",
+             ""Quotes"": [],
+             ""Explanation"": ""The rule is looking for connections to the host search.dnssearch.org, which is a domain that is generated by a domain generation algorithm.""
+         }
+     ]
+ }
+ ","['T1119', 'T1588']",['T1014']
+26287,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""26287"",
+       ""Technique ID"": ""T1106"",
+       ""Technique Name"": ""Data Staged"",
+       ""Quotes"": ""The T1106 technique involves staging data on a compromised system for later use."",
+       ""Explanation"": ""The rule triggers an alert when a connection to a host known to host the Computrace client software is detected. The Computrace client software is known to be used for tracking stolen laptops and can be used to exfiltrate data from a compromised system.""
+     },
+     {
+       ""Sid"": ""26287"",
+       ""Technique ID"": ""T1567"",
+       ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+       ""Quotes"": ""The T1567 technique involves exfiltrating data over a command and control channel."",
+       ""Explanation"": ""This rule alerts on connections to a host known to host the Computrace client software. The Computrace client software can be used to exfiltrate data from a compromised system.""
+     }
+   ]
+ }
+ ","['T1106', 'T1567']",['T1014']
+26660,"
+ [
+   {
+     ""Sid"": ""26660"",
+     ""Technique ID"": ""T1193"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [
+       ""\""content:\""|3B| filename=\"""",
+       ""\""content:\""Delivery_Information_ID-\"""",
+       ""\""msg:\""MALWARE-OTHER Fake delivery information phishing attack\""""
+     ],
+     ""Explanation"": ""The Snort rule matches phishing attacks by looking for specific keywords in HTTP headers and content. This includes phrases like \""delivery information\"" and file extensions like \"".exe\"" which are commonly used in phishing emails to trick users into downloading malware.""
+   },
+   {
+     ""Sid"": ""26660"",
+     ""Technique ID"": ""T1498"",
+     ""Technique Name"": ""Malicious File"",
+     ""Quotes"": [
+       ""\""file_data\"""",
+       ""\""content:\"".exe\"""",
+       ""\""classtype:trojan-activity\""""
+     ],
+     ""Explanation"": ""This rule also looks for malicious files by checking file data and identifying the presence of executable files (\"".exe\""). This is an indication of malware being downloaded and executed on the system.""
+   }
+ ]
+ ","['T1193', 'T1498']",['T1566']
+26774,"{
+ ""Sid"": ""26774"",
+ ""Technique ID"": ""T1105"",
+ ""Technique Name"": ""Command and Control"",
+ ""Quotes"": ""The rule detects an outbound connection to a known malware command and control (C&C) server."",
+ ""Explanation"": ""The rule triggers when a TCP connection is established from an internal network to an external IP address on one of the common HTTP ports. The traffic is inspected for the presence of the string ""/loader.cpl"" in the HTTP URI and the HTTP header contains the string ""|3B 20|MSIE|20|"". Additionally, the header does not contain the string ""|0D 0A|Accept-Language:"". This combination of indicators suggests that the traffic is likely associated with a Win.Worm.Luder variant malware attempting to establish a connection to its C&C server.""
+ }
+ {
+ ""Sid"": ""26774"",
+ ""Technique ID"": ""T1566"",
+ ""Technique Name"": ""Phishing"",
+ ""Quotes"": ""The rule looks for traffic that is consistent with phishing."",
+ ""Explanation"": ""The rule triggers when a TCP connection is established from an internal network to an external IP address on one of the common HTTP ports. The traffic is inspected for the presence of the string ""/loader.cpl"" in the HTTP URI and the HTTP header contains the string ""|3B 20|MSIE|20|"". Additionally, the header does not contain the string ""|0D 0A|Accept-Language:"". This combination of indicators suggests that the traffic is likely associated with a phishing attempt.""
+ }","['T1105', 'T1566']",['T1196']
+27538,"
+ {
+   ""Sid"": ""27538"",
+   ""Technique ID"": ""T1564"",
+   ""Technique Name"": ""Modify Registry"",
+   ""Quotes"": [
+     ""Modify the registry to alter the behavior and configuration of software and the operating system."",
+     ""Create or modify registry keys and values to establish persistence, exfiltrate data, or perform other malicious actions.""
+   ],
+   ""Explanation"": ""Malwares can modify registry settings to create persistence, often creating a new registry key that points to malware executable stored on disk. This rule detects self-signed SSL certificates with the default organization name \""MyCompany Ltd\"" and can indicate attempts to modify registry settings.""
+ },
+ {
+   ""Sid"": ""27538"",
+   ""Technique ID"": ""T1098.002"",
+   ""Technique Name"": ""Self-Signed Certificate"",
+   ""Quotes"": [
+     ""Use a self-signed certificate to establish an encrypted communications channel with a remote system."",
+     ""Create and use a certificate that is not signed by a trusted certificate authority (CA)."",
+     ""This technique can be used to avoid detection by security controls that rely on certificate validation.""
+   ],
+   ""Explanation"": ""This rule detects self-signed SSL certificates with the default organization name \""MyCompany Ltd\"" and can indicate attempts to establish an encrypted communications channel using a self-signed certificate.""
+ }
+ ","['T1564', 'T1098.002']",['T1078']
+27774,"
+ {
+   ""Sid"": ""27774"",
+   ""Technique ID"": ""T1071.001"",
+   ""Technique Name"": ""Data Exfiltration Over C2 Channel"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers on HTTP POST requests containing specific data, indicating an attempt to exfiltrate data over a command and control (C2) channel.""
+ }
+ ",['T1071.001'],['T1020']
+27919,"
+ {
+   ""Sid"": ""27919"",
+   ""Technique ID"": ""T1486"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": ""\""content:\""Accept-Encoding|3A| identity, *|3B|q=0|0D 0A|\"",fast_pattern,nocase\"""",
+   ""Explanation"": ""The rule looks for encrypted data in the HTTP body, which is a technique used by malware to evade detection.""
+ }
+ ",['T1486'],['T1020']
+27966,"{
+   ""Sid"": ""27966"",
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""Establish communication with a remote system over an existing network connection.""
+   ],
+   ""Explanation"": ""The rule detects communication with a remote system over an existing network connection, which is a common technique used by malware for command and control purposes.""
+ }
+ {
+   ""Sid"": ""27966"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Data Encoding"",
+   ""Quotes"": [
+     ""Encode data to avoid detection.""
+   ],
+   ""Explanation"": ""The rule detects the use of data encoding, which is a technique commonly used by malware to evade detection.""
+ }","['T1105', 'T1110']",['T1505']
+27967,"
+ [
+   {
+     ""Sid"": ""27967"",
+     ""Technique ID"": ""T1106"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule looks for web shell activity, which is commonly used for Command and Control (C2) communications.""
+   },
+   {
+     ""Sid"": ""27967"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Data Encoding"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule looks for a specific pattern in the HTTP body, which could indicate data encoding.""
+   }
+ ]
+ ","['T1106', 'T1071']",['T1505']
+27968,"
+ [
+   {
+     ""Sid"": ""27968"",
+     ""Technique ID"": ""T1106"",
+     ""Technique Name"": ""Command and Scripting Interpreter"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects a web shell connection to a backdoor Trojan. The web shell could be used to execute commands on the target system.""
+   },
+   {
+     ""Sid"": ""27968"",
+     ""Technique ID"": ""T1105"",
+     ""Technique Name"": ""Ingress Tool Transfer"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects a web shell connection to a backdoor Trojan. The web shell could be used to transfer tools or data to or from the target system.""
+   }
+ ]
+ ","['T1106', 'T1105']",['T1505']
+28255,"
+ [
+   {
+     ""Sid"": ""28255"",
+     ""Technique ID"": ""T1105"",
+     ""Technique Name"": ""Web Shell"",
+     ""Quotes"": [
+       ""\""used phishing URLs to compromise targets with web shells that give remote access to the server\"""",
+       ""\""used web shells to maintain persistence and access compromised networks\""""
+     ],
+     ""Explanation"": ""The rule triggers on a request to a URL that includes \""/get.php?invite=\"", which is a common pattern used in phishing attacks to compromise targets with web shells.""
+   },
+   {
+     ""Sid"": ""28255"",
+     ""Technique ID"": ""T1566"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [
+       ""\""used phishing emails to deliver malicious attachments\"""",
+       ""\""used phishing links in emails to deliver malware\""""
+     ],
+     ""Explanation"": ""The rule triggers on a request to a URL that includes \""/get.php?invite=\"", which is a common pattern used in phishing attacks to trick users into clicking on malicious links or opening attachments.""
+   }
+ ]
+ ","['T1105', 'T1566']",['T1566']
+28323,"
+ [
+   {
+     ""Sid"": ""28323"",
+     ""Technique ID"": ""T1133"",
+     ""Technique Name"": ""Web Shell"",
+     ""Quotes"": [
+       ""The Win.Backdoor.Chopper web shell connection identifies compromised web servers with a Chinese backdoor, likely used for further attacks or compromise."",
+       ""Attackers often use web shells to provide unauthenticated remote access to a compromised system.""
+     ],
+     ""Explanation"": ""The provided rule looks for web shells based on the presence of a \""FromBase64String\"" header and \""z\"" content within the HTTP request body, which is a common technique used by attackers to execute malicious code on a web server.""
+   },
+   {
+     ""Sid"": ""28323"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Remote File Copy"",
+     ""Quotes"": [
+       ""The use of the \""FromBase64String\"" header and \""z\"" content suggest that the attacker is possibly downloading a malicious file from a remote server.""
+     ],
+     ""Explanation"": ""The rule also checks for the presence of a \""FromBase64String\"" header, which can be used to decode base64-encoded data. This indicates that the attacker may be attempting to download a malicious file from a remote server.""
+   }
+ ]
+ ","['T1133', 'T1110']",['T1505']
+28344,"
+ {
+   ""Sid"": ""28344"",
+   ""Technique ID"": ""T1177"",
+   ""Technique Name"": ""SQL Injection"",
+   ""Quotes"": ""\""CHR(\"","",
+   ""Explanation"": ""The rule detects multiple calls to the \""CHR()\"" function, which may be used to bypass SQL injection filters and obfuscate malicious SQL statements.""
+ }
+ {
+   ""Sid"": ""28344"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Command and Control"",
+   ""Quotes"": ""\""CHR(\"","",
+   ""Explanation"": ""The rule may also detect attempts to obfuscate command and control communications by using encoded strings, including the \""CHR()\"" function.""
+ }
+ ","['T1177', 'T1027']","['T1027', 'T1140', 'T1190']"
+28345,"
+ {
+   ""Sid"": ""28345"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [
+     ""\""Javascript obfuscation - split - seen in IFRAMEr Tool attack\""""
+   ],
+   ""Explanation"": ""The rule detects obfuscated JavaScript code using the split() function, which is a common technique used to evade detection by security controls.""
+ }
+ {
+   ""Sid"": ""28345"",
+   ""Technique ID"": ""T1140"",
+   ""Technique Name"": ""Deobfuscate/Decode Files or Information"",
+   ""Quotes"": [
+     ""\""Javascript obfuscation - split - seen in IFRAMEr Tool attack\""""
+   ],
+   ""Explanation"": ""The rule detects obfuscated JavaScript code using the split() function, which requires decoding to understand the malicious content.""
+ }
+ ","['T1027', 'T1140']","['T1027', 'T1140']"
+28346,"{""Sid"": ""28346"", ""Technique ID"": ""T1027"", ""Technique Name"": ""Obfuscated Files or Information"", ""Quotes"": null, ""Explanation"": ""The Snort rule detects obfuscated Javascript code within an IFRAME, which is a common technique used by attackers to evade detection and analysis.""},
+ {""Sid"": ""28346"", ""Technique ID"": ""T1140"", ""Technique Name"": ""Deobfuscate/Decode Files or Information"", ""Quotes"": null, ""Explanation"": ""The Snort rule detects obfuscated Javascript code, which requires deobfuscation to extract the malicious payload.""}","['T1027', 'T1140']","['T1027', 'T1140']"
+28420,"
+ [
+   {
+     ""Sid"": ""28420"",
+     ""Technique ID"": ""T1027"",
+     ""Technique Name"": ""Obfuscated Files or Information"",
+     ""Quotes"": [
+       ""|22|c|22|+|22|r|22 3A|2+|22|e|22|+|22|a|22|+|22|t|22|+|22|e|22|+|22|E|22|+|22|l|22|+|22|e|22|+|22|m|22|+((f)?|22|e|22|+|22|n|22|+|22|t|22 3A 22 22|""
+     ],
+     ""Explanation"": ""Indicator- Obfuscation is a technique used to obscure the true meaning or purpose of files or information (e.g., encrypting, encoding, compressing). It is being used to bypass detection and analysis.""
+   },
+   {
+     ""Sid"": ""28420"",
+     ""Technique ID"": ""T1140"",
+     ""Technique Name"": ""Deobfuscate/Decode Files or Information"",
+     ""Quotes"": [
+       ""|22|c|22|+|22|r|22 3A|2+|22|e|22|+|22|a|22|+|22|t|22|+|22|e|22|+|22|E|22|+|22|l|22|+|22|e|22|+|22|m|22|+((f)?|22|e|22|+|22|n|22|+|22|t|22 3A 22 22|""
+     ],
+     ""Explanation"": ""Techniques used to reverse the obfuscation process and extract the original, meaningful information.""
+   }
+ ]
+ ","['T1027', 'T1140']","['T1027', 'T1140']"
+28421,"
+ {
+   ""Sid"": ""28421"",
+   ""Technique ID"": ""T1140"",
+   ""Technique Name"": ""Deobfuscate/Decode Files or Information"",
+   ""Quotes"": [
+     """"
+   ],
+   ""Explanation"": ""The rule detects obfuscated javascript code that is decoded using fromCharCode function. This technique is commonly used to evade detection by security tools.""
+ }
+ {
+   ""Sid"": ""28421"",
+   ""Technique ID"": ""T1027"",
+   ""Technique Name"": ""Obfuscated Files or Information"",
+   ""Quotes"": [
+     """"
+   ],
+   ""Explanation"": ""The rule detects obfuscated javascript code, which is an example of obfuscated files or information.""
+ }
+ ","['T1140', 'T1027']","['T1027', 'T1140']"
+28552,"
+ {
+   ""Sid"": ""28552"",
+   ""Technique ID"": ""T1046"",
+   ""Technique Name"": ""Port Scanning"",
+   ""Quotes"": [
+     ""Attempts to connect to a range of addresses on a target network in order to identify open ports..""
+   ],
+   ""Explanation"": ""The rule triggers on traffic to port 2425, which is used by the IPTUX messenger service. This traffic may be indicative of port scanning, as the attacker is attempting to identify open ports on the target network.""
+ }
+ {
+   ""Sid"": ""28552"",
+   ""Technique ID"": ""T1040"",
+   ""Technique Name"": ""Network Service Scanning"",
+   ""Quotes"": [
+     ""Attempts to identify network services running on a remote host..""
+   ],
+   ""Explanation"": ""The rule also triggers on traffic containing the string ""iptux"", which is associated with the IPTUX messenger service. This traffic may be indicative of network service scanning, as the attacker is attempting to identify specific services running on the target network.""
+ }
+ ","['T1046', 'T1040']","['T1018', 'T1040', 'T1046']"
+28976,"
+ [
+   {
+     ""Sid"": ""28976"",
+     ""Technique ID"": ""T1048"",
+     ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+     ""Quotes"": [
+       ""\""|3B| name=|22|arquivo|22 3B| filename=|22|C:|5C|\""""
+     ],
+     ""Explanation"": ""The rule triggers on exfiltration activity, specifically on the presence of the string \""name=arquivo filename=C:\\\"" in the HTTP body, which is a common pattern associated with data exfiltration over a command and control channel.""
+   },
+   {
+     ""Sid"": ""28976"",
+     ""Technique ID"": ""T1568"",
+     ""Technique Name"": ""Data Encoding"",
+     ""Quotes"": [
+       ""\""|0D 0A|TP=\""""
+     ],
+     ""Explanation"": ""The rule also checks for the presence of the string \""|0D 0A|TP=\"", which suggests that the exfiltrated data may be encoded in some way. Data encoding is a common technique used by attackers to obfuscate the contents of exfiltrated data.""
+   }
+ ]
+ ","['T1048', 'T1568']",['T1020']
+29031,"
+ [
+   {
+     ""Sid"": ""29031"",
+     ""Technique ID"": ""T1099"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [
+       ""\""Command and control (C2) is the communication between a remote attacker and a compromised system for the purpose of controlling that system\""""
+     ],
+     ""Explanation"": ""The rule is related to a malware (Trojan) that is attempting to establish an inbound connection to a host on the internal network. The malware is attempting to download a file from a remote server, which is likely a command and control server.""
+   },
+   {
+     ""Sid"": ""29031"",
+     ""Technique ID"": ""T1134"",
+     ""Technique Name"": ""File and Directory Discovery"",
+     ""Quotes"": [
+       ""\""File and directory discovery is the process of locating files and directories on a system\""""
+     ],
+     ""Explanation"": ""The rule is related to a malware (Trojan) that is attempting to download a file from a remote server. The malware is likely attempting to discover files and directories on the system in order to find sensitive information.""
+   }
+ ]
+ ","['T1099', 'T1134']",['T1102']
+29261,"
+ [
+   {
+     ""Sid"": ""29261"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [
+       ""\""outgound connection\""""
+     ],
+     ""Explanation"": ""This rule detects outbound connections to a known Command and Control server, indicating that a malware infection may be attempting to communicate with its command server.""
+   },
+   {
+     ""Sid"": ""29261"",
+     ""Technique ID"": ""T1132"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": [
+       ""\""FileToDownload.exe\""""
+     ],
+     ""Explanation"": ""This rule detects an attempt to exfiltrate a file named \""FileToDownload.exe\"" to an external server, suggesting that the malware is attempting to exfiltrate data to a remote location.""
+   }
+ ]
+ ","['T1071', 'T1132']",['T1102']
+29379,"[
+   {
+     ""Sid"": ""29379"",
+     ""Technique ID"": ""T1048"",
+     ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+     ""Quotes"": [
+       ""|03 2B 82 86 02 A0 05|""
+     ],
+     ""Explanation"": ""The rule detects outbound encrypted traffic from a known malware dropper, indicating a potential attempt to exfiltrate data over a command and control channel.""
+   },
+   {
+     ""Sid"": ""29379"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": [
+       ""outbound encrypted traffic - potential exfiltration""
+     ],
+     ""Explanation"": ""The rule specifically mentions the potential for data exfiltration, suggesting that the detected activity is related to the exfiltration of sensitive information.""
+   }
+ ]","['T1048', 'T1071']",['T1020']
+29396,"
+ [
+   {
+     ""Sid"": ""29396"",
+     ""Technique ID"": ""T1566.001"",
+     ""Technique Name"": ""Phishing: Spearphishing Attachment"",
+     ""Quotes"": [
+       ""Spearphishing emails often contain malicious attachments that the user is tricked into opening."",
+       ""The attachment may be a weaponized document or a compressed file containing malware.""
+     ],
+     ""Explanation"": ""The rule detects phishing emails with .zip receipt filename download with .exe name within .zip. Phishing emails often contain malicious attachments that the user is tricked into opening.""
+   },
+   {
+     ""Sid"": ""29396"",
+     ""Technique ID"": ""T1074"",
+     ""Technique Name"": ""Data Encoding: Steganography"",
+     ""Quotes"": [
+       ""Adversaries may hide their communications in an innocuous file, such as an image, audio file, or video."",
+       ""The adversary may embed the malicious content in the file using steganography techniques.""
+     ],
+     ""Explanation"": ""The rule detects PK file data. Steganography is the practice of hiding data within another file. PK is the magic number for a ZIP file, which could be used to hide malicious content.""
+   }
+ ]
+ ","['T1566.001', 'T1074']",['T1566']
+29397,"{
+   ""Sid"": ""29397"",
+   ""Technique ID"": ""T1566.001"",
+   ""Technique Name"": ""Phishing: Spearphishing Attachment"",
+   ""Quotes"": [
+     ""\""Spearphishing emails often contain malicious attachments, such as weaponized Microsoft Office documents or ZIP archives, that, when opened, run malicious code on the recipient’s computer\"""",
+     ""\""Spearphishing is a targeted attack, so attachments are crafted to be interesting or relevant to the user\""""
+   ],
+   ""Explanation"": ""The rule detects phishing attacks that use .zip files containing .exe files with names that include the word \""shipping\"". This is a common tactic used in spearphishing attacks, where attackers send targeted emails with malicious attachments to specific individuals or organizations.""
+ }
+ {
+   ""Sid"": ""29397"",
+   ""Technique ID"": ""T1574.003"",
+   ""Technique Name"": ""Phishing: Malicious File"",
+   ""Quotes"": [
+     ""\""Attackers may also embed malicious files in emails\"""",
+     ""\""Malicious files may be attached to emails or downloaded from phishing websites\""""
+   ],
+   ""Explanation"": ""The rule detects phishing attacks that use malicious .zip files containing .exe files. This is a common tactic used in phishing attacks, where attackers send emails with malicious attachments that, when opened, can infect the recipient's computer with malware.""
+ }","['T1566.001', 'T1574.003']",['T1566']
+29398,"
+ {
+   ""Sid"": ""29398"",
+   ""Technique ID"": ""T1566"",
+   ""Technique Name"": ""Phishing"",
+   ""Quotes"": [],
+   ""Explanation"": ""This rule detects potential phishing attacks by looking for a specific pattern in the HTTP traffic. The pattern includes a filename that contains the word \""voicemail\"" and ends with \"".zip\"", and the content of the ZIP file includes an executable file with the name \"".exe\"". This pattern is commonly used in phishing attacks to trick users into downloading and executing malicious files.""
+ }
+ ",['T1566'],['T1566']
+29399,"JSON
+ {
+   ""Sid"": ""29399"",
+   ""Technique ID"": ""T1566.001"",
+   ""Technique Name"": ""Phishing: Spearphishing Attachment"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects phishing attacks that use ZIP attachments with EXE files within the ZIP. Phishing attacks often use spearphishing emails to deliver malicious attachments, and this rule specifically looks for attachments with specific naming conventions that are commonly used in phishing campaigns.""
+ }
+ {
+   ""Sid"": ""29399"",
+   ""Technique ID"": ""T1189"",
+   ""Technique Name"": ""Masquerading: File Attribute Modification"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule also checks for the presence of the 'PK' header within the first 2 bytes of the file and the '.exe' extension within the first 50 bytes of the file. These checks are used to identify malicious files that have been disguised as legitimate files by modifying their file attributes.""
+ }
+ ","['T1566.001', 'T1189']",['T1566']
+29789,"
+ [
+   {
+     ""Sid"": ""29789"",
+     ""Technique ID"": ""T1135"",
+     ""Technique Name"": ""Ingress Tool Transfer"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects inbound HTTP traffic to specific ports that contains a URI indicative of a malware plugin download. This suggests an attacker is attempting to transfer a tool to a system within the network.""
+   },
+   {
+     ""Sid"": ""29789"",
+     ""Technique ID"": ""T1574.003"",
+     ""Technique Name"": ""Modify Registry"",
+     ""Quotes"": [],
+     ""Explanation"": ""Malware often modifies the registry to maintain persistence or alter system settings. The rule may detect attempts to modify the registry as part of the malware installation process.""
+   }
+ ]
+ ","['T1135', 'T1574.003']",['T1176']
+29790,"
+ [
+   {
+     ""Sid"": ""29790"",
+     ""Technique ID"": ""T1135"",
+     ""Technique Name"": ""External Remote Services"",
+     ""Quotes"": [
+       ""\""The cybercriminal instructed the employee to download Win.Trojan.Careto using the URL, /l/af_l_addon.xpi.\""""
+     ],
+     ""Explanation"": ""The rule detects a connection to an external remote service that is used to download a malicious plugin, which indicates the use of external remote services for malicious purposes.""
+   },
+   {
+     ""Sid"": ""29790"",
+     ""Technique ID"": ""T1574"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [
+       ""\""The cybercriminal instructed the employee to download Win.Trojan.Careto using the URL, /l/af_l_addon.xpi.\""""
+     ],
+     ""Explanation"": ""The rule detects a phishing attempt where the malicious plugin is disguised as a legitimate software update or add-on, tricking the victim into downloading and installing it.""
+   }
+ ]
+ ","['T1135', 'T1574']",['T1176']
+29791,"
+ {
+   ""Sid"": ""29791"",
+   ""Technique ID"": ""T1134"",
+   ""Technique Name"": ""File Download"",
+   ""Quotes"": [
+     ""\""Downloading files from a remote system could be a sign of malware attempting to download additional components or exfiltrate data from the compromised system.\""""
+   ],
+   ""Explanation"": ""The rule detects an attempt to download a malicious file, which could be used by malware to establish a command-and-control connection or exfiltrate data.""
+ }
+ {
+   ""Sid"": ""29791"",
+   ""Technique ID"": ""T1128"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""\""Malware often communicates with a command and control (C2) server to receive instructions, exfiltrate data, or receive updates.\""""
+   ],
+   ""Explanation"": ""The rule detects an attempt to establish a connection to a known malware command-and-control server, which could be used by malware to receive instructions or exfiltrate data.""
+ }
+ ","['T1134', 'T1128']",['T1176']
+29869,"
+ [
+   {
+     ""Sid"": ""29869"",
+     ""Technique ID"": ""T1105"",
+     ""Technique Name"": ""Phishing for Credentials"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers on traffic containing \""facebook.com.exe\"" which suggests that the traffic is likely related to a phishing attempt. Phishing is a technique used to trick users into providing their credentials by sending emails or messages that appear to come from a legitimate source.""
+   },
+   {
+     ""Sid"": ""29869"",
+     ""Technique ID"": ""T1566"",
+     ""Technique Name"": ""Indicator Removal on Host"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers on traffic containing \""facebook.com.exe\"" which suggests that the traffic is likely related to malware. Malware can use techniques like Indicator Removal on Host to remove traces of itself from the system, making it harder to detect.""
+   }
+ ]
+ ","['T1105', 'T1566']",['T1566']
+30003,"
+ [
+   {
+     ""Sid"": ""30003"",
+     ""Technique ID"": ""T1189"",
+     ""Technique Name"": ""Drive-by Compromise"",
+     ""Quotes"": [""\""the attackers are leveraging interest in trending topics to lure victims to malicious websites \"""", ""\""JSUnpack is an advanced JavaScript obfuscator that produces a single flow JavaScript file from multiple input JavaScript files\""],
+     ""Explanation"": ""The rule triggers once a client from HOME_NET reaches out to a server on EXTERNAL_NET on HTTP ports and downloads malicious JavaScript payload""
+   },
+   {
+     ""Sid"": ""30003"",
+     ""Technique ID"": ""T1204"",
+     ""Technique Name"": ""User Execution"",
+     ""Quotes"": [""\""the attackers are leveraging interest in trending topics to lure victims to malicious websites\""],
+     ""Explanation"": ""The rule triggers once a client from HOME_NET reaches out to a server on EXTERNAL_NET on HTTP ports and downloads malicious JavaScript payload""
+   }
+ ]
+ ","['T1189', 'T1204']",['T1189']
+30567,"
+ [
+   {
+     ""Sid"": ""30567"",
+     ""Technique ID"": ""T1193"",
+     ""Technique Name"": ""Phishing for Information"",
+     ""Quotes"": [
+       ""\""Win.Trojan.Agent E-FAX phishing attempt\""""
+     ],
+     ""Explanation"": ""The rule triggers on phishing attempts using EFAX attachments. Phishing is a technique used to obtain information by impersonating a trusted entity.""
+   },
+   {
+     ""Sid"": ""30567"",
+     ""Technique ID"": ""T1497"",
+     ""Technique Name"": ""Evasion: File Carving"",
+     ""Quotes"": [
+       ""content:\"".pif\"",distance 0,nocase""
+     ],
+     ""Explanation"": ""The rule looks for PIF files, which can be used to bypass file-based security controls. File carving involves extracting specific data from a file, which can be used to evade detection.""
+   }
+ ]
+ ","['T1193', 'T1497']",['T1566']
+30568,"{
+   ""Sid"": ""30568"",
+   ""Technique ID"": ""T1199"",
+   ""Technique Name"": ""Phishing for Information"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers when there is an attempt to access a phishing website using the HTTP protocol. The website is disguised behind a legitimate company, which is E-Fax, and contains a malicious ZIP file.""
+ }",['T1199'],['T1566']
+30569,"
+ [
+   {
+     ""Sid"": ""30569"",
+     ""Technique ID"": ""T1039"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [
+       ""\""Funeral ceremony phishing attempt\""""
+     ],
+     ""Explanation"": ""The rule detects phishing attempts that use emails with attachments containing the keyword \""FuneralCeremony_\"" in the filename and the \"".exe\"" extension.""
+   },
+   {
+     ""Sid"": ""30569"",
+     ""Technique ID"": ""T1189"",
+     ""Technique Name"": ""Drive-by Compromise"",
+     ""Quotes"": [
+       ""\""Win.Trojan.Agent\""""
+     ],
+     ""Explanation"": ""The rule detects drive-by compromise attempts that use a Trojan to infect the victim's computer.""
+   }
+ ]
+ ","['T1039', 'T1189']",['T1566']
+31070,"
+ {
+   ""Sid"": ""31070"",
+   ""Technique ID"": ""T1567.001"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""Techniques that steal data over C2 channels typically use the same methods that are used for C2 communications or may steal data within a C2 message itself.""
+   ],
+   ""Explanation"": ""The rule detects outbound connections to known C2 servers and specifically looks for POST requests with a specific URI and header, which is indicative of data exfiltration over a C2 channel.""
+ },
+ {
+   ""Sid"": ""31070"",
+   ""Technique ID"": ""T1132"",
+   ""Technique Name"": ""Data Encoding"",
+   ""Quotes"": [
+     ""Data encoding techniques hide malicious content within seemingly innocuous data.""
+   ],
+   ""Explanation"": ""The rule looks for specific patterns in the HTTP request that are indicative of data encoding, such as the presence of a specific header or the absence of certain headers.""
+ }
+ ","['T1567.001', 'T1132']",['T1014']
+31830,"[
+   {
+     ""Sid"": ""31830"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Credential Dumping"",
+     ""Quotes"": [],
+     ""Explanation"": ""The Snort rule triggers on attempts to log into an FTP server using the default credentials. Credential dumping involves obtaining credentials from a system or device, often through malicious software or phishing attacks. In this case, the attacker is attempting to dump the credentials for the FTP server using the default login.""
+   },
+   {
+     ""Sid"": ""31830"",
+     ""Technique ID"": ""T1078"",
+     ""Technique Name"": ""Valid Accounts"",
+     ""Quotes"": [],
+     ""Explanation"": ""The Snort rule triggers on attempts to log into an FTP server using the default credentials. Valid accounts involve using legitimate credentials to access a system or network. In this case, the attacker is attempting to use the default credentials to gain access to the FTP server, which could be considered a valid account if the default credentials have not been changed.""
+   }
+ ]","['T1110', 'T1078']",['T1078']
+31831,"
+ {
+   ""Sid"": ""31831"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Endpoint Denial of Service"",
+   ""Quotes"": [
+     ""The actor exploits a system or service by causing it to consume excessive resources (e.g., CPU time, file handles, disk space). This may result in the system or service becoming unavailable to perform its intended function.""
+   ],
+   ""Explanation"": ""The rule is looking for a specific FTP login attempt that may indicate a vulnerability that could allow an attacker to perform an Endpoint Denial of Service attack.""
+ }
+ ",['T1190'],['T1078']
+32008,"
+ {
+   ""Sid"": ""32008"",
+   ""Technique ID"": ""T1193"",
+   ""Technique Name"": ""Phishing"",
+   ""Quotes"": [
+     ""This technique involves sending fraudulent emails or creating malicious websites that appear to be from a legitimate source, in order to trick victims into providing sensitive information such as passwords or financial data."",
+     ""Phishing attacks often use social engineering tactics to create a sense of urgency or fear, and may impersonate trusted individuals or organizations.""
+   ],
+   ""Explanation"": ""The Snort rule is designed to detect phishing attacks that use malicious HTTP responses to trick victims into downloading and executing malware. The rule looks for specific file data (e.g., ""PK"", ""DeltaTicket_ET-RM-""), which is commonly used in phishing attacks.""
+ },
+ {
+   ""Sid"": ""32008"",
+   ""Technique ID"": ""T1566"",
+   ""Technique Name"": ""Phishing for Credentials"",
+   ""Quotes"": [
+     ""Phishing for credentials involves sending fraudulent emails or creating malicious websites that appear to be from a legitimate source, in order to trick victims into entering their credentials."",
+     ""Phishing attacks often use social engineering tactics to create a sense of urgency or fear, and may impersonate trusted individuals or organizations.""
+   ],
+   ""Explanation"": ""The Snort rule is designed to detect phishing attacks that use malicious HTTP responses to trick victims into providing their credentials. The rule looks for specific file data (e.g., ""PK"", ""DeltaTicket_ET-RM-""), which is commonly used in phishing attacks.""
+ }
+ ","['T1193', 'T1566']",['T1566']
+32845,"
+ {
+   ""Sid"": ""32845"",
+   ""Technique ID"": ""T1132"",
+   ""Technique Name"": ""Data Exfiltration"",
+   ""Quotes"": ""\""Computrace-Backdoor-Revisited.pdf.\"""",
+   ""Explanation"": ""The IDS rule is for detecting Absolute Software Computrace outbound connections. The technique is Data Exfiltration because it involves sending data from a system to an external destination.""
+ }
+ ",['T1132'],['T1014']
+32846,"{
+   ""Sid"": ""32846"",
+   ""Technique ID"": ""T1559"",
+   ""Technique Name"": ""Malware Delivery: Common Ports"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers when the outbound traffic from the internal network to the external network is detected on the HTTP ports. The rule uses various indicators of compromise, including content inspection, pattern matching, and PCRE, to check for traffic originating from the domain \"".absolute.com.\"", which is associated with Absolute Software Computrace. The rule also has references to various documents and presentations that analyze the Computrace backdoor. Based on the analysis of the rule, it can be inferred that it is primarily targeting malware delivery using common ports (T1559) by detecting the outbound connection to \"".absolute.com.\""""
+ }
+ {
+   ""Sid"": ""32846"",
+   ""Technique ID"": ""T1111"",
+   ""Technique Name"": ""Hidden Files and Directories"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers when the outbound traffic from the internal network to the external network is detected on the HTTP ports. The rule uses various indicators of compromise, including content inspection, pattern matching, and PCRE, to check for traffic originating from the domain \"".absolute.com.\"", which is associated with Absolute Software Computrace. The rule also has references to various documents and presentations that analyze the Computrace backdoor. Based on the analysis of the rule, it can be inferred that it is primarily targeting hidden files and directories (T1111) by detecting the outbound connection to \"".absolute.com.\"".""
+ }","['T1559', 'T1111']",['T1014']
+32846,"
+ {
+   ""32847"": [
+     {
+       ""Technique ID"": ""T1043"",
+       ""Technique Name"": ""Command and Scripting Interpreter"",
+       ""Quotes"": [],
+       ""Explanation"": ""The rule looks for outbound connections to bh.namequery.com, which is associated with Absolute Software Computrace. Computrace is a remote device management software that can be used to execute commands and scripts on target systems.""
+     },
+     {
+       ""Technique ID"": ""T1193"",
+       ""Technique Name"": ""Remote System Discovery"",
+       ""Quotes"": [],
+       ""Explanation"": ""The rule also looks for the \""TagId\"" header, which is used by Computrace to identify and track target systems. This suggests that the rule is intended to detect attempts to remotely discover and identify systems that are managed by Computrace.""
+     }
+   ]
+ }
+ ","['T1043', 'T1193']",['T1014']
+32848,"
+ [
+   {
+     ""Sid"": ""32848"",
+     ""Technique ID"": ""T1048"",
+     ""Technique Name"": ""Exfiltration Over C2 Channel"",
+     ""Quotes"": [
+       ""\""Host|3A| namequery.nettrace.co.za|0D 0A|\""""
+     ],
+     ""Explanation"": ""The IDS rule detects outbound connections to namequery.nettrace.co.za, which is associated with Absolute Software Computrace. Computrace is a remote management tool that can be used to exfiltrate data.""
+   },
+   {
+     ""Sid"": ""32848"",
+     ""Technique ID"": ""T1071.001"",
+     ""Technique Name"": ""Data Exfiltration: Command and Scripting Interpreter"",
+     ""Quotes"": [
+       ""\""TagId: \""""
+     ],
+     ""Explanation"": ""The IDS rule detects the presence of the \""TagId:\"" header, which is used by Computrace to identify devices. This suggests that the attacker is attempting to exfiltrate data using a command or scripting interpreter.""
+   }
+ ]
+ ","['T1048', 'T1071.001']",['T1014']
+32849,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""32849"",
+       ""Technique ID"": ""T1083"",
+       ""Technique Name"": ""Remote Desktop Protocol (RDP)"",
+       ""Quotes"": [
+         ""RDP is a proprietary protocol developed by Microsoft which provides a user with a graphical interface to connect to another computer over a network connection.""
+       ],
+       ""Explanation"": ""The rule checks for traffic to a known Absolute Software Computrace server, which could be an attempt to connect to the RDP port.""
+     },
+     {
+       ""Sid"": ""32849"",
+       ""Technique ID"": ""T1048"",
+       ""Technique Name"": ""Exfiltration Over C2 Channel"",
+       ""Quotes"": [
+         ""Adversaries may exfiltrate data over a C2 channel to maintain persistence and minimize detection.""
+       ],
+       ""Explanation"": ""The rule checks for traffic containing the string ""TagId: "", which could be a tag used to identify exfiltrated data.""
+     }
+   ]
+ }
+ ","['T1083', 'T1048']",['T1014']
+32850,"
+ {
+   ""Rule"": {
+     ""Sid"": ""32850"",
+     ""Rule"": ""alert tcp $HOME_NET any - $EXTERNAL_NET $HTTP_PORTS ( msg:\""APP-DETECT Absolute Software Computrace outbound connection - search2.namequery.com\"";  flow:to_server,established;  http_header;  content:\""Host|3A| search2.namequery.com|0D 0A|\"",fast_pattern,nocase;  content:\""TagId: \"";  metadata:policy max-detect-ips drop,policy security-ips drop,ruleset community;  service:http;  reference:url,absolute.com/support/consumer/technology_computrace;  reference:url,www.blackhat.com/docs/us-14/materials/us-14-Kamlyuk-Kamluk-Computrace-Backdoor-Revisited.pdf;  reference:url,www.blackhat.com/presentations/bh-usa-09/ORTEGA/BHUSA09-Ortega-DeactivateRootkit-PAPER.pdf;  classtype:misc-activity;  sid:32850;  rev:3;  )""
+   },
+   ""Techniques"": [
+     {
+       ""Technique ID"": ""T1071"",
+       ""Technique Name"": ""Remote System Discovery"",
+       ""Quotes"": [],
+       ""Explanation"": ""The rule triggers when the source IP (client IP) sends content containing \""Host|3A| search2.namequery.com|0D 0A|\"" to an IP address in $EXTERNAL_NET, which indicates an attempt to perform remote system discovery and gather information about systems on the network.""
+     },
+     {
+       ""Technique ID"": ""T1048"",
+       ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+       ""Quotes"": [],
+       ""Explanation"": ""The rule alerts when a client IP attempts to send data containing \""TagId: \"" to an external IP address over HTTP, which is a common method used by malware to exfiltrate data to a command and control server.""
+     }
+   ]
+ }
+ ","['T1071', 'T1048']",['T1014']
+32851,"
+ {
+   ""Sid"": ""32851"",
+   ""Technique ID"": ""T1087"",
+   ""Technique Name"": ""Credential Dumping"",
+   ""Quotes"": ""content:\""TagId: \"";"",
+   ""Explanation"": ""This rule looks for a \""TagId\"" string in HTTP traffic, which could indicate that the traffic is related to the Computrace software, which is known to be used for credential dumping.""
+ }
+ ",['T1087'],['T1014']
+33220,"
+ {
+   ""Sid"": ""33220"",
+   ""Technique ID"": ""T1102"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [
+     ""Adversaries may implement a variety of encryption techniques to achieve a variety of effects, including rendering data unreadable, hiding data, and evading detection.""
+   ],
+   ""Explanation"": ""The rule detects an exfiltration attempt using the HawkEye Keylogger, which is known to encrypt data for exfiltration.""
+ }
+ ",['T1102'],"['T1020', 'T1056']"
+33221,"
+ [
+   {
+     ""Sid"": ""33221"",
+     ""Technique ID"": ""T1134"",
+     ""Technique Name"": ""Credential Dumping"",
+     ""Quotes"": [
+       ""\""MALWARE-CNC Win.Trojan.HawkEye Keylogger exfiltration attempt\""""
+     ],
+     ""Explanation"": ""The rule is detecting a keylogger exfiltration attempt, which is a type of credential dumping.""
+   },
+   {
+     ""Sid"": ""33221"",
+     ""Technique ID"": ""T1114"",
+     ""Technique Name"": ""Password Spraying"",
+     ""Quotes"": [
+       ""\""MALWARE-CNC Win.Trojan.HawkEye Keylogger exfiltration attempt - clipboard and screenshot\""""
+     ],
+     ""Explanation"": ""The rule is detecting a keylogger exfiltration attempt, which can be used to obtain passwords for password spraying attacks.""
+   }
+ ]
+ ","['T1134', 'T1114']","['T1020', 'T1056']"
+33222,"
+ [
+   {
+     ""Sid"": ""33222"",
+     ""Technique ID"": ""T1041"",
+     ""Technique Name"": ""Exfiltration Over C2 Channel"",
+     ""Quotes"": [
+       ""\""exfiltration attempt\""""
+     ],
+     ""Explanation"": ""The rule detects HawkEye Trojan attempting to exfiltrate data over a C2 channel.""
+   },
+   {
+     ""Sid"": ""33222"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": [
+       ""\""exfiltration attempt\""""
+     ],
+     ""Explanation"": ""The rule detects exfiltration of data by HawkEye Trojan.""
+   }
+ ]
+ ","['T1041', 'T1071']","['T1020', 'T1056']"
+33223,"
+ {
+     ""Sid"": ""33223"",
+     ""Technique ID"": ""T1212"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": ""\""clipboard and screenshot\"""",
+     ""Explanation"": ""This rule triggers a warning when communication is established to external addresses from an internal network with suspicious content. The communication contains information about a screenshot and a file name that matches the name of a Trojan containing a keylogger. The Trojan HawkEye can exfiltrate data from a compromised system, including clipboard data and screenshots.""
+ }
+ {
+     ""Sid"": ""33223"",
+     ""Technique ID"": ""T1571"",
+     ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+     ""Quotes"": ""\""MALWARE-CNC Win.Trojan.HawkEye Keylogger\"""",
+     ""Explanation"": ""This rule alerts on traffic that has been identified as relating to a HawkEye Keylogger. HawkEye is a remote access trojan (RAT) that allows an attacker to control a compromised computer remotely. It can be used to exfiltrate data from the compromised computer to a command and control server.""
+ }
+ ","['T1212', 'T1571']","['T1020', 'T1056']"
+37245,"
+ [
+   {
+     ""Sid"": ""37245"",
+     ""Technique ID"": ""T1132"",
+     ""Technique Name"": ""Web Shell"",
+     ""Quotes"": [
+       ""web shell connection""
+     ],
+     ""Explanation"": ""The rule triggers on an HTTP request with a body containing a web shell, which is a technique used to maintain persistent access to a compromised system.""
+   },
+   {
+     ""Sid"": ""37245"",
+     ""Technique ID"": ""T1498"",
+     ""Technique Name"": ""Malicious Link"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule triggers on an HTTP request with a body containing a malicious link, which is a technique used to trick users into clicking on a link that will download malicious software or redirect them to a malicious website.""
+   }
+ ]
+ ","['T1132', 'T1498']","['T1001', 'T1505', 'T1132']"
+38385,"{
+   ""Sid"": ""38385"",
+   ""Technique ID"": ""T1043"",
+   ""Technique Name"": ""External Remote Services"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule is looking for a connection to an external IP address on port 21, which is the port used by FTP. FTP is a protocol that is commonly used by malware to transfer data to and from a remote server. This rule is therefore likely to be looking for malware that is using FTP to connect to a remote server.""
+ }
+ {
+   ""Sid"": ""38385"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Credential Harvesting"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule is looking for a connection to an external IP address on port 21, which is the port used by FTP. FTP is a protocol that is commonly used by malware to transfer data to and from a remote server. This rule is therefore likely to be looking for malware that is using FTP to connect to a remote server and harvest credentials.""
+ }","['T1043', 'T1110']",['T1056']
+38386,"{
+   ""Sid"": ""38386"",
+   ""Technique ID"": ""T1109"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""\\\""In an attacker-controlled C2 server, the attacker can use keylogging capabilities to obtain user credentials, such as passwords and encryption keys, from the victim's system.\\\"""",
+     ""\\\""The attacker typically gains initial access to the victim's system via phishing, malicious links, social engineering, or drive-by downloads.\\\""""
+   ],
+   ""Explanation"": ""The rule triggers on an outbound FTP connection with the content \""PASS Goodman1986\"" which suggests that the traffic is related to a malware-controlled command and control server.""
+ },
+ {
+   ""Sid"": ""38386"",
+   ""Technique ID"": ""T1034"",
+   ""Technique Name"": ""Credential Harvesting"",
+   ""Quotes"": [
+     ""\\\""Attackers may use keyloggers to steal victim credentials when they are entered into web browsers or other programs.\\\"""",
+     ""\\\""Remote access trojans (RATs) can be used to install keyloggers or other credential-stealing malware on the compromised device.\\\""""
+   ],
+   ""Explanation"": ""The rule triggers on an outbound FTP connection with the content \""PASS Goodman1986\"" which suggests that the traffic is related to a malware attempting to harvest credentials.""
+ }","['T1109', 'T1034']",['T1056']
+38387,"
+ {
+   ""Sid"": ""38387"",
+   ""Technique ID"": ""T1109"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""\""STOR Screenshot from|3A 20|\""""
+   ],
+   ""Explanation"": ""The rule triggers on an outbound connection to an FTP server with the content \""STOR Screenshot from|3A 20|\"". This pattern suggests that a remote actor has gained access to the host and is attempting to exfiltrate sensitive information, such as screenshots, to a command and control (C2) server.""
+ }
+ ",['T1109'],['T1056']
+38388,"
+ {
+   ""Sid"": ""38388"",
+   ""Technique ID"": ""T1043"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""\""Exfiltration Over Command and Control Channel\""""
+   ],
+   ""Explanation"": ""The rule triggers when a connection is made from the internal network to an external IP address on HTTP ports. The rule also checks for the presence of the string \""/geoip/geoip.php\"" in the HTTP URI, which is a common indicator of malware attempting to exfiltrate data.""
+ },
+ {
+   ""Sid"": ""38388"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [
+     ""\""Data Encrypted for Impact\""""
+   ],
+   ""Explanation"": ""The rule triggers when a connection is made from the internal network to an external IP address on HTTP ports. The rule also checks for the absence of the \""Accept\"", \""User-Agent\"", and \""Referer\"" headers in the HTTP request, which is a common indicator of malware attempting to evade detection.""
+ }
+ ","['T1043', 'T1110']",['T1056']
+38510,"
+ {
+   ""Sid"": ""38510"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration over Command and Control Channel"",
+   ""Quotes"": [
+     ""\""POST /api?upload\"",fast_pattern""
+   ],
+   ""Explanation"": ""The rule detects exfiltration of data through a POST request to a specific URI, which is a common technique used by malware to communicate with its command and control (C2) server.""
+ }
+ {
+   ""Sid"": ""38510"",
+   ""Technique ID"": ""T1123"",
+   ""Technique Name"": ""Network Sniffing"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule checks for the absence of specific HTTP headers (User-Agent, Accept, Referer) in the request, which is a common technique used by network sniffers to capture data from the network.""
+ }
+ ","['T1041', 'T1123']",['T1020']
+38557,"{
+   ""Sid"": ""38557"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""\""The adversary uses the established command and control (C2) channel to exfiltrate data from the target system to another system typically under their control\"""",
+     ""\""The C2 channel can be used to send exfiltrated data back to the adversary as well as transmit commands back to the compromised system.""
+   ],
+   ""Explanation"": ""The rule detects an outbound connection to a known C2 server, indicating that the compromised system is potentially exfiltrating data.""
+ },
+ {
+   ""Sid"": ""38557"",
+   ""Technique ID"": ""T1098"",
+   ""Technique Name"": ""Remote System Discovery"",
+   ""Quotes"": [
+     ""\""The adversary determines which hosts are reachable and which services they offer, typically to establish a foothold on a target network\""""
+   ],
+   ""Explanation"": ""The rule detects an outbound connection to a web server on port 80, which could be an attempt to discover remote systems on the target network.""
+ }","['T1041', 'T1098']",['T1056']
+38558,"JSON
+ {
+   ""Sid"": ""38558"",
+   ""Technique ID"": ""T1121"",
+   ""Technique Name"": ""Network Sniffing"",
+   ""Quotes"": [
+     """"User-Agent: 20 [A-F0-9]{32}""
+   ],
+   ""Explanation"": ""The rule looks for specific patterns in the HTTP headers, indicating that a client is sending data to a remote server. This could be indicative of network sniffing activity, where an attacker is attempting to capture sensitive information from network traffic.""
+ },
+ {
+   ""Sid"": ""38558"",
+   ""Technique ID"": ""T1218.002"",
+   ""Technique Name"": ""Phishing for Information - Credential Harvesting - HTTP"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for specific patterns in the HTTP headers, indicating that a client is sending data to a remote server. This could be indicative of phishing for information, where an attacker is attempting to harvest credentials from users.""
+ }
+ ","['T1121', 'T1218.002']",['T1056']
+38559,"
+ {
+   ""Sid"": ""38559"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""outbound connection""
+   ],
+   ""Explanation"": ""The rule detects exfiltration of keystrokes over HTTP to a remote server, which is a common technique used by malware to communicate with its command and control server.""
+ }
+ {
+   ""Sid"": ""38559"",
+   ""Technique ID"": ""T1498"",
+   ""Technique Name"": ""Keylogging"",
+   ""Quotes"": [
+     ""keystorkes""
+   ],
+   ""Explanation"": ""The rule detects the exfiltration of keystrokes, which is a common technique used by malware to steal sensitive information such as passwords and credit card numbers.""
+ }
+ ","['T1041', 'T1498']",['T1056']
+38560,"{
+   ""Sid"": ""38560"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": ""content:\""/News/gate.php?\"""",
+   ""Explanation"": ""The rule triggers when an HTTP GET request is made to a specific URI (/News/gate.php?) with a specific parameter, which is consistent with communication with a command and control server.""
+ }
+ {
+   ""Sid"": ""38560"",
+   ""Technique ID"": ""T1116"",
+   ""Technique Name"": ""Exfiltration Over C2 Channel"",
+   ""Quotes"": ""content:\""JFIF\"""",
+   ""Explanation"": ""The rule also checks for the presence of \""JFIF\"" in the HTTP traffic, which is a common header for JPEG image files. This suggests that the attacker may be exfiltrating data, possibly screenshots.""
+ }","['T1071', 'T1116']",['T1056']
+38561,"
+ {
+   ""Sid"": ""38561"",
+   ""Technique ID"": ""T1134"",
+   ""Technique Name"": ""Obtain Information"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for a pattern in the HTTP URI that matches the format \""/plugins/[a-z]{3,10}.p\"". This pattern is indicative of an attempt by malware to download plugins. The rule triggers when the specified pattern is detected in the HTTP URI, indicating an attempt by the malware to obtain information about the plugins that are available for download.""
+ }
+ {
+   ""Sid"": ""38561"",
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Ingress Tool Transfer"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for a pattern in the HTTP URI that matches the format \""/plugins/[a-z]{3,10}.p\"". This pattern is indicative of an attempt by malware to download plugins. The rule triggers when the specified pattern is detected in the HTTP URI, indicating an attempt by the malware to transfer an ingress tool to the target system.""
+ }
+ ","['T1134', 'T1105']","['T1056', 'T1176']"
+38562,"
+ [
+   {
+     ""Sid"": ""38562"",
+     ""Technique ID"": ""T1041"",
+     ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+     ""Quotes"": [
+       ""\""content:\""/gate.php\"",fast_pattern,nocase\""""
+     ],
+     ""Explanation"": ""The rule triggers when a POST request is sent to \""/gate.php\"" which is a common behavior in malware C2 communication.""
+   },
+   {
+     ""Sid"": ""38562"",
+     ""Technique ID"": ""T1008"",
+     ""Technique Name"": ""Remote System Discovery"",
+     ""Quotes"": [
+       ""\""content:\""pc=\"",nocase\"""",
+       ""\""content:\""&admin=\"",distance 0,nocase\"""",
+       ""\""content:\""&os=\"",distance 0,nocase\"""",
+       ""\""content:\""&hid=\"",distance 0,nocase\"""",
+       ""\""content:\""&arc=\"",distance 0,nocase\""""
+     ],
+     ""Explanation"": ""The rule looks for specific parameters in the request body which could be used to gather information about the infected system and its environment.""
+   }
+ ]
+ ","['T1041', 'T1008']","['T1020', 'T1056']"
+38563,"
+ {
+   ""Sid"": ""38563"",
+   ""Technique ID"": ""T1566"",
+   ""Technique Name"": ""Masquerading"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects a fake 404 response from a malware-controlled C&C server. This technique is used by malware to evade detection by pretending to be a legitimate website.""
+ }
+ ",['T1566'],['T1056']
+38564,"
+ {
+   ""Sid"": ""38564"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over C2 Channel"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects exfiltration of keystrokes by a Trojan over an HTTP channel, which is indicative of command and control (C2) activity.""
+ }
+ {
+   ""Sid"": ""38564"",
+   ""Technique ID"": ""T1115"",
+   ""Technique Name"": ""Network Share Discovery"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects an attempt to access a specific URI path (""/post.php?""), which could be used for network share discovery.""
+ }
+ ","['T1041', 'T1115']","['T1020', 'T1056']"
+38565,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""38565"",
+       ""Technique ID"": ""T1134"",
+       ""Technique Name"": ""File Download"",
+       ""Quotes"": [
+         ""\""content:\"".bin\"",fast_pattern,nocase\"""",
+         ""\""http_uri;  pcre:\"" \\/\\/[a-f0-9]{32}\\/\\w+\\.bin\\/\""""
+       ],
+       ""Explanation"": ""The rule looks for a specific file download pattern, which is a common technique used by malware to download malicious payloads.""
+     },
+     {
+       ""Sid"": ""38565"",
+       ""Technique ID"": ""T1437"",
+       ""Technique Name"": ""Command and Control"",
+       ""Quotes"": [
+         ""\""msg:\""MALWARE-CNC Win.Trojan.Sweeper variant dropper initial download attempt\"";\""""
+       ],
+       ""Explanation"": ""The rule specifically mentions \""MALWARE-CNC\"" in its message, indicating that it is designed to detect command and control traffic.""
+     }
+   ]
+ }
+ ","['T1134', 'T1437']",['T1197']
+38566,"
+ {
+   ""Sid"": ""38566"",
+   ""Technique ID"": ""T1218"",
+   ""Technique Name"": ""Dropper"",
+   ""Quotes"": [
+     "".bin"",
+     ""Microsoft BITS""
+   ],
+   ""Explanation"": ""The rule looks for a file with a .bin extension being downloaded by Microsoft BITS. This is a common technique used by malware to drop a payload onto a system.""
+ }
+ ",['T1218'],['T1197']
+38890,"{
+   ""Sid"": ""38890"",
+   ""Technique ID"": ""T1020"",
+   ""Technique Name"": ""Exfiltration Over C2 Channel"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers based on content in an HTTP GET request which may be an exfiltration of data by a trojan as it is communicating to it's C2 server.""
+ }
+ {
+   ""Sid"": ""38890"",
+   ""Technique ID"": ""T1071.001"",
+   ""Technique Name"": ""Data Encoding: Base64"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule triggers based on the URI being .php?fname=Hawkeye_Keylogger&data=xxxxxxxx. The URI contains a key-value pair with a '=' and an ampersand '&'. The content of the value looks like it could be base64 encoded.""
+ }","['T1020', 'T1071.001']","['T1020', 'T1056']"
+38950,"
+ [
+   {
+     ""Sid"": ""38950"",
+     ""Technique ID"": ""T1071"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule identifies exfiltration of passwords, which is a type of data exfiltration.""
+   },
+   {
+     ""Sid"": ""38950"",
+     ""Technique ID"": ""T1031"",
+     ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule suggests that the data is exfiltrated over a command and control channel, which is a common technique used by malware.""
+   }
+ ]
+ ","['T1071', 'T1031']",['T1020']
+39409,"
+ [
+   {
+     ""Sid"": ""39409"",
+     ""Technique ID"": ""T1043"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [
+       ""\""Win.Trojan.iSpy variant initial outbound connection\""""
+     ],
+     ""Explanation"": ""The rule detects initial outbound connections from a Win.Trojan.iSpy variant, which is a type of malware used for command and control.""
+   },
+   {
+     ""Sid"": ""39409"",
+     ""Technique ID"": ""T1110"",
+     ""Technique Name"": ""Data Exfiltration"",
+     ""Quotes"": [
+       ""\""iSpy Keylogger\"""",
+       ""\""Computer Information\"""",
+       ""\""Username\"""",
+       ""\""Installed\""""
+     ],
+     ""Explanation"": ""The rule detects the exfiltration of data such as computer information, username, and installed software, which is a common technique used by malware to gather information about the target system.""
+   }
+ ]
+ ","['T1043', 'T1110']",['T1056']
+39410,"
+ {
+   ""Sid"": ""39410"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""The ATT&CK technique T1071, Command and Control, involves an adversary using a variety of methods to communicate with compromised systems to issue commands or receive data."",
+     ""Win.Trojan.iSpy is a remote access trojan that allows an attacker to control a victim's computer remotely.""
+   ],
+   ""Explanation"": ""The rule is detecting a variant of Win.Trojan.iSpy. This malware is known to use command and control servers to receive commands from an attacker. The rule is looking for specific strings that are associated with iSpy Keylogger, Browser, Website, Username, and Password. These strings are likely being used by the malware to communicate with its command and control server.""
+ }
+ {
+   ""Sid"": ""39410"",
+   ""Technique ID"": ""T1048"",
+   ""Technique Name"": ""Data Exfiltration"",
+   ""Quotes"": [
+     ""The ATT&CK technique T1048, Data Exfiltration, involves an adversary transferring data from a compromised system to an external location."",
+     ""Win.Trojan.iSpy variant exfiltration outbound connection""
+   ],
+   ""Explanation"": ""The rule is detecting a variant of Win.Trojan.iSpy. This malware is known to exfiltrate data from a compromised system. The rule is looking for specific strings that are associated with iSpy Keylogger, Browser, Website, Username, and Password. These strings are likely being used by the malware to exfiltrate data from the compromised system.""
+ }
+ ","['T1071', 'T1048']","['T1020', 'T1056']"
+39911,"{
+   ""Sid"": ""39911"",
+   ""Technique ID"": ""T1048"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": ""Flow: to_server, established"",
+   ""Explanation"": ""The rule detects exfiltration attempts via a command and control channel, which is consistent with the technique's description of using a C2 channel for data exfiltration.""
+ }
+ {
+   ""Sid"": ""39911"",
+   ""Technique ID"": ""T1035"",
+   ""Technique Name"": ""Keylogging"",
+   ""Quotes"": ""Content: \""Subject: HawkEye Keylogger\"""",
+   ""Explanation"": ""The rule specifically mentions \""HawkEye Keylogger\"" in its content match, indicating that it is designed to detect keylogging activity, which is a common technique used by malware.""
+ }","['T1048', 'T1035']","['T1020', 'T1056']"
+40220,"
+ [
+   {
+     ""Sid"": ""40220"",
+     ""Technique ID"": ""T1123"",
+     ""Technique Name"": ""Exfiltration Over Other Network Medium"",
+     ""Quotes"": [
+       ""|0B 10 05 00|"",
+       ""Cisco IOS Group-Prime memory disclosure exfiltration attempt""
+     ],
+     ""Explanation"": ""The rule matches traffic containing the string \""|0B 10 05 00|\"", which is consistent with the exfiltration of data over UDP.""
+   },
+   {
+     ""Sid"": ""40220"",
+     ""Technique ID"": ""T1216"",
+     ""Technique Name"": ""Remote System Discovery"",
+     ""Quotes"": [
+       ""Cisco IOS Group-Prime memory disclosure""
+     ],
+     ""Explanation"": ""The rule's reference to Cisco IOS Group-Prime suggests that it is designed to detect attempts to discover and exploit vulnerabilities in Cisco devices.""
+   }
+ ]
+ ","['T1123', 'T1216']",['T1020']
+40832,"
+ {
+   ""Sid"": ""40832"",
+   ""Technique ID"": ""T1071.001"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""Command and control (C2) is the adversary's method of communicating with compromised systems""
+   ],
+   ""Explanation"": ""The rule is looking for a specific command that is used to initiate keylogging functionality in the Houdini backdoor, which is a type of malware used for remote control.""
+ },
+ {
+   ""Sid"": ""40832"",
+   ""Technique ID"": ""T1110.002"",
+   ""Technique Name"": ""Remote System Administration"",
+   ""Quotes"": [
+     ""Remote system administration is the ability to perform administrative functions on a computer system from a remote location""
+   ],
+   ""Explanation"": ""The rule is looking for a specific command that is used to initiate keylogging functionality in the Houdini backdoor, which is a type of malware used for remote control.""
+ }
+ ","['T1071.001', 'T1110.002']",['T1056']
+40911,"
+ [
+   {
+     ""Sid"": ""40911"",
+     ""Technique ID"": ""T1112"",
+     ""Technique Name"": ""Hide Artifacts"",
+     ""Quotes"": [
+       ""\""Hide Artifacts\"" techniques are used by adversaries to remove or alter evidence of their activity on a system or network."",
+       ""Adversaries may use \""Hide Artifacts\"" techniques to make it more difficult for defenders to detect or investigate their activity.""
+     ],
+     ""Explanation"": ""The rule looks for outbound connections from the internal network to the external network on HTTP ports. It also looks for specific HTTP URIs and content in the HTTP client body. This rule is likely designed to detect malware-related activity, such as a Win.Rootkit.Sednit variant making an outbound connection to a command-and-control server. The \""Hide Artifacts\"" technique is relevant to this rule because the malware may be attempting to hide its activity by using an encrypted connection or by sending data in a non-standard format.""
+   },
+   {
+     ""Sid"": ""40911"",
+     ""Technique ID"": ""T1021"",
+     ""Technique Name"": ""Remote File Copy"",
+     ""Quotes"": [
+       ""\""Remote File Copy\"" techniques involve copying files from one system to another over a network."",
+       ""Adversaries may use \""Remote File Copy\"" techniques to transfer data, malware, or tools between systems.""
+     ],
+     ""Explanation"": ""The rule looks for outbound connections from the internal network to the external network on HTTP ports. It also looks for specific HTTP URIs and content in the HTTP client body. This rule is likely designed to detect malware-related activity, such as a Win.Rootkit.Sednit variant making an outbound connection to a command-and-control server. The \""Remote File Copy\"" technique is relevant to this rule because the malware may be attempting to copy files from the compromised system to the command-and-control server.""
+   }
+ ]
+ ","['T1112', 'T1021']",['T1014']
+41443,"
+ {
+   ""Sid"": ""41443"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""\""The following are common indicators of exfiltration over a command and control channel:  The adversary uses the HTTP Network protocol to communicate with a remote host\"""",
+     ""\""The adversary uses commands and arguments, encoded as parameters within an HTTP GET/POST request\""""
+   ],
+   ""Explanation"": ""The rule triggers when a client sends HTTP requests to a remote host with specific URI, body content (/gate.php, 163=, &x=, &z=) suggesting data exfiltration over an HTTP command and control channel.""
+ },
+ {
+   ""Sid"": ""41443"",
+   ""Technique ID"": ""T1407"",
+   ""Technique Name"": ""XMRig Miner"",
+   ""Quotes"": [
+     ""XMRig is an open-source CPU mining software used for the cryptocurrency Monero."",
+     ""Attackers use XMRig to mine cryptocurrency by compromising hosts and deploying the miner software on them""
+   ],
+   ""Explanation"": ""The rule triggers on traffic of the miner's communication with the C2 server; the C2 server's IP address could be determined as this has a pattern in common with XMRig's mining pool addresses.""
+ }
+ ","['T1041', 'T1407']",['T1056']
+41444,"
+ {
+   ""Sid"": ""41444"",
+   ""Technique ID"": ""T1433"",
+   ""Technique Name"": ""Data Exfiltration"",
+   ""Quotes"": [
+     ""3C|br|3E 3C|br|3E 3C|b|3E 3C|big|3E 3C|font color=|22|"",
+     ""|22 3E 20 5B|""
+   ],
+   ""Explanation"": ""The rule looks for outbound HTTP connections to external IPs on standard HTTP ports and searches for specific strings in the HTTP URI and body. This suggests that the alert is looking for exfiltration of data via HTTP, which is consistent with the MITER ATT&CK technique T1433, Data Exfiltration.""
+ },
+ {
+   ""Sid"": ""41444"",
+   ""Technique ID"": ""T1090"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""MALWARE-CNC Win.Ransomware.X-Mas variant keylogger outbound connection""
+   ],
+   ""Explanation"": ""The rule is looking for outbound HTTP connections to external IPs on standard HTTP ports and searches for specific strings in the HTTP URI and body. This suggests that the alert is looking for a malware variant connecting to a command and control server.""
+ }
+ ","['T1433', 'T1090']",['T1056']
+41712,"
+ {
+   ""Sid"": ""41712"",
+   ""Technique ID"": ""T1132"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule looks for a specific file name and content that is associated with malware. Data Encrypted for Impact involves encrypting data on a victim system to impair access to the data.""
+ }
+ ",['T1132'],['T1197']
+42331,"
+ [
+   {
+     ""Sid"": ""42331"",
+     ""Technique ID"": ""T1059.001"",
+     ""Technique Name"": ""Command and Scripting Interpreter"",
+     ""Quotes"": [
+       ""|FF|SMB|32 00 00 00 00|""
+     ],
+     ""Explanation"": ""The rule looks for a specific SMB packet with the header `|FF|SMB|32 00 00 00 00|`, which is commonly used by malware to execute commands and scripts.""
+   },
+   {
+     ""Sid"": ""42331"",
+     ""Technique ID"": ""T1098"",
+     ""Technique Name"": ""WinRM"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule also looks for the string `|0E 00|`, which is used by WinRM, a remote management tool that can be abused by attackers to execute commands.""
+   }
+ ]
+ ","['T1059.001', 'T1098']",['T1055']
+42340,"{
+   ""Sid"": ""42340"",
+   ""Technique ID"": ""T1134"",
+   ""Technique Name"": ""Credential Harvesting: SMB/IPC Shares"",
+   ""Quotes"": [
+     ""\""content:\""|FF|SMB|75 00 00 00 00|\"",depth 9,offset 4;\"""",
+     ""\""content:\""|00 5C 00|I|00|P|00|C|00|$|00 00 00|\"",fast_pattern,nocase;\""""
+   ],
+   ""Explanation"": ""This rule triggers on SMB/IPC share access attempts. The SMB/IPC protocol is used to allow access to shared resources on a remote system. It is commonly used to share files and printers between systems. In this case, it appears that the rule is triggering on an attempt to access an anonymous IPC share on a remote system. This could be an attempt to gather credentials or to exploit a vulnerability in the SMB protocol""
+ },
+ {
+   ""Sid"": ""42340"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Windows Service Discovery"",
+   ""Quotes"": [
+     ""\""alert tcp any any - $HOME_NET 445\""""
+   ],
+   ""Explanation"": ""The remote computer or device is attempting to discover or enumerate SMB services on your local network. This behavior could simply be the result of normal network traffic, but it could also be a reconnaissance technique used by an attacker to gather information about your network and identify potential targets.""
+ }","['T1134', 'T1071']",['T1021']
+42834,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""42834"",
+       ""Technique ID"": ""T1106"",
+       ""Technique Name"": ""Command and Control"",
+       ""Quotes"": [
+         ""The adversary may use web shells, which are malicious scripts that can be used to execute commands on a web server, as a form of command and control."",
+         ""Web shells can allow an attacker to remotely control the server, upload and download files, execute commands, and perform other malicious activities.""
+       ],
+       ""Explanation"": ""The rule detects a web shell connection by looking for a specific pattern in the HTTP body. This pattern is commonly used by the China Chopper web shell, which is known to be used for command and control purposes.""
+     },
+     {
+       ""Sid"": ""42834"",
+       ""Technique ID"": ""T1105"",
+       ""Technique Name"": ""Establish Command and Control"",
+       ""Quotes"": [
+         ""The adversary establishes command and control (C2) to maintain persistence and conduct post-exploitation activities."",
+         ""C2 allows the adversary to communicate with compromised systems, issue commands, and transfer data.""
+       ],
+       ""Explanation"": ""The rule detects a connection to a known command and control server. This connection is likely being used to establish a backdoor or to download additional malware.""
+     }
+   ]
+ }
+ ","['T1106', 'T1105']",['T1505']
+42835,"{
+   ""Sid"": ""42835"",
+   ""Technique ID"": ""T1051"",
+   ""Technique Name"": ""Web Shell"",
+   ""Quotes"": [
+     ""\""web shell connection\""""
+   ],
+   ""Explanation"": ""The rule detects a web shell connection, which is a technique commonly used by attackers to maintain persistent access to a compromised system.""
+ }
+ {
+   ""Sid"": ""42835"",
+   ""Technique ID"": ""T1105"",
+   ""Technique Name"": ""Command and Control"",
+   ""Quotes"": [
+     ""\""MALWARE-CNC\""""
+   ],
+   ""Explanation"": ""The rule detects traffic to a known malware command and control server, indicating that the compromised system is communicating with an attacker-controlled server.""
+ }","['T1051', 'T1105']",['T1505']
+42836,"
+ {
+   ""Sid"": ""42836"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Exploitation for Client Execution"",
+   ""Quotes"": [],
+   ""Explanation"": ""The rule detects web shell connection used by China Chopper, a backdoor that allows remote attackers to execute arbitrary commands on a compromised machine. This technique is commonly used by attackers to gain initial access to a system and can be used to execute malicious code, such as malware, or to establish a persistent presence on the system.""
+ }
+ ",['T1190'],['T1505']
+43002,"
+ {
+   ""Sid"": ""43002"",
+   ""Technique ID"": ""T1134"",
+   ""Technique Name"": ""IPC Share Access"",
+   ""Quotes"": [
+     ""\""SMB packets such as the IPC$ share access attempt are often used for reconnaissance through reverse connections.\"" (source - fireeye_indicators_of_compromise)""
+   ],
+   ""Explanation"": ""The rule triggers on SMB packets attempting to access the IPC$ share, which can be used for reconnaissance or lateral movement.""
+ },
+ {
+   ""Sid"": ""43002"",
+   ""Technique ID"": ""T1046"",
+   ""Technique Name"": ""Network Share Discovery"",
+   ""Quotes"": [
+     ""\""SMB is also used to enumerate network shares where attackers can attempt to gain access to sensitive information, such as configuration files or credentials."" (source - microsoft_detection_rules)""
+   ],
+   ""Explanation"": ""The rule triggers on SMB packets, which can be used to enumerate network shares and potentially gain access to sensitive information.""
+ }
+ ","['T1134', 'T1046']",['T1021']
+43003,"
+ {
+   ""Sid"": ""43003"",
+   ""Technique ID"": ""T1068"",
+   ""Technique Name"": ""SMB/Windows Admin Shares"",
+   ""Quotes"": [
+     ""|FF|SMB|75 00 00 00 00|""
+   ],
+   ""Explanation"": ""The rule triggers an alert when it detects a SMB packet with the SMB header flag set to 0xFF, which is commonly used for IPC share access attempts.""
+ },
+ {
+   ""Sid"": ""43003"",
+   ""Technique ID"": ""T1553.002"",
+   ""Technique Name"": ""SMB Server Message Block Protocol"",
+   ""Quotes"": [
+     ""|FF|SMB|75 00 00 00 00|""
+   ],
+   ""Explanation"": ""The rule uses the SMB protocol to detect network traffic. SMB is a file sharing protocol that is commonly used in Windows environments.""
+ }
+ ","['T1068', 'T1553.002']",['T1021']
+43287,"
+ {
+   ""Sid"": ""43287"",
+   ""Technique ID"": ""T1059"",
+   ""Technique Name"": ""File and Directory Discovery"",
+   ""Quotes"": [
+     ""\""Techniques that identify or access files, directories, or other sensitive data on a target system, network, or removable storage device that may contain user data.\""Techniques that identify or access files, directories, or other sensitive data on a target system, network, or removable storage device that may contain user data.\""""
+   ],
+   ""Explanation"": ""The rule triggers based on an HTTP request containing \""/etc/inetd.conf\"" in the URI. The attacker may access this file to attempt to gain information about the system.""
+ },
+ {
+   ""Sid"": ""43287"",
+   ""Technique ID"": ""T1110"",
+   ""Technique Name"": ""Access Control Bypass"",
+   ""Quotes"": [
+     ""\""Techniques that modify or bypass access control mechanisms on a target system, such as disabling security policies, disabling auditing, granting unauthorized privileges, and tampering with access control lists (ACLs) to gain access to data or system resources.\""""
+   ],
+   ""Explanation"": ""The rule also triggers when the attacker tries to access the file without proper authorization. This indicates that the attacker is attempting to bypass access control mechanisms.""
+ }
+ ","['T1059', 'T1110']",['T1087']
+43288,"
+ {
+   ""Sid"": ""43288"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Credential Harvesting: Phishing"",
+   ""Quotes"": [],
+   ""Explanation"": ""This rule generates an alert when an external IP address attempts to access the /etc/motd file on an HTTP server, which could be an indicator of phishing activity.""
+ }
+ {
+   ""Sid"": ""43288"",
+   ""Technique ID"": ""T1595.001"",
+   ""Technique Name"": ""Command and Scripting Interpreter: Shell"",
+   ""Quotes"": [],
+   ""Explanation"": ""This rule triggers an alert when a user on a remote host attempts to access the /etc/motd file on an HTTP server, which could result in an attacker obtaining information about the server configuration or executing arbitrary commands.""
+ }
+ ","['T1190', 'T1595.001']",['T1087']
+43289,"
+ [
+   {
+     ""Sid"": ""43289"",
+     ""Technique ID"": ""T1190.001"",
+     ""Technique Name"": ""System Owner/User Discovery"",
+     ""Quotes"": [
+       ""\""Accesses system logs to identify potential user accounts, system settings, or other sensitive information.\""""
+     ],
+     ""Explanation"": ""The rule triggers on attempts to access the /etc/shadow file, which contains hashed user passwords. This indicates an attempt to gather information about system users, which is consistent with the System Owner/User Discovery technique.""
+   },
+   {
+     ""Sid"": ""43289"",
+     ""Technique ID"": ""T1048.003"",
+     ""Technique Name"": ""File and Directory Discovery"",
+     ""Quotes"": [
+       ""\""Discovers files and directories of interest on a system.\""""
+     ],
+     ""Explanation"": ""The rule triggers on attempts to access the /etc/shadow file, which is a directory of interest for attackers because it contains hashed user passwords. This indicates an attempt to discover files and directories, which is consistent with the File and Directory Discovery technique.""
+   }
+ ]
+ ","['T1190.001', 'T1048.003']",['T1087']
+45967,"
+ {
+   ""Sid"": ""45967"",
+   ""Technique ID"": ""T1048"",
+   ""Technique Name"": ""Exfiltration Over DNS"",
+   ""Quotes"": [
+     ""|0F|"",
+     ""|03|trp""
+   ],
+   ""Explanation"": ""This rule looks for data exfiltration over DNS by detecting specific patterns in DNS traffic. Exfiltration Over DNS is a technique used by malware to exfiltrate data over DNS protocol, which is often used to avoid detection by security measures that monitor traditional network traffic.""
+ }
+ {
+   ""Sid"": ""45967"",
+   ""Technique ID"": ""T1190"",
+   ""Technique Name"": ""Domain Generation Algorithms"",
+   ""Quotes"": [
+     ""DNS""
+   ],
+   ""Explanation"": ""This rule also looks for Domain Generation Algorithms (DGA), which are algorithms used by malware to generate domain names that are difficult to predict and block. DGA is a technique used by malware to evade detection and sinkhole-based countermeasures.""
+ }
+ ","['T1048', 'T1190']",['T1020']
+45968,"
+ {
+   ""Sid"": ""45968"",
+   ""Technique ID"": ""T1048"",
+   ""Technique Name"": ""Exfiltration Over DNS"",
+   ""Quotes"": [
+     ""outbound data exfiltration""
+   ],
+   ""Explanation"": ""The rule triggers when there is data exfiltration over DNS. This technique is commonly used by malware to exfiltrate data from a compromised system.""
+ }
+ {
+   ""Sid"": ""45968"",
+   ""Technique ID"": ""T1568"",
+   ""Technique Name"": ""Malware Dropper"",
+   ""Quotes"": [
+     ""MALWARE-CNC Win.Trojan.UDPOS""
+   ],
+   ""Explanation"": ""The rule triggers when the malware Win.Trojan.UDPOS is detected. This malware is known to drop other malware onto a compromised system.""
+ }
+ ","['T1048', 'T1568']",['T1020']
+45980,"
+ {
+   ""Rules"": [
+     {
+       ""Sid"": ""45980"",
+       ""Technique ID"": ""T1071.001"",
+       ""Technique Name"": ""Command and Control"",
+       ""Quotes"": [
+         ""|74 00 29|net.oscp.client.keylogger.KeystrokeLogger"",
+         ""MALWARE-CNC MultiOS.Trojan.OSCelestial variant inbound connection""
+       ],
+       ""Explanation"": ""The rule is looking for a specific payload that is associated with the MultiOS.Trojan.OSCelestial malware. This malware is known to establish a command and control connection with a remote server, allowing the attacker to control the infected system and steal data.""
+     },
+     {
+       ""Sid"": ""45980"",
+       ""Technique ID"": ""T1118"",
+       ""Technique Name"": ""Keystroke Logging"",
+       ""Quotes"": [
+         ""|74 00 29|net.oscp.client.keylogger.KeystrokeLogger""
+       ],
+       ""Explanation"": ""The rule is looking for a specific payload that is associated with a keylogger. A keylogger is a type of malware that records every keystroke made on the infected system, giving the attacker access to sensitive information such as passwords and credit card numbers.""
+     }
+   ]
+ }
+ ","['T1071.001', 'T1118']",['T1056']
+46067,"
+ {
+   ""Sid"": ""46067"",
+   ""Technique ID"": ""T1043"",
+   ""Technique Name"": ""Command and Control Exfiltration over Unencrypted Non-Web Protocols"",
+   ""Quotes"": [
+     ""Adversaries may use standard protocols like HTTP to exfiltrate data over command and control channels.""
+   ],
+   ""Explanation"": ""The rule detects outbound HTTP traffic with the header \""Expect: 100-continue\"" and the content \""pc=\"" and \""pc_data=\"". This content suggests that the traffic is related to a malware command and control channel.""
+ }
+ {
+   ""Sid"": ""46067"",
+   ""Technique ID"": ""T1003"",
+   ""Technique Name"": ""OS Credential Dumping: Registry"",
+   ""Quotes"": [
+     ""Adversaries may also abuse legitimate, built-in OS utilities or commands to dump credentials from the registry.""
+   ],
+   ""Explanation"": ""The rule detects HTTP traffic with the header \""Expect: 100-continue\"" and the content \""pc=\"" and \""pc_data=\"". This content suggests that the traffic is related to a malware command and control channel. The malware could be dumping credentials from the registry to send over the command and control channel.""
+ }
+ ","['T1043', 'T1003']",['T1176']
+46070,"{
+   ""Sid"": ""46070"",
+   ""Technique ID"": ""T1041"",
+   ""Technique Name"": ""Exfiltration Over Command and Control Channel"",
+   ""Quotes"": [
+     ""\""content:\""Expect: 100-continue\"",fast_pattern,nocase\"""",
+     ""\""content:\""id=\"",depth 3\""""
+   ],
+   ""Explanation"": ""The rule detects the \""Expect: 100-continue\"" HTTP header, which is commonly used in file exfiltration over command and control channels. Additionally, the rule also checks for the \""id=\"" parameter in the HTTP request body, which is another indicator of exfiltration.""
+ },
+ {
+   ""Sid"": ""46070"",
+   ""Technique ID"": ""T1106"",
+   ""Technique Name"": ""Data Encrypted for Impact"",
+   ""Quotes"": [
+     ""\""content:\""Expect: 100-continue\"",fast_pattern,nocase\""""
+   ],
+   ""Explanation"": ""The rule detects the \""Expect: 100-continue\"" HTTP header, which is commonly used in data encryption for impact. This is because the header can be used to delay the server's response, giving the attacker time to encrypt the data before it is sent.""
+ }","['T1041', 'T1106']",['T1020']
+46482,"
+ {
+   ""Sid"": ""46482"",
+   ""Technique ID"": ""T1071"",
+   ""Technique Name"": ""Data Exfiltration"",
+   ""Quotes"": [
+ 
+   ],
+   ""Explanation"": ""The rule detects data exfiltration via HTTP GET request to a remote host. Data exfiltration is a technique used by adversaries to steal sensitive data from a compromised network.""
+ }
+ {
+   ""Sid"": ""46482"",
+   ""Technique ID"": ""T1098"",
+   ""Technique Name"": ""Remote Access Software"",
+   ""Quotes"": [
+ 
+   ],
+   ""Explanation"": ""The rule detects a connection to a remote access tool. Remote access software is often used by adversaries to gain remote access to a compromised system.""
+ }
+ ","['T1071', 'T1098']","['T1020', 'T1056']"
+47377,"
+ [
+   {
+     ""Sid"": ""47377"",
+     ""Technique ID"": ""T1484"",
+     ""Technique Name"": ""Command and Control"",
+     ""Quotes"": [
+       ""\""Unix.Trojan.Vpnfilter plugin variant connection attempt\""""
+     ],
+     ""Explanation"": ""The rule detects a connection attempt to a known malware command and control server, indicating that the attacker is attempting to establish command and control over a compromised system.""
+   },
+   {
+     ""Sid"": ""47377"",
+     ""Technique ID"": ""T1566"",
+     ""Technique Name"": ""Phishing"",
+     ""Quotes"": [],
+     ""Explanation"": ""The rule detects a connection attempt to a known phishing URL, indicating that the attacker is attempting to trick the user into providing sensitive information or clicking on a malicious link.""
+   }
+ ]
+ ","['T1484', 'T1566']",['T1176']
+47639,"
+ [
+   {
+     ""Sid"": ""47639"",
+     ""Technique ID"": ""T1576.001"",
+     ""Technique Name"": ""DNS Over Network Tunnels"",
+     ""Quotes"": null,
+     ""Explanation"": ""The rule triggers an alert on DNS traffic with a large data size and a specific content pattern, which is consistent with the technique of using DNS for data exfiltration or tunneling.""
+   },
+   {
+     ""Sid"": ""47639"",
+     ""Technique ID"": ""T1009"",
+     ""Technique Name"": ""Obfuscated Files or Information"",
+     ""Quotes"": null,
+     ""Explanation"": ""The rule detects unusually large DNS TXT records, which could indicate an attempt to hide malicious content or exfiltrate data using DNS.""
+   }
+ ]
+ ","['T1576.001', 'T1009']",['T1048']

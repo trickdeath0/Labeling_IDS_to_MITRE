@@ -41,3 +41,28 @@ def print_plot(data, miter):
 print_plot(Nir_Data, 'technique ids')
 print_plot(Our_Full_Data, 'MITRE Technique ID')
 print_plot(Our_Test_Data_300, 'technique ids')
+
+
+import ast
+
+technique_counts = (Our_Test_Data_300['technique ids'].value_counts())
+# Converting the Series to a dictionary
+technique_counts_dict = technique_counts.to_dict()
+#print(technique_counts_dict)
+
+# Initialize the new dictionary
+new_data = {}
+# Iterate through the original dictionary
+for key, value in technique_counts_dict.items():
+    # Convert the string key to a list
+    techniques = ast.literal_eval(key)
+    # Iterate through the techniques in the list
+    for technique in techniques:
+        # Add the technique to the new dictionary
+        if technique in new_data:
+            new_data[technique] += value
+        else:
+            new_data[technique] = value
+
+sorted_data = dict(sorted(new_data.items(), key=lambda item: item[1], reverse=True))
+print(sorted_data)

@@ -88,7 +88,7 @@ import pandas as pd
 import random
 import csv
 
-df = pd.read_csv(r"Pre fine tuning DB\Train_Test_Data\combined_data.csv")
+df = pd.read_csv(r"Semester_A\Pre fine tuning DB\Train_Test_Data\combined_data_fix.csv")
 
 # Create empty sets for training and test data
 training_set = []
@@ -121,7 +121,7 @@ while len(df) > 0:
         
 
     # Check if we've already extracted 40 rows with the same technique
-    if technique_count[technique] < 8 and len(test_set) < 300:
+    if technique_count[technique] < 5 and len(test_set) < 200:
         test_set.append(row)
     else:
         training_set.append(row)
@@ -134,12 +134,12 @@ while len(df) > 0:
 headers = ['Sid', 'URL', 'technique ids', 'Rule']
 
 # Save the train and test sets to separate CSV files
-with open(r"Pre fine tuning DB\Train_Test_Data\train_data.csv", 'w', newline='') as file:
+with open(r"Semester_A\Pre fine tuning DB\Train_Test_Data\train_data_80_20.csv", 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(headers)
     writer.writerows(training_set)
 
-with open(r"Pre fine tuning DB\Train_Test_Data\test_data.csv", 'w', newline='') as file:
+with open(r"Semester_A\Pre fine tuning DB\Train_Test_Data\test_data_80_20.csv", 'w', newline='') as file:
     writer = csv.writer(file)
     writer.writerow(headers)
     writer.writerows(test_set)

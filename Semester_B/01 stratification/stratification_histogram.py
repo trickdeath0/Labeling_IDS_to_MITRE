@@ -7,6 +7,7 @@ import pandas as pd
 Nir_Data = pd.read_csv(r'Semester_B\01 stratification\ground_truth.csv') 
 Our_Full_Data = pd.read_csv(r'Semester_B\01 stratification\combined_data_fix.csv')
 Our_Test_Data_300 = pd.read_csv(r'Semester_B\01 stratification\test_data_fix.csv')
+Our_Train_Data_300 = pd.read_csv(r'Semester_B\01 stratification\train_data_fix.csv')
   
 # # drop the name column as it is of no importance here 
 Nir_Data.drop('Unnamed: 0', axis=1, inplace=True) 
@@ -16,6 +17,8 @@ Nir_Data.drop('Unnamed: 0', axis=1, inplace=True)
 (Nir_Data['technique ids'].value_counts()) / len(Nir_Data) * 100
 (Our_Full_Data['MITRE Technique ID'].value_counts()) / len(Our_Full_Data) * 100
 (Our_Test_Data_300['technique ids'].value_counts()) / len(Our_Test_Data_300) * 100
+(Our_Train_Data_300['technique ids'].value_counts()) / len(Our_Train_Data_300) * 100
+
 
 # Step 3: Display the distribution of rules
 import matplotlib.pyplot as plt
@@ -38,9 +41,9 @@ def print_plot(data, miter):
     plt.show()
 
 
-print_plot(Nir_Data, 'technique ids')
-print_plot(Our_Full_Data, 'MITRE Technique ID')
-print_plot(Our_Test_Data_300, 'technique ids')
+# print_plot(Nir_Data, 'technique ids')
+# print_plot(Our_Full_Data, 'MITRE Technique ID')
+# print_plot(Our_Test_Data_300, 'technique ids')
 
 
 import ast
